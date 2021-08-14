@@ -497,6 +497,10 @@ body {
   }
 }
 
+.header .header__logo-img {
+  cursor: pointer;
+}
+
 .header .header__nav-item .header__nav-link {
   color: #fff;
   font-size: 1.6rem;
@@ -1720,6 +1724,7 @@ body {
 }
 
 .content--bdsw .content-count {
+  cursor: pointer;
   margin-left: 10%;
   width: 80%;
   height: 50px;
@@ -1752,6 +1757,7 @@ body {
 }
 
 .content--bdsw .content-count .content-count__input {
+  cursor: pointer;
   width: 100%;
   margin-top: 5%;
 }

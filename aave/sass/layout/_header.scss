@@ -6,6 +6,9 @@
     @include mobile {
         background-color: $color-white;
     }
+    .header__logo-img {
+        cursor: pointer;
+    }
     .header__nav-item {
         .header__nav-link {
             color: #fff;
