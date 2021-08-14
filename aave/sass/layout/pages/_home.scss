@@ -1,0 +1,861 @@
+// section first
+.content__firstSection {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .content__firstSection-img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: -100px;
+        @include mobile {
+            top: 0px;
+        }
+    }
+    .content__firstSection-wrap {
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        @include mobile {
+            min-width: 360px;
+            left: 0;
+        }
+        @include ipadPro {
+            top: 13%;
+            left: 20%;
+            min-width: 800px;
+        }
+        @include tablet {
+            top: 11%;
+            left: -2%;
+            min-width: 800px;
+        }
+        .firstSection__title {
+            @include font(3rem, 600);
+            color: $color-white;
+            @include mobile {
+                @include font(2.6rem, 600);
+            }
+        }
+        .firstSection__number {
+            @include font(7.5rem, 800, 1.15);
+            background-image: linear-gradient(255deg, #b6509e 25%, #2ebac6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @include mobile {
+                @include font(3.2rem, 600);
+            }
+        }
+        .firstSection__text {
+            @include font(1.6rem, 300);
+            color: $color-white;
+            max-width: 500px;
+            margin: auto;
+            @include mobile {
+                @include font(1.4rem, 400);
+            }
+        }
+        .firstSection__btn {
+            min-width: 150px;
+            height: 40px;
+            color: #383d51;
+            z-index: 1;
+            &:hover {
+                box-shadow: 1px 1px 8px #fff;
+            }
+        }
+    }
+}
+
+// Second section
+.content__SecondSection {
+    $ml: 260px;
+    .content-market-wrap {
+        background-color: $color-white;
+        height: 70px;
+        padding: 12px;
+        position: relative;
+        z-index: 0;
+        .content-market__left {
+            .content-market__text {
+                @include font(1.6rem, 400);
+                color: $color-black;
+            }
+            .content-market__number {
+                @include font(2rem, 600);
+            }
+        }
+        .content-market-col {
+            margin-left: -100px;
+        }
+        .content-market__right {
+            width: 104px;
+            cursor: pointer;
+            margin-left: $ml;
+            height: 36px;
+            border-radius: 2px;
+            border: 2px solid #fff;
+            background-color: #383d51;
+            position: relative;
+            z-index: 2;
+            @include tablet {
+                margin-left: 0;
+            }
+            @include ipadPro {
+                margin-left: 120px;
+            }
+            span {
+                @include font(1rem, 600);
+                color: $color-white;
+                margin-left: 10%;
+                @include ipadPro {
+                    margin-left: 24%;
+                }
+            }
+            .content-market-img {
+                position: relative;
+                top: -20%;
+                left: 10%;
+                width: 55px;
+                height: 15px;
+                @include ipadPro {
+                    left: 24%;
+                }
+            }
+            .content-market-subLogo__img {
+                width: 30px;
+                margin-left: 12%;
+                // @include ipadPro {
+                //     margin-left: 1%;
+                // }
+            }
+            .content-market__text-right {
+                @include font(0.9rem, 300);
+                position: relative;
+                top: -20%;
+                left: 20%;
+                letter-spacing: 5px;
+                color: $color-white;
+                @include ipadPro {
+                    left: 24%;
+                }
+            }
+        }
+        .content-market__right-col {
+            margin-right: -7%;
+            position: relative;
+            @include tablet {
+                margin-right: 0;
+            }
+        }
+        .content-market__right-bg {
+            margin-left: $ml;
+            width: 108px;
+            position: absolute;
+            z-index: 1;
+            top: -2px;
+            bottom: -2px;
+            left: 5px;
+            right: 1px;
+            border-radius: 2px;
+            background: linear-gradient(255deg, #b6509e 25%, #2ebac6);
+            opacity: 1;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            display: none;
+            @include tablet {
+                margin-left: 0;
+            }
+            @include ipadPro {
+                margin-left: 120px;
+            }
+        }
+        .content-market__right:hover~.content-market__right-bg {
+            display: block;
+        }
+    }
+    .labeled-witch {
+        position: relative;
+        $height: 36px;
+        width: 200px;
+        max-height: $height;
+        background-color: #383d51;
+        transition: all 0.4s ease;
+        .labeled-witch__pointer.active {
+            background-color: $color-white;
+            background-clip: content-box;
+            //  color
+        }
+        .labeled-witch__pointer h3 {
+            color: $color-white;
+        }
+        .labeled-witch__pointer.active h3 {
+            font-weight: 600;
+            display: block;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(255deg, #b6509e 25%, #2ebac6);
+        }
+        .labeled-witch__pointer {
+            text-align: center;
+            margin: auto;
+            padding: 4px;
+            width: 50%;
+            cursor: pointer;
+        }
+    }
+    .tables {
+        .table__header {
+            .table__header--text {
+                cursor: pointer;
+                position: relative;
+                font-size: 14px;
+                position: relative;
+                display: inline;
+                color: #383d51;
+                @include tablet {
+                    font-size: 10px;
+                }
+            }
+            .table__header-wrap {
+                position: relative;
+                height: 100%;
+                span {
+                    position: absolute;
+                    top: -50%;
+                    left: 16%;
+                    color: #8d8f99;
+                    @include font(1rem, 400);
+                }
+            }
+            .table__header-text-up:after {
+                content: "";
+                position: absolute;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                border-bottom: 8px solid #8d8f99;
+                top: 42%;
+                left: 105%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-42%);
+            }
+            .table__header-text-down:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                border-top: 8px solid #8d8f99;
+                left: 105%;
+                top: 70%;
+                -webkit-transform: translateY(-70%);
+                transform: translateY(-70%);
+            }
+            .active:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                border-top: 8px solid $color-black;
+                left: 105%;
+                top: 70%;
+                -webkit-transform: translateY(-70%);
+                transform: translateY(-70%);
+            }
+        }
+        .table__content {
+            .table__content-wrap {
+                background-color: $color-white;
+                margin-bottom: 12px;
+                padding: 12px 5px;
+                cursor: pointer;
+                background: #fff;
+                .table__token-text {
+                    margin-left: 10px;
+                    text-align: left;
+                    flex: 1;
+                    padding-right: 16px;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                }
+                .table__token-img {
+                    width: 32px;
+                    height: 32px;
+                }
+                .table__content-right {
+                    position: relative;
+                    h3 {
+                        @include font(1.6rem, 600);
+                        position: absolute;
+                        top: 25%;
+                        line-height: 1;
+                        margin: 0 5px;
+                    }
+                    .table-token_btn {
+                        font-size: 10px;
+                        margin-right: 10px;
+                        width: 90px;
+                        min-height: 32px;
+                        border: 1px solid black;
+                    }
+                    .table-token_btn:hover {
+                        background-color: #383d51;
+                        color: $color-white;
+                        box-shadow: 0 1px 3px 0 #383d51;
+                    }
+                    .table-content-market-wrap {
+                        min-width: 100px;
+                        padding: 2px 4px;
+                        border: 1px solid rgba(141, 143, 153, 0.2);
+                        .table-content-market-img-icon {
+                            width: 10px;
+                            height: 10px;
+                            margin-right: 4px;
+                        }
+                        .table-content-market-APRValue {
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                        }
+                        .LiquidityMiningAPYLine__title {
+                            margin-left: 4px;
+                            font-size: 1.2rem;
+                            color: #8d8f99;
+                        }
+                    }
+                }
+            }
+            .table__content-wrap:hover {
+                box-shadow: 0 3px 9px 0 rgba(182, 80, 158, 0.5);
+            }
+        }
+        .table__content-mobile {
+            background-color: #fff;
+            padding: 10px;
+            width: 100%;
+            // row 1
+            .table-content-market__img {
+                width: 24px;
+                height: 24px;
+                margin-right: 10px;
+            }
+            // row 2
+            .table-content-market-text {
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+            .table-content-market-number {
+                p {
+                    font-weight: 800;
+                }
+            }
+            // row 3
+            .table-content-market__text-title {
+                h3 {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    position: relative;
+                    min-height: 10px;
+                    span {
+                        font-weight: 500;
+                    }
+                    .content-market__text-title--fix {
+                        position: absolute;
+                        top: 15%;
+                        left: 55%;
+                        font-weight: 400 !important;
+                        font-size: 1rem;
+                        color: #8d8f99;
+                    }
+                }
+                .table-content-market-wrap {
+                    min-width: 100px;
+                    padding: 2px 4px;
+                    border: 1px solid rgba(141, 143, 153, 0.2);
+                    .table-content-market-img-icon {
+                        width: 10px;
+                        height: 10px;
+                        margin-right: 4px;
+                    }
+                    .table-content-market-APRValue {
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                    }
+                    .LiquidityMiningAPYLine__title {
+                        margin-left: 4px;
+                        font-size: 1.2rem;
+                        color: #8d8f99;
+                    }
+                }
+            }
+            // row 4
+            .table-token_btn {
+                font-size: 10px;
+                margin-right: 10px;
+                width: 90px;
+                min-height: 32px;
+                border: 1px solid black;
+            }
+            .table-token_btn:hover {
+                background-color: #383d51;
+                color: $color-white;
+                box-shadow: 0 1px 3px 0 #383d51;
+            }
+            // #show-market-mobile:checked~.table-market-mobile {
+            //     display: flex;
+            // }
+            .table-market-mobile {
+                display: none;
+            }
+        }
+    }
+    // mobile
+    .PoolSelect {
+        min-width: 190px;
+        .dropdown-toggle::after {
+            display: none !important;
+        }
+        .dropdown-menu {
+            width: 100%;
+            margin-top: 10px;
+            .dropdown-item {
+                padding: 0.25rem 0;
+            }
+            h3 {
+                font-size: 1.6rem;
+                font-weight: 300;
+                padding: 10px 5px;
+                text-align: center;
+                border-bottom: 1px solid #383d51;
+            }
+            .PoolSelect__button--logoInner {
+                padding: 0.4rem 0;
+                border-top: 1px solid rgba(56, 61, 81, 0.1);
+                text-align: center;
+                .PoolSelect__image-inner {
+                    margin-right: 10px;
+                    img {
+                        width: 86px;
+                        height: 24px;
+                    }
+                    span {
+                        font-weight: 400;
+                        font-size: 1.6rem;
+                    }
+                }
+                .PoolSelect__marketText {
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-image: linear-gradient(255deg, #b6509e 25%, #2ebac6);
+                }
+            }
+        }
+        .PoolSelect__button {
+            cursor: pointer;
+            padding: 4px 24px;
+            background-color: #fff;
+            .PoolSelect__image-inner {
+                img {
+                    width: 86px;
+                    height: 24px;
+                }
+                span {
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                }
+            }
+            .PoolSelect__marketText {
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-image: linear-gradient(255deg, #b6509e 25%, #2ebac6);
+            }
+        }
+    }
+    .content__info {
+        margin-top: 5%;
+        margin-left: 15%;
+        .content__info-text {
+            margin-right: 4px;
+        }
+    }
+}
+
+// content__ThirdSection
+.content__ThirdSection {
+    position: relative;
+    z-index: 0;
+    background: #383d51;
+    padding: 70px 0;
+    .investor-inner {
+        .investor__title {
+            margin-bottom: 24px;
+            @include font(3rem, 800);
+            color: $color-white;
+        }
+        .investor__text {
+            @include font(1.4rem, 300);
+            color: $color-white;
+        }
+    }
+    .investor {
+        position: relative !important;
+        border-radius: 5px;
+        position: relative;
+        padding: 15px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: $color-white;
+        .investor-img {
+            width: 100%;
+        }
+    }
+    .investor-bg {
+        position: relative;
+    }
+    .investor-bg:hover:after {
+        display: block;
+    }
+    .investor-bg:after {
+        content: "";
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        position: absolute;
+        z-index: 0;
+        left: 5px;
+        right: 5px;
+        top: -2px;
+        bottom: -2px;
+        background: linear-gradient(255deg, #b6509e 25%, #2ebac6);
+        display: none;
+    }
+}
+
+// content__FourSection
+.animateD {
+    margin-top: 10%;
+    margin-bottom: 50px;
+    .animated-img {
+        width: 55px;
+        height: 80px;
+    }
+    .animateD__title h3 {
+        @include font(3rem, 600);
+        color: #383d51;
+    }
+    .SubscriptionForm__form {
+        position: relative;
+        &-input {
+            margin-top: 30px;
+            text-align: left;
+            width: 70%;
+            padding: 10px 30px;
+            border: 1px solid $color-black;
+            &:focus {
+                border-color: #2ebac6;
+            }
+        }
+        .form__submit {
+            position: absolute;
+            height: 55%;
+            top: 43%;
+            right: 15.4%;
+            color: $color-white;
+            background-color: #383d51;
+            font-size: 1.2rem;
+            padding: 0 16px;
+            @include tablet {
+                top: 42%;
+            }
+            @include ipadPro {
+                top: 42%;
+            }
+        }
+    }
+}
+
+// content-babydoge
+.content-babydoge {
+    .content-babydoge__img {
+        width: 192px;
+        height: 192px;
+    }
+    .content-babydoge-number {
+        color: white;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 1.5;
+    }
+    .content-babydoge-text {
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+    }
+    .content-babydoge-panca {
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+    }
+    .content-babydoge-utc {
+        color: #9385d0;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 1;
+    }
+}
+
+.content--air {
+    .content-air__title {
+        color: white;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 1.5;
+    }
+    .content-air__text-title {
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+    .content-air__text-token {
+        @include mobile {
+            font-size: 1.2rem;
+        }
+    }
+    .content-air__text {
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1;
+        i {
+            color: #fcd667;
+            margin-right: 4px;
+        }
+    }
+    .content-air__btn {
+        margin: 24px 0;
+        width: 230px;
+        border-radius: 15px;
+        color: white;
+        background-color: red;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}
+
+// content bdsw
+.content--bdsw {
+    margin-top: 100px;
+    padding: 40px;
+    min-height: 600px;
+    border-radius: 25px;
+    background-color: #0e245d;
+    position: relative;
+    .content-rate__text {
+        color: white;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1;
+        margin-left: 5px;
+        margin-bottom: 0;
+    }
+    .content-rate {
+        padding-bottom: 24px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid rgba(11, 22, 44, 0.2);
+    }
+    .content--bdsw-btn {
+        height: 60px;
+        width: 170px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        width: 230px;
+        border-radius: 15px;
+        color: white;
+        background-color: red;
+        @include mobile {
+            margin-top: 80px !important;
+        }
+    }
+    .content--bdsw-btn:hover {
+        color: #fff;
+        filter: brightness(0.9);
+    }
+    .content-token {
+        width: 80%;
+        height: 45%;
+        margin: auto;
+        background-color: #223d8e;
+        border-radius: 25px;
+        position: absolute;
+        left: 50%;
+        top: -10%;
+        transform: translateX(-50%);
+    }
+    .content-token_title {
+        color: white;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+    .content-count {
+        margin-left: 10%;
+        width: 80%;
+        height: 50px;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        .content-count__input::placeholder {
+            color: #fff;
+            opacity: 0.9;
+            font-size: 20px;
+        }
+        .content-count__input {
+            width: 100%;
+            margin-top: 5%;
+            @include ipadPro {
+                margin-top: 2%;
+            }
+        }
+    }
+    .content-count p {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 0;
+        line-height: 50px;
+    }
+    .content-token h5 {
+        margin-left: 10%;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 0;
+        line-height: 50px;
+        @include ipadPro {
+            margin-left: 10%;
+        }
+    }
+}
+
+// content--reffer
+.content--reffer {
+    margin-top: 100px;
+    padding: 40px;
+    min-height: 600px;
+    border-radius: 25px;
+    background-color: #0e245d;
+    position: relative;
+    .content--reffer-btn {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        background-color: red;
+        color: #fff;
+        height: 60px;
+        width: 200px;
+        border-radius: 15px;
+    }
+    .content--reffer-btn:hover {
+        color: #fff;
+        filter: brightness(0.9);
+    }
+    .content-address {
+        width: 80%;
+        height: 45%;
+        margin: auto;
+        background-color: #223d8e;
+        border-radius: 25px;
+        position: absolute;
+        left: 50%;
+        top: -10%;
+        transform: translateX(-50%);
+        h5 {
+            cursor: pointer;
+            text-decoration: underline;
+            margin-top: -8px;
+            margin-left: 80%;
+            font-weight: 300;
+            font-size: 20px;
+            color: #b7d386;
+            margin-bottom: 0;
+            line-height: 50px;
+        }
+    }
+    .content-address_title {
+        top: 20px;
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 1.1;
+    }
+    .content-address {
+        width: 80%;
+        left: 50%;
+        top: -10%;
+        transform: translateX(-50%);
+    }
+    .content-count {
+        width: 80%;
+    }
+    .content-rate__text {
+        color: white;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1;
+        margin-left: 5px;
+        margin-bottom: 0;
+    }
+    .content-count__input {
+        font-size: 18px;
+        width: 100%;
+    }
+    .content-address h5 {
+        margin-left: 75%;
+    }
+    .content-address_title {
+        color: white;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 1.5;
+    }
+    .content-count__input::placeholder {
+        color: #fff;
+        opacity: 0.8;
+    }
+    .content-count__input {
+        @include mobile {
+            margin-top: 4%;
+        }
+    }
+    .content-rate {
+        padding-bottom: 24px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid rgba(11, 22, 44, 0.2);
+    }
+    .content-count__input {
+        cursor: pointer;
+        background-color: #223d8e;
+        flex: 1;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+    }
+    .content-count {
+        margin-left: 10%;
+        width: 80%;
+        height: 50px;
+        border: 1px solid #fff;
+        border-radius: 10px;
+    }
+}
