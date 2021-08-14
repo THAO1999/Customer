@@ -725,12 +725,12 @@
             font-size: 20px;
         }
         .content-count__input {
+            color: #fff;
             cursor: pointer;
             width: 100%;
             margin-top: 5%;
-            @include ipadPro {
-                margin-top: 2%;
-            }
+            font-size: 2rem;
+            margin-top: 2%;
         }
     }
     .content-count p {
@@ -819,7 +819,8 @@
         margin-bottom: 0;
     }
     .content-count__input {
-        font-size: 18px;
+        color: #fff;
+        font-size: 20px;
         width: 100%;
     }
     .content-address h5 {

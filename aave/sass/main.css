@@ -1757,15 +1757,12 @@ body {
 }
 
 .content--bdsw .content-count .content-count__input {
+  color: #fff;
   cursor: pointer;
   width: 100%;
   margin-top: 5%;
-}
-
-@media (min-width: 1024px) and (max-width: 1335px) {
-  .content--bdsw .content-count .content-count__input {
-    margin-top: 2%;
-  }
+  font-size: 2rem;
+  margin-top: 2%;
 }
 
 .content--bdsw .content-count p {
@@ -1869,7 +1866,8 @@ body {
 }
 
 .content--reffer .content-count__input {
-  font-size: 18px;
+  color: #fff;
+  font-size: 20px;
   width: 100%;
 }
 
