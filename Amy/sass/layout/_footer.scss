@@ -1,0 +1,18 @@
+.footer {
+    background: #e1ebec;
+    border-radius: 12px;
+    color: #e1ebec;
+    margin-top: auto;
+    height: 100px;
+    align-items: center;
+}
+
+.footer__text {
+    color: #000;
+}
+
+#hero-logo {
+    @include mobile {
+        width: 150px;
+    }
+}

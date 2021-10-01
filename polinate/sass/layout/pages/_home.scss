@@ -1,0 +1,546 @@
+%p {
+    font-size: 26px;
+    line-height: 38px;
+    color: #000;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.introduce {
+    margin-top: 64px;
+    h1 {
+        font-size: 54px;
+        line-height: 65px;
+        font-weight: bold;
+        // margin: 0 0 18px;
+        color: #000;
+        margin: 0 auto;
+        max-width: 940px;
+        text-align: center;
+        @include mobile {
+            font-size: 23px;
+            line-height: 0px;
+        }
+        @include tablet {
+            font-size: 43px;
+            line-height: 0px;
+        }
+    }
+    p {
+        @extend %p;
+        padding-top: 30px;
+        max-width: 940px;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        @include tablet {
+            font-size: 23px;
+            line-height: 20px;
+        }
+    }
+}
+
+.policy {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    @include mobile {
+        text-align: center;
+        max-height: 355px;
+    }
+    @include tablet {
+        text-align: center;
+    }
+    .approve__text {
+        margin-top: 200px;
+        @extend %p;
+        max-width: 406px;
+        padding: 0 16px;
+        font-weight: 300;
+        @include mobile {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 15px;
+            line-height: 24px;
+        }
+        @include tablet {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 23px;
+            line-height: 20px;
+            max-width: 1000px;
+            margin-bottom: 20px;
+        }
+    }
+    .approve__img {
+        position: absolute;
+        top: -6%;
+        left: 70%;
+        z-index: 2;
+        @include desk-low {
+            left: 55%;
+        }
+        @include ipadPro {
+            left: 43%;
+        }
+        @include mobile {
+            position: unset;
+            width: 345px;
+        }
+        @include tablet {
+            position: unset;
+        }
+    }
+    .approve__img-bg {
+        position: absolute;
+        top: -25%;
+        left: 87%;
+        z-index: 1;
+        @include desk-low {
+            left: 70%;
+        }
+        @include ipadPro {
+            left: 62%;
+        }
+        @include mobile {
+            display: none;
+        }
+        @include tablet {
+            display: none;
+        }
+    }
+    .dot__bg {
+        position: absolute;
+        top: -15%;
+        left: -18%;
+        z-index: 3;
+        width: 1822px;
+        height: 1666px;
+        @include desk-low {
+            left: -4%;
+            width: 1408px;
+        }
+        @include ipadPro {
+            left: -7%;
+            width: 1208px;
+        }
+        @include mobile {
+            display: none;
+        }
+        @include tablet {
+            display: none;
+        }
+    }
+}
+
+.purchase {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    @include mobile {
+        text-align: center;
+        height: 450px;
+    }
+    @include tablet {
+        text-align: center;
+    }
+    .purchase__text {
+        margin-top: 100px;
+        margin-left: 60%;
+        @extend %p;
+        max-width: 406px;
+        padding: 0 16px;
+        font-weight: 300;
+        @include mobile {
+            margin: 15px 0 15px 0;
+            text-align: center;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        @include tablet {
+            margin: 15px 0 15px 0;
+            text-align: center;
+            font-size: 23px;
+            line-height: 24px;
+            max-width: 1006px;
+        }
+    }
+    .purchase__img {
+        width: 540px;
+        height: 340px;
+        position: absolute;
+        top: -6%;
+        left: -10%;
+        z-index: 2;
+        @include desk-low {
+            left: 2%;
+        }
+        @include ipadPro {
+            left: 2%;
+        }
+        @include mobile {
+            position: unset;
+            width: 345px;
+        }
+        @include tablet {
+            position: unset;
+        }
+    }
+    .purchase__img-bg {
+        position: absolute;
+        top: -25%;
+        left: -35%;
+        z-index: 1;
+        @include desk-low {
+            left: -9%;
+        }
+        @include ipadPro {
+            left: -12%;
+        }
+        @include mobile {
+            display: none;
+        }
+        @include tablet {
+            display: none;
+        }
+    }
+}
+
+.trading {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    @include mobile {
+        text-align: center;
+        height: 520px;
+    }
+    @include tablet {
+        text-align: center;
+    }
+    .trading__text {
+        margin-top: 100px;
+        @extend %p;
+        max-width: 406px;
+        padding: 0 16px;
+        font-weight: 300;
+        @include mobile {
+            margin: 15px 0 15px 0;
+            text-align: center;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        @include tablet {
+            margin: 15px 0 15px 0;
+            text-align: center;
+            font-size: 23px;
+            max-width: 1000px;
+            line-height: 24px;
+        }
+    }
+    .trading__img {
+        position: absolute;
+        top: -6%;
+        left: 70%;
+        z-index: 2;
+        height: 345px;
+        width: 500px;
+        @include desk-low {
+            left: 55%;
+        }
+        @include ipadPro {
+            left: 43%;
+        }
+        @include mobile {
+            position: unset;
+            width: 345px;
+        }
+        @include tablet {
+            position: unset;
+        }
+    }
+    .trading__img-bg {
+        position: absolute;
+        top: -25%;
+        left: 87%;
+        z-index: 1;
+        @include desk-low {
+            left: 70%;
+        }
+        @include ipadPro {
+            left: 62%;
+        }
+        @include mobile {
+            display: none;
+        }
+        @include tablet {
+            display: none;
+        }
+    }
+}
+
+.coming,
+.funding {
+    h1 {
+        text-align: center;
+        font-size: 54px;
+        line-height: 65px;
+        color: #000;
+        font-weight: 600;
+        margin: 0 0 21px;
+        @include mobile {
+            font-size: 34px;
+            line-height: 40px;
+        }
+        @include tablet {
+            font-size: 34px;
+            line-height: 40px;
+        }
+    }
+    p {
+        width: 190px;
+        text-align: center;
+        background: #efcd5f;
+        border-radius: 40px;
+        padding: 14px 42px;
+        font-weight: 500;
+        display: block;
+        margin: 0 auto;
+        box-shadow: none !important;
+        cursor: pointer;
+    }
+}
+
+.non-crypto {
+    background: #efcd5f;
+    border-radius: 12px;
+    padding: 59px 16px;
+    .creatives__title {
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 600;
+        color: #000;
+        margin: 0 0 33px;
+        text-align: center;
+        @include mobile {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    .creatives--wrap {
+        max-width: 1000px;
+        margin: 0 auto 24px;
+        border: 2px dashed #4d4d4d;
+        border-radius: 10px;
+        padding: 20px;
+        .creatives__text {
+            font-size: 24px;
+            line-height: 28px;
+            color: #000;
+            font-weight: 300;
+            padding: 0 15px;
+            @include mobile {
+                text-align: center;
+            }
+            @include tablet {
+                text-align: center;
+            }
+        }
+        @include mobile {
+            img {
+                width: 100%;
+            }
+        }
+        @include tablet {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .exploring {
+        max-width: 1000px;
+        margin: 0 auto 24px;
+        border: 2px dashed #4d4d4d;
+        border-radius: 10px;
+        padding: 20px;
+        .exploring__text {
+            font-size: 24px;
+            line-height: 28px;
+            color: #000;
+            font-weight: 300;
+            padding: 0 15px;
+            @include mobile {
+                text-align: center;
+            }
+            @include tablet {
+                text-align: center;
+            }
+        }
+        @include mobile {
+            img {
+                width: 100%;
+            }
+        }
+        @include tablet {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .non-crypto__btn {
+        width: 190px;
+        text-align: center;
+        background: #000;
+        color: #fff;
+        border-radius: 40px;
+        padding: 14px 42px;
+        font-weight: 500;
+        display: block;
+        margin: 0 auto;
+        box-shadow: none !important;
+        cursor: pointer;
+    }
+}
+
+.club {
+    max-width: 913px;
+    margin: 100px auto;
+    border: 2px dashed #fdc54d;
+    border-radius: 268px;
+    transform: rotate(-2deg);
+    padding: 50px 60px;
+    position: relative;
+    @include mobile {
+        padding: 10px;
+        border-radius: 151px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 34px;
+        line-height: 45px;
+        color: #000;
+        font-weight: 600;
+        margin: 0 0 21px;
+        span {
+            color: #fdc54d;
+        }
+        @include mobile {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    p {
+        text-align: center;
+        font-size: 34px;
+        line-height: 45px;
+        color: #000;
+        font-weight: 300;
+        margin: 0 0 21px;
+        @include mobile {
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+    .eye__img {
+        position: absolute;
+        top: -17%;
+        left: 75%;
+        @include mobile {
+            width: 150px;
+        }
+    }
+    .movie__img {
+        position: absolute;
+        top: 51%;
+        left: -7%;
+        width: 130px;
+        @include mobile {
+            width: 100px;
+        }
+    }
+}
+
+// countdown
+.countdown-container {
+    border-top: 1px solid;
+    #countdown-time {
+        padding-top: 70px;
+        text-align: center;
+        .clock-number {
+            margin-bottom: 36px;
+            height: 70px;
+            font-size: 4rem;
+            font-weight: 600;
+            color: $color-black;
+            @include mobile {
+                font-size: 4rem;
+                margin-bottom: 20px;
+            }
+        }
+        .clock-title {
+            text-align: center;
+            color: $color-black;
+        }
+    }
+    .presale-button {
+        border: 0.125rem solid #e2d8d8;
+        background-color: #2f6dff;
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        border-radius: 2rem;
+        text-align: center;
+        width: 200px;
+        color: #fff;
+        height: 3.75rem;
+    }
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 50px;
+    h2 {
+        font-size: 4.5rem;
+        font-weight: 600;
+        -webkit-text-stroke-width: 2px;
+    }
+    .claim__title,
+    .safe {
+        letter-spacing: 0.5rem;
+        text-transform: uppercase;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: #000; //#ffff82
+        span {
+            -webkit-text-fill-color: unset;
+            font-size: 16px;
+            display: block;
+        }
+    }
+    .waves-effect__btn {
+        background-color: #efcd5f;
+        border-radius: 8px;
+    }
+    #buyinput,
+    #airinput,
+    #refaddress {
+        text-align: left;
+        border-bottom: 1px solid #efcd5f;
+        margin-left: 20%;
+        margin-bottom: 20px;
+        display: block;
+        width: 60%;
+    }
+    .invite,
+    .attention {
+        font-size: 2.52rem;
+        line-height: 110%;
+        margin: 1.46rem 0 1.168rem 0;
+    }
+    .address,
+    .bep20 {
+        font-size: 1rem;
+    }
+    .refer {}
+}

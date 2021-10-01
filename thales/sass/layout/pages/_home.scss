@@ -1,0 +1,458 @@
+%p {
+    font-size: 26px;
+    line-height: 38px;
+    color: #000;
+}
+
+%bg {
+    background: linear-gradient(148.33deg, rgba(255, 255, 255, 0.03) -2.8%, rgba(255, 255, 255, 0.01) 106.83%);
+    backdrop-filter: blur(10px);
+    border-radius: 23px;
+    border-image: initial;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(202, 145, 220, 0.6) rgba(106, 193, 213, 0.6) rgba(106, 193, 213, 0.6) rgba(202, 145, 220, 0.6);
+}
+
+.container {
+    overflow: hidden;
+}
+
+.hide-bg.content {
+    position: relative !important;
+    z-index: 2 !important;
+    background: transparent;
+    @include mobile {
+        padding: 20px;
+    }
+}
+
+#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 100% !important;
+    width: 100% !important;
+    color: #16043810 !important;
+}
+
+canvas {
+    background-color: blue;
+}
+
+.trading {
+    margin-top: 200px;
+    @include ipadPro {
+        margin-top: 40px;
+    }
+    @include mobile {
+        margin-top: 40px;
+    }
+    @include tablet {
+        margin-top: 40px;
+    }
+    .trading__title {
+        font-size: 72px;
+        line-height: 84px;
+        color: #fff;
+        width: calc(min(830px, 100%));
+        @include ipadPro {
+            font-size: 40px;
+            width: 430px;
+            line-height: 54px;
+        }
+        @include mobile {
+            font-size: 40px;
+            line-height: 54px;
+        }
+    }
+    .trading__text {
+        color: #fff;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.2px;
+        margin-bottom: 120px;
+        margin-top: 50px;
+    }
+    .trading-launch__btn {
+        margin-right: 20px;
+        height: 40px;
+        padding: 6px 25px;
+        border-radius: 40px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: rgb(246, 246, 254);
+        cursor: pointer;
+        background: linear-gradient( 90deg, rgb(57, 54, 199) 4.67%, rgb(45, 131, 210) 42.58%, rgb(35, 165, 221) 77.66%, rgb(53, 218, 219) 95.67%);
+        &:hover {
+            background: rgb(0, 249, 255);
+            color: rgb(4, 4, 90);
+        }
+        @include mobile {
+            padding: 6px 13px;
+        }
+    }
+    .trading-who__btn {
+        height: 40px;
+        padding: 6px 25px;
+        border-radius: 40px;
+        background: transparent;
+        border-width: 1.5px;
+        border-style: solid;
+        border-color: rgb(202, 145, 220) rgb(117, 152, 160) rgb(106, 193, 213) rgb(202, 145, 220);
+        color: rgb(246, 246, 254);
+        &:hover {
+            border: 1.5px solid rgb(0, 249, 255);
+            color: rgb(0, 249, 255);
+        }
+    }
+}
+
+.market {
+    padding: 0 40px 0 70px;
+    @include mobile {
+        padding: 0 20px 0 20px;
+    }
+    min-height: 600px;
+    width: 550px;
+    text-align: center;
+    background: linear-gradient(148.33deg, rgba(255, 255, 255, 0.03) -2.8%, rgba(255, 255, 255, 0.01) 106.83%);
+    backdrop-filter: blur(10px);
+    border-radius: 23px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(202, 145, 220) rgb(117, 152, 160) rgb(106, 193, 213) rgb(202, 145, 220);
+    @include ipadPro {
+        width: 100%;
+    }
+    @include tablet {
+        width: 100%;
+    }
+    @include mobile {
+        width: 100%;
+    }
+    .market__img {
+        width: 200px;
+    }
+    .market__title {
+        color: #f6f6fe;
+        font-size: 32px;
+    }
+    .market__text {
+        color: #f6f6fe;
+        margin-bottom: 30px;
+    }
+    .market__btn {
+        margin-top: 40px;
+        height: 40px;
+        padding: 6px 25px;
+        border-radius: 40px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: rgb(246, 246, 254);
+        cursor: pointer;
+        background: rgb(57, 54, 199);
+        &:hover {
+            background: rgb(113, 25, 225);
+        }
+    }
+}
+
+.dot {
+    width: 80%;
+    margin: 50px auto;
+    height: 2px;
+    filter: blur(2px);
+    background-color: rgb(0, 249, 255);
+    @include ipadPro {
+        margin: 50px 10%;
+    }
+}
+
+.investor,
+.technical {
+    text-align: center;
+    .investor__text,
+    .technical__text {
+        color: #f6f6fe;
+        font-size: 32px;
+    }
+    .investor__img,
+    .technical__img {
+        margin-left: 39%;
+        padding: 30px;
+        margin-top: 50px;
+        max-width: 320px;
+        background: linear-gradient(148.33deg, rgba(255, 255, 255, 0.03) -2.8%, rgba(255, 255, 255, 0.01) 106.83%);
+        backdrop-filter: blur(10px);
+        border-radius: 23px;
+        border-image: initial;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgba(202, 145, 220, 0.6) rgba(106, 193, 213, 0.6) rgba(106, 193, 213, 0.6) rgba(202, 145, 220, 0.6);
+        margin-bottom: 70px;
+        @include ipadPro {
+            margin-left: 33%;
+        }
+        @include tablet {
+            margin-left: 30%;
+        }
+        @include mobile {
+            margin-left: 8%;
+        }
+    }
+}
+
+.technical {
+    .technical__wrap {
+        margin-left: 30%;
+        @include ipadPro {
+            margin-left: 22%;
+        }
+        @include tablet {
+            margin-left: 18%;
+        }
+        @include mobile {
+            margin-left: 10%;
+            flex-direction: column !important;
+        }
+        .technical__img {
+            width: 265px;
+            margin: 50px 30px 90px 0;
+            @include mobile {}
+        }
+    }
+}
+
+.title {
+    text-align: center;
+    margin: 50px auto;
+    color: #fff;
+    font-size: 28px;
+}
+
+.metamask__wrap,
+.network__wrap {
+    height: 134px;
+    padding: 20px 35px;
+    max-width: 350px;
+    @extend %bg;
+    .metamask__text,
+    .network__text {
+        margin-left: 20px;
+        font-size: 14px;
+        color: #fff;
+    }
+}
+
+.meta__img,
+.network__wrap {
+    margin: 70px 0;
+}
+
+.dots {
+    margin-left: 10px !important;
+    width: 5px;
+    background-color: rgb(184, 198, 229);
+    height: 460px;
+    margin: 100px auto;
+    align-items: center;
+    @include ipadPro {
+        margin-left: 46px !important;
+    }
+    @include tablet {
+        margin-left: 46px !important;
+    }
+    img {
+        margin-bottom: 200px;
+        width: 20px;
+    }
+}
+
+.who {
+    @extend %bg;
+    padding: 45px 35px 45px 70px;
+    @include mobile {
+        padding: 45px 25px 45px 25px;
+    }
+    .who__title {
+        font-size: 28px;
+        color: #fff;
+    }
+    .who__text {
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #fff;
+    }
+}
+
+.faq {
+    @extend %bg;
+    padding: 45px 35px 45px 70px;
+    @include mobile {
+        padding: 45px 25px 45px 25px;
+    }
+    .faq__label {
+        font-size: 28px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    .faq--wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .faq__title {
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+    .faq__text {
+        font-size: 14px;
+        color: #fff;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgb(0, 249, 255);
+    }
+}
+
+.join-wrap {
+    margin-left: 35%;
+    margin-top: 40px;
+    height: 60px;
+    width: 200px;
+    padding: 12px 25px;
+    border-radius: 40px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: rgb(246, 246, 254);
+    cursor: pointer;
+    background: rgb(57, 54, 199);
+    @include ipadPro {
+        margin-left: 39%;
+    }
+    @include mobile {
+        margin-left: 25%;
+    }
+    &:hover {
+        background: rgb(113, 25, 225);
+    }
+    .join__btn {
+        font-size: 20px;
+    }
+}
+
+// countdown
+.countdown-container {
+    #countdown-time {
+        padding-top: 70px;
+        text-align: center;
+        margin-bottom: 100px;
+        .clock-number {
+            margin-bottom: 36px;
+            height: 70px;
+            font-size: 4rem;
+            font-weight: 600;
+            color: #fff;
+            @include mobile {
+                font-size: 4rem;
+                margin-bottom: 20px;
+            }
+        }
+        .clock-title {
+            text-align: center;
+            color: #fff;
+        }
+    }
+}
+
+.claim {
+    text-align: center;
+    .claim__btn {
+        width: 200px;
+        margin-bottom: 50px;
+        height: 40px;
+        padding: 6px 25px;
+        border-radius: 40px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: rgb(246, 246, 254);
+        cursor: pointer;
+        background: rgb(57, 54, 199);
+        &:hover {
+            background: rgb(113, 25, 225);
+        }
+    }
+    .claim__input {
+        height: 40px;
+        margin-left: 10%;
+        margin-bottom: 20px;
+        width: 80%;
+        display: block;
+        //  background-color: #20262b;
+        border: 1px solid #505050;
+        color: #c8002d;
+        outline: none;
+    }
+    .claim__title {
+        color: #fff;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .claim__text {
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+.invite {
+    text-align: center;
+    .claim__text {
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .claim__btn {
+        width: 200px;
+        margin-bottom: 50px;
+        height: 40px;
+        padding: 6px 25px;
+        border-radius: 40px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: rgb(246, 246, 254);
+        cursor: pointer;
+        background: rgb(57, 54, 199);
+        &:hover {
+            background: rgb(113, 25, 225);
+        }
+    }
+    .invite__text {
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .invite__title {
+        color: #fff;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .invite__input {
+        height: 40px;
+        margin-left: 10%;
+        margin-bottom: 70px;
+        width: 80%;
+        display: block;
+        //  background-color: #20262b;
+        border: 1px solid #505050;
+        color: #c8002d;
+        outline: none;
+    }
+}

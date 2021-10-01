@@ -1,0 +1,143 @@
+.header-show.header {
+    animation-name: changeBottom;
+    animation-duration: 3s;
+    opacity: 1;
+}
+
+.header-hide.header {
+    animation-name: changeTop;
+    animation-duration: 3s;
+    opacity: 0;
+}
+
+.header {
+    background: url(../assets/images/hero-bg.png);
+    border-radius: 12px;
+    margin-bottom: 32px;
+    background-size: cover;
+    background-position: top;
+    padding-left: 36px;
+    padding-right: 16px;
+    height: 85px;
+    line-height: 85px;
+    position: fixed;
+    top: 1%;
+    left: 18%;
+    width: 63%;
+    z-index: 1;
+    box-shadow: 0 0 8px #46402f33;
+    opacity: 0;
+    @include ipadPro {
+        left: 5%;
+        width: 89%;
+    }
+    @include mobile {
+        left: 5%;
+        width: 89%;
+    }
+    @include tablet {
+        left: 5%;
+        width: 89%;
+    }
+    .icon-menu {
+        background-color: #fff;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        svg {
+            position: absolute;
+        }
+    }
+    .nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+            li {
+                cursor: pointer;
+                @include ipadPro {
+                    margin-left: 5px;
+                }
+                a {
+                    font-size: 16px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    letter-spacing: -0.25px;
+                    height: 40px;
+                    line-height: 40px;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    border-radius: 6px;
+                    color: #5f6470;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    @keyframes changeBottom {
+        from {
+            // opacity: 0;
+            transform: translateY(-40px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes changeTop {
+        from {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(-40px);
+        }
+    }
+}
+
+// mobile
+header {
+    .menu-mobile {
+        // box-shadow: 0 0 8px rgb(70 64 47 / 20%);
+        position: fixed;
+        top: 11%;
+        left: 4%;
+        right: 4%;
+        z-index: 2;
+        padding: 24px;
+        background: #e1ebec;
+        border-radius: 6px;
+        display: none;
+        @include mobile {
+            top: 15%;
+        }
+        .nav-mobile {
+            text-align: center;
+            li {
+                cursor: pointer;
+                margin-left: 10px;
+                @include ipadPro {
+                    margin-left: 5px;
+                }
+                a {
+                    font-size: 16px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    letter-spacing: -0.25px;
+                    height: 40px;
+                    line-height: 40px;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    border-radius: 6px;
+                    color: #5f6470;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    #close-icon {
+        display: none;
+    }
+}

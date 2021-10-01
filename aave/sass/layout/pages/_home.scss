@@ -589,19 +589,19 @@
         height: 192px;
     }
     .content-babydoge-number {
-        color: white;
+        color: #000;
         font-size: 40px;
         font-weight: 800;
         line-height: 1.5;
     }
     .content-babydoge-text {
-        color: white;
+        color: #000;
         font-size: 16px;
         font-weight: 500;
         line-height: 1;
     }
     .content-babydoge-panca {
-        color: white;
+        color: #000;
         font-size: 16px;
         font-weight: 400;
         line-height: 1;
@@ -616,15 +616,15 @@
 
 .content--air {
     .content-air__title {
-        color: white;
+        color: #000;
         font-size: 40px;
         font-weight: 800;
         line-height: 1.5;
     }
     .content-air__text-title {
-        color: white;
+        color: #000;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.5;
         margin-bottom: 24px;
     }
@@ -634,9 +634,9 @@
         }
     }
     .content-air__text {
-        color: white;
+        color: #000;
         font-size: 16px;
-        font-weight: 300;
+        font-weight: 500;
         line-height: 1;
         i {
             color: #fcd667;
@@ -648,7 +648,7 @@
         width: 230px;
         border-radius: 15px;
         color: white;
-        background-color: red;
+        background-color: #383d51;
         &:hover {
             opacity: 0.9;
         }
@@ -661,12 +661,12 @@
     padding: 40px;
     min-height: 600px;
     border-radius: 25px;
-    background-color: #0e245d;
+    background-color: #f1f1f3;
     position: relative;
     .content-rate__text {
-        color: white;
+        color: #000;
         font-size: 18px;
-        font-weight: 300;
+        font-weight: 500;
         line-height: 1;
         margin-left: 5px;
         margin-bottom: 0;
@@ -685,7 +685,7 @@
         width: 230px;
         border-radius: 15px;
         color: white;
-        background-color: red;
+        background-color: #383d51;
         @include mobile {
             margin-top: 80px !important;
         }
@@ -698,7 +698,7 @@
         width: 80%;
         height: 45%;
         margin: auto;
-        background-color: #223d8e;
+        background-color: #9497a2;
         border-radius: 25px;
         position: absolute;
         left: 50%;
@@ -757,13 +757,13 @@
     padding: 40px;
     min-height: 600px;
     border-radius: 25px;
-    background-color: #0e245d;
+    background-color: #f1f1f3;
     position: relative;
     .content--reffer-btn {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 50px;
-        background-color: red;
+        background-color: #383d51;
         color: #fff;
         height: 60px;
         width: 200px;
@@ -777,7 +777,7 @@
         width: 80%;
         height: 45%;
         margin: auto;
-        background-color: #223d8e;
+        background-color: #9497a2;
         border-radius: 25px;
         position: absolute;
         left: 50%;
@@ -790,7 +790,7 @@
             margin-left: 80%;
             font-weight: 300;
             font-size: 20px;
-            color: #b7d386;
+            color: #fff;
             margin-bottom: 0;
             line-height: 50px;
         }
@@ -811,9 +811,9 @@
         width: 80%;
     }
     .content-rate__text {
-        color: white;
+        color: #000;
         font-size: 18px;
-        font-weight: 300;
+        font-weight: 500;
         line-height: 1;
         margin-left: 5px;
         margin-bottom: 0;
@@ -847,12 +847,25 @@
         border-bottom: 1px solid rgba(11, 22, 44, 0.2);
     }
     .content-count__input {
+        margin-left: 10px;
         cursor: pointer;
-        background-color: #223d8e;
+        background-color: #9497a2;
         flex: 1;
         outline: none;
         border: none;
         border-radius: 10px;
+        @include mobile {
+            margin-left: 0;
+        }
+        @include tablet {
+            margin-left: 0;
+        }
+        @include ipadPro {
+            margin-left: 0;
+        }
+        @include desk-low {
+            margin-left: 0;
+        }
     }
     .content-count {
         margin-left: 10%;

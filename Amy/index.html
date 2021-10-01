@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amy</title>
+    <link rel="icon" href="./assets/images/ADAMOON-01.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/vendor/nav.css">
+    <link rel="stylesheet" href="./assets/css/vendor/boostrap-5.min.css">
+    <link rel="stylesheet" href="./sass/main.css">
+    <!-- font -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="container ">
+            <div class="header" id="header-hide-js">
+                <div class="row">
+                    <div class="col-lg-2 col-4">
+                        <img src="./assets/images/logo.png" id="hero-logo" width="200" height="84" class="HeroSection_HeroSection__logo__2Ygn5  " alt="">
+
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 824 128" width="154.5" height="24"><path d="M102.384 34.2V0h-17.06v17.09H68.252V34.2h-17.06V17.09H34.12V0H17.06v34.2H0v68.393h17.06v17.06h85.324v-17.09h17.07V34.201h-17.07zm-34.131 68.393v-17.11h-17.06v17.1H34.12v-17.1h17.071V68.381h17.06v17.1h17.071v17.1l-17.07.01zm176.687 1.063h-29.6V90.629h5.962l-2.742-7.551h-25.278l-3.08 7.551h6.955v13.027h-29.243V90.629h6.747l21.254-48.23H185.63V29.371h25.487l26.698 61.257h7.085l.04 13.027zm-30.514-31.548l-7.77-20.916h-.636l-8.346 20.916h16.752zm129.262 31.548h-21.601V74.622c0-4.412-.746-7.581-2.226-9.48a7.83 7.83 0 00-6.528-2.861c-3.508 0-6.032 1.143-7.602 3.428a15.292 15.292 0 00-2.335 8.804v18.054h6.856v11.089h-21.65V74.622c0-4.412-.746-7.581-2.227-9.48a7.83 7.83 0 00-6.577-2.861c-3.578 0-6.128 1.143-7.651 3.428a15.51 15.51 0 00-2.286 8.804v18.054h9.827v11.089H248.26V92.567h6.856V63.314h-6.747V52.086h21.492v7.78c3.273-5.849 8.49-8.773 15.65-8.773a20.032 20.032 0 0110.294 2.742 14.477 14.477 0 016.508 8.347c3.054-7.393 8.655-11.09 16.803-11.09a19.078 19.078 0 0112.34 4.343c3.578 2.888 5.37 7.383 5.376 13.483v23.659h6.856v11.079zm58.625-40.461h-5.028l-16.574 40.461-4.908 12.917h6.746V128h-28.477v-11.437h8.227l4.114-12.112-18.045-41.256h-5.226V52.086h26.291v11.11h-5.147L374.8 86.962h.686l7.77-23.768h-4.452V52.086h23.54zm-.11 40.461v-18.63h17.449v18.63zm84.34-51.431l-13.026 1.143-2.286-10.93h-19.425v20.757h31.2v12.917h-31.2V90.63h12.112v13.027h-35.433V90.629h7.999V42.4h-7.999V29.371h55.753zm34.4 51.431h-28.458V92.567h6.856V63.314h-7.422V52.086h22.128v40.461h6.856l.04 11.109zm-22.168-60.691V27.653h14.735v15.312h-14.735zm90.629 60.691h-28.458V92.567h6.857V74.622c0-4.412-.746-7.581-2.226-9.48a7.83 7.83 0 00-6.578-2.861c-3.504 0-6.207 1.086-8.108 3.26a12.917 12.917 0 00-2.981 8.515v18.511h6.876v11.089h-28.468V92.567h6.856V63.314h-7.432V52.086h22.168v7.95c3.438-5.962 8.963-8.943 16.574-8.943a19.594 19.594 0 0112.688 4.342c3.578 2.888 5.37 7.383 5.376 13.483v23.659h6.856v11.079zm9.102-47.893a69.843 69.843 0 0111.297-3.677 52.037 52.037 0 0110.791-.993 24.116 24.116 0 0114.408 4.342c4.034 2.888 6.051 7.27 6.051 13.146v22.396c0 2.65 1.183 3.975 3.548 3.975a7.502 7.502 0 002.166-.348l.119 7.77a19.296 19.296 0 01-9.26 2.405c-6.777 0-10.547-3.392-11.308-10.175v-.11a24.215 24.215 0 01-6.23 7.085 16.266 16.266 0 01-10.344 3.2 19.485 19.485 0 01-10.741-3.319c-3.432-2.206-5.147-6.015-5.147-11.427 0-6.32 2.533-10.51 7.6-12.57a43.183 43.183 0 0116.396-3.09 68.69 68.69 0 018.466.458v-1.71a27.822 27.822 0 00-1.093-7.77c-.729-2.517-3.187-3.775-7.373-3.775a28.04 28.04 0 00-4.163.288 12.12 12.12 0 00-3.717 1.202l-1.987 7.313-11.765-1.262 2.286-13.354zm27.822 26.828v-.696l-3.717-.457a31.608 31.608 0 00-3.716-.228 15.6 15.6 0 00-6.856 1.43c-1.987.994-2.98 2.842-2.98 5.664a6.548 6.548 0 001.37 4.223c.915 1.146 2.475 1.72 4.68 1.72a11.178 11.178 0 007.264-2.803c2.246-1.841 3.564-4.783 3.955-8.823v-.03zM715 103.656h-28.458V92.567h6.856V74.622c0-4.412-.745-7.581-2.226-9.48a7.83 7.83 0 00-6.578-2.861c-3.497 0-6.21 1.083-8.108 3.26a12.828 12.828 0 00-2.98 8.515v18.511h6.855v11.089h-28.447V92.567h6.856V63.314h-7.433V52.086h22.178v7.95c3.432-5.962 8.956-8.943 16.574-8.943a19.565 19.565 0 0112.679 4.342c3.59 2.888 5.382 7.383 5.375 13.483v23.659H715v11.079zm53.417-19.207a26.56 26.56 0 01-6.11 13.722c-3.544 4.412-9.47 6.621-17.777 6.628-7.459 0-13.61-2.173-18.451-6.519-4.843-4.345-7.29-10.86-7.343-19.544 0-9.155 2.65-16.05 7.949-20.688a27.822 27.822 0 0119.087-6.955c3.058.027 6.104.39 9.082 1.083a37.808 37.808 0 019.549 3.597l2.285 15.66-11.774 1.261-1.71-8.456a25.05 25.05 0 00-7.78-1.49 10.513 10.513 0 00-7.998 3.597c-2.206 2.405-3.309 6.31-3.309 11.715 0 10.056 3.922 15.087 11.765 15.093 5.796 0 9.188-3.643 10.175-10.93l12.36 2.226zm54.7 2.981c-.39 4.57-2.64 8.608-6.747 12.112-4.107 3.505-9.86 5.257-17.26 5.257-7.69 0-14.033-2.173-19.027-6.519-4.995-4.345-7.49-10.82-7.482-19.425 0-7.95 2.265-14.573 6.796-19.873 4.531-5.3 10.874-7.949 19.028-7.949 7.154.04 12.964 2.113 17.428 6.22 4.465 4.107 6.734 9.516 6.807 16.226a34.47 34.47 0 01-.805 7.433h-33.784c.835 8.147 4.873 12.225 12.113 12.231 3.974 0 6.647-.993 8.058-2.861a13.454 13.454 0 002.564-5.147l12.31 2.295zm-15.66-15.093a11.139 11.139 0 00-1.66-7.333c-1.41-2.286-3.868-3.428-7.372-3.428a8.784 8.784 0 00-7.085 2.98 15.034 15.034 0 00-3.199 7.77l19.316.01z" fill="currentColor"></path></svg> -->
+                    </div>
+                    <div class="col-2 offset-6 d-block d-lg-none">
+                        <div class="icon-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="close-icon" viewBox="0 0 32 32" width="24" height="24"><path d="M22.957 23.758a1.92 1.92 0 01-2.715 0L16 18.91l-4.242 4.846a1.92 1.92 0 11-2.715-2.715l4.413-5.04-4.414-5.043a1.92 1.92 0 112.715-2.715L16 13.093l4.242-4.85a1.92 1.92 0 112.715 2.715l-4.413 5.043 4.413 5.04c.75.75.75 1.966 0 2.717z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="open-icon" viewBox="0 0 32 32" width="24" height="24"><path d="M26.24 14.4H5.76c-.883 0-.96.715-.96 1.6s.077 1.6.96 1.6h20.48c.883 0 .96-.715.96-1.6s-.077-1.6-.96-1.6zm0 6.4H5.76c-.883 0-.96.715-.96 1.6s.077 1.6.96 1.6h20.48c.883 0 .96-.715.96-1.6s-.077-1.6-.96-1.6zM5.76 11.2h20.48c.883 0 .96-.715.96-1.6S27.123 8 26.24 8H5.76c-.883 0-.96.715-.96 1.6s.077 1.6.96 1.6z"></path></svg>
+                        </div>
+                    </div>
+
+                    <div class=" col-lg-10 col-12 d-none d-lg-block">
+                        <div class="nav">
+                            <ul>
+                                <li class="nav__item">
+                                    <a class="nav__link" style="background: #fff;
+                                    padding: 12px; margin-left: 32px;">Home</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link">Blogs</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link">By Congress Cat</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link">My Congress Cat</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link">Gallery</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" style="background: #202636;
+                                    padding: 12px;    color: #e1ebec">Connect</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="menu-mobile" id="menu-mobile-js">
+                <div class="nav-mobile">
+                    <ul>
+                        <li class="nav__item">
+                            <a class="nav__link" style="background: #fff;
+                            padding: 12px;margin-bottom: 10px;">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link">Blogs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link">By Congress Cat</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link">My Congress Cat</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link">Gallery</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" style="background: #202636;
+                            padding: 12px; color: #e1ebec;margin-bottom: 10px;">Connect</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="content ">
+            <div class="container">
+                <div class="trade" id="trade-js">
+                    <div class=" row">
+                        <div class="col-lg-7 col-12">
+                            <div class="trade--wrap">
+                                <img src="./assets/images/logo.png" id="hero-logo" width="409" class="HeroSection_HeroSection__logo__2Ygn5 svg-js" alt="">
+                                <h1 class="trade__title " id="trade__title-js">
+                                    <span>Lend,</span>
+                                    <span>Margin Trade</span>
+                                    <span>and</span>
+                                    <span>Earn</span>
+                                    <span>on</span>
+                                    <span>Layer 2</span>
+                                </h1>
+                                <p class="trade__text " id="trade__text-js">
+                                    Explore the way to maximize capital efficiency.
+                                </p>
+                                <div class="btn--wrap">
+                                    <button class="trade__btn-one btn mb-4 " id="trade__btn-js"> Launch App</button>
+                                    <button class="trade__btn-second btn " id="trade__btn-js"> Documents</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 d-none d-lg-block">
+                            <div class="trade__img">
+                                <img src="./assets/images/hero-cat.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="congress">
+                    <h1 class="congress__title">Congress Cat</h1>
+                    <p class="congress__text">
+                        Congress Cat symbolizes your identity as an early contributor of Amy Finance. All the Congress Cat owners will have priority to acquire more Golden Cat airdrops for IQ Mining.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="congress__img">
+                                <img src="./assets/images/nft-card-0.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="congress__img">
+                                <img src="./assets/images/nft-card-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="congress__img">
+                                <img src="./assets/images/nft-card-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="congress__img">
+                                <img src="./assets/images/nft-card-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="congress__btn btn"> Buy Congress Cat</button>
+                </div>
+                <div class="assembly" id="assembly-js">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="assembly__title">Assembly Pool</h1>
+                            <p class="assembly__text">
+                                Assembly Pool is the main component of AMY Finance. It supplies assets for both margin trading and borrowing purposes, maximizing the utilization of assets for pool contributors.
+                            </p>
+                            <img src="./assets/images/banner.png" class="assembly__img" id="assembly__img-js" alt="">
+                            <button class="assembly__btn btn"> Buy Congress Cat</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="leverage" id="leverage-js">
+                    <div class="row">
+                        <div class=" col-lg-6 col-12 d-block d-lg-none laverage_one" style="padding-left: 150px; margin-top: 100px;">
+                            <h1 class="leverage__title">Leverage</h1>
+                            <p class="leverage__text">
+                                Liquidity is provided by brokers or by other existing liquidity protocols on Layer2. We source the liquidity from <a href="#">DoDoEx</a>, making user experience comparable to CEX on Arbitrum.
+                            </p>
+                            <button class="leverage__btn btn">Start Trading</button>
+                        </div>
+                        <div class="col-lg-6  col-12">
+                            <div class="leverage__img" id="leverage__img-js">
+                                <img src="./assets/images/leverage.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12   d-none d-lg-block" style="padding-left: 150px; margin-top: 100px;">
+                            <h1 class="leverage__title">Leverage</h1>
+                            <p class="leverage__text">
+                                Liquidity is provided by brokers or by other existing liquidity protocols on Layer2. We source the liquidity from <a href="#">DoDoEx</a>, making user experience comparable to CEX on Arbitrum.
+                            </p>
+                            <button class="leverage__btn btn">Start Trading</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="golden" id="golden-js">
+                    <h1 class="golden__title">
+                        Golden Cats IQ Mining(NFT)
+                    </h1>
+                    <p class="golden__text">
+                        By staking assets or joining certain activities on AMY Finance, you can get loot boxes with Golden Cats, and start IQ Mining, which will bring you a lot of fun in AMY!
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4 d-none d-lg-block">
+                            <div class="golden-no--wrap" id="golden-no--wrap-js">
+                                <h1 class="no__title">
+                                    No.
+                                </h1>
+                                <p class="no__text">
+                                    Unique identity for each Golden Cat.
+                                </p>
+                            </div>
+                            <div class="golden-type--wrap" id="golden-type--wrap-js">
+                                <h1 class="type__title">
+                                    Type
+                                </h1>
+                                <p class="type__text">
+                                    If a single address stakes three Golden Cats with the same type, it will have an IQ bonus.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="golden__img" id="golden__img-js">
+                                <img src="./assets/images/cat-card-0.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-lg-block">
+                            <div class="golden-iq--wrap" id="golden-iq--wrap-js">
+                                <h1 class="iq__title">
+                                    IQ
+                                </h1>
+                                <p class="iq__text">
+                                    Stands for the mining power of your cat.
+                                </p>
+                            </div>
+                            <div class="golden-generation--wrap" id="golden-generation--wrap-js">
+                                <h1 class="Generation__title">
+                                    Generation Limit
+                                </h1>
+                                <p class="Generation__text">
+                                    Determines how many tiems your cat can be upgraded.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-block d-lg-none">
+                        <div class="col-12">
+                            <div class="golden--wrap d-flex flex-row">
+                                <div class="golden-no--wrap" id="golden-no--wrap-js">
+                                    <h1 class="no__title">
+                                        No.
+                                    </h1>
+                                    <p class="no__text">
+                                        Unique identity for each Golden Cat.
+                                    </p>
+                                </div>
+                                <div class="golden-type--wrap" id="golden-type--wrap-js">
+                                    <h1 class="type__title">
+                                        Type
+                                    </h1>
+                                    <p class="type__text">
+                                        If a single address stakes three Golden Cats with the same type, it will have an IQ bonus.
+                                    </p>
+                                </div>
+                                <div class="golden-iq--wrap" id="golden-iq--wrap-js">
+                                    <h1 class="iq__title">
+                                        IQ
+                                    </h1>
+                                    <p class="iq__text">
+                                        Stands for the mining power of your cat.
+                                    </p>
+                                </div>
+                                <div class="golden-generation--wrap" id="golden-generation--wrap-js">
+                                    <h1 class="Generation__title">
+                                        Generation Limit
+                                    </h1>
+                                    <p class="Generation__text">
+                                        Determines how many tiems your cat can be upgraded.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="golden__btn btn">Shuffle</button>
+                </div>
+                <div class="mining" id="mining-js">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="mining__title">IQ Mining</h1>
+                            <p class="mining__text">
+                                Mine with the total IQ of your Golden Cats and get cats with higher IQ by assembling function.
+                            </p>
+                            <img src="./assets/images/banner-2.png" class="mining__img" id="mining__img-js" alt="">
+                            <button class="mining__btn btn"> <span>Start Mining</span> </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="community">
+                    <h1 class="community__title">
+                        Join our community
+                    </h1>
+                    <p class="community__text">
+                        Amy Finance is exploring a maximum capital efficiency. Welcome to join our community to navigate in a better DeFi space.
+                    </p>
+                    <div class="community-icon--wrap">
+                        <div class="community-telegram community-icon disable">
+                            <span class="icon-svg">
+                                <svg width="32 " height="32 " xmlns="http://www.w3.org/2000/svg "><path d="M12.039 28.228l.497-7.51L26.17 8.43c.604-.55-.124-.816-.923-.337L8.416 18.729l-7.279-2.308c-1.562-.444-1.58-1.527.355-2.308L29.846 3.176c1.297-.586
+                                2.54.32 2.042 2.308l-4.829 22.744c-.337 1.616-1.314 2.006-2.663 1.26l-7.35-5.433-3.534 3.427c-.408.408-.745.746-1.473.746 " fill="#202636 " fill-rule="evenodd "></path></svg>
+                            </span>
+                            <span class="telegram__text community-icon__text ">
+                                Telegram announcement
+                            </span>
+                        </div>
+                        <div class="community-discord community-icon ">
+                            <span class="icon-svg">
+                                <svg width="32 " height="32 " xmlns="http://www.w3.org/2000/svg "><path d="M26.868 0c1.874 0 3.386 1.516 3.476 3.3V32l-3.57-3.03-1.96-1.785-2.138-1.864.893 2.94H4.852c-1.87 0-3.387-1.42-3.387-3.301V3.307c0-1.784 1.52-3.303
+                                3.393-3.303h22l.01-.004zM18.71 7.577h-.04l-.269.267c2.764.8 4.101 2.05 4.101 2.05-1.781-.891-3.386-1.337-4.992-1.517-1.16-.18-2.32-.085-3.3 0h-.266c-.627 0-1.96.267-3.747.98-.623.271-.98.448-.98.448s1.336-1.336 4.28-2.049l-.18-.18s-2.23-.085-4.636
+                                1.693c0 0-2.407 4.192-2.407 9.36 0 0 1.334 2.32 4.991 2.408 0 0 .533-.71 1.073-1.336-2.053-.624-2.853-1.872-2.853-1.872s.179.088.447.267h.08c.04 0 .058.02.08.04v.008c.021.021.04.04.08.04.44.181.88.36 1.24.533.621.27 1.42.538
+                                2.4.715 1.24.18 2.661.267 4.28 0 .8-.18 1.6-.356 2.4-.713.52-.267 1.16-.534 1.862-.983 0 0-.8 1.248-2.94 1.872a20.34 20.34 0 001.06 1.333c3.659-.08 5.08-2.4 5.16-2.301 0-5.16-2.42-9.36-2.42-9.36-2.18-1.619-4.22-1.68-4.58-1.68l.076-.023zm.224
+                                5.884c.938 0 1.694.8 1.694 1.78 0 .987-.76 1.787-1.694 1.787-.933 0-1.693-.8-1.693-1.779.003-.986.764-1.784 1.693-1.788zm-6.057 0c.933 0 1.688.8 1.688 1.78 0 .987-.76 1.787-1.693 1.787-.934 0-1.694-.8-1.694-1.779 0-.986.76-1.784
+                                1.699-1.788z " fill="#202636 "></path></svg>
+                            </span>
+                            <span class="discord__text community-icon__text  ">
+                           Discord
+                            </span>
+                        </div>
+                        <div class="community-keybase community-icon ">
+                            <span class="icon-svg">
+                                <svg width="32 " height="32 " xmlns="http://www.w3.org/2000/svg "><path d="M13.711 28.496a1.272 1.272 0 11-1.273-1.272c.698 0 1.268.574 1.268 1.273l.005-.001zm7.891 0a1.271 1.271 0 01-2.543 0 1.268 1.268 0 112.538.001l.005-.001zm6.054-12.211l-.208-.272c-.062-.08-.128-.155-.19-.234-.06-.081-.126-.15-.189-.225-.139-.16-.279-.319-.425-.479l-.102-.106-.121-.132-.18-.175c-.02-.024-.043-.045-.067-.07-1.546-1.52-3.34-2.649-5.273-3.34l-.307-.104a5.478
+                                5.478 0 00-.113-4.45 5.48 5.48 0 00-3.251-2.88c-.875-.289-1.64-.426-2.281-.407-.044-.14-.134-.77.66-2.464L14.002 0l-.383.532c-.44.607-.864 1.193-1.26 1.77a2.476 2.476 0 00-1.66-.773L8.82 1.415c-.044-.004-.093-.004-.138-.004a2.498
+                                2.498 0 00-2.494 2.34l-.117 1.87v.003a2.5 2.5 0 002.34 2.639l1.336.081c-.087 1.12.097 2.16.54 3.075a15.04 15.04 0 00-4.88 3.312C1 19.19 1 24.07 1 27.993v2.367l1.74-1.85c.355 1.24.87 2.41 1.527 3.487H6.53a12.263 12.263 0 01-2.24-5.13l2.55-2.707-1.313
+                                4.121 2.32-1.69c4.1-2.98 8.992-3.667 14.547-2.04 2.407.71 4.747.053 5.964-1.675l.14-.22c.12.664.187 1.33.187 1.994 0 2.084-.34 4.917-1.84 7.35h2.148c1.035-2.084 1.575-4.576 1.575-7.35-.002-2.932-1.048-5.895-2.912-8.365zm-16.014-8.03c.164-1.336.77-2.599
+                                1.64-3.96a1.812 1.812 0 001.71.999c.29-.011.807.033 1.645.309a3.608 3.608 0 012.144 1.9c.43.908.465 1.923.105 2.865a3.59 3.59 0 01-1.075 1.48l-.544-.67-.002-.004a1.958 1.958 0 00-2.745-.273 1.93 1.93 0 00-.713 1.41c-1.6-.721-2.4-2.19-2.17-4.055l.005-.001zm5.739
+                                6.814l-.692.566a.305.305 0 01-.43-.043l-.149-.18a.317.317 0 01.045-.445l.68-.56-1.406-1.732a.41.41 0 01.058-.581.404.404 0 01.579.054l3.95 4.86a.412.412 0 01-.223.666.42.42 0 01-.413-.139l-.394-.486-1.393 1.138a.326.326 0 01-.206.074.316.316
+                                0 01-.248-.12l-.636-.772a.32.32 0 01.047-.448l1.401-1.143-.568-.71h-.002zm-7.26-8.58l-1.595-.1a.618.618 0 01-.58-.651l.12-1.869a.616.616 0 01.614-.58h.032l1.868.12a.612.612 0 01.577.65l-.009.136c-.426.756-.78 1.512-1.03 2.293h.002zM26.82
+                                21.796c-.754 1.073-2.25 1.441-3.9.957-5.18-1.521-9.86-1.204-13.957.935l2.181-6.831-7.054 7.479c.132-5.016 3.27-9.288 7.677-11.082.628.498 1.379.88 2.23 1.122.214.058.43.098.64.136a1.88 1.88 0 00.28 1.876l.101.12c-.23.6-.14
+                                1.3.295 1.832l.633.776c.355.433.879.684 1.439.684a1.88 1.88 0 001.181-.419l.38-.31c.232.1.49.151.755.151a1.935 1.935 0 001.237-.434c.83-.68.96-1.914.279-2.747L18.99 13.3a5.12 5.12 0 00.544-.508c.18.05.361.104.534.16.354.13.71.264
+                                1.06.42a12.735 12.735 0 013.694 2.53c.039.04.079.073.114.11l.226.234c.051.052.102.105.148.16.106.113.214.233.319.356l.168.2c.06.07.115.139.173.213l.152.2c.054.068.106.136.156.206 1.118 1.532 1.316 3.105.54 4.21l.002.006zM10.075
+                                5.487l-1.113-.068.07-1.114 1.112.068-.069 1.114z " fill="#202636 "></path></svg>
+                            </span>
+                            <span class="keybase__text community-icon__text ">
+                               Keybase
+                            </span>
+                        </div>
+                        <div class="community-twiter community-icon ">
+                            <span class="icon-svg">
+                                <svg width="32 " height="32 " xmlns="http://www.w3.org/2000/svg "><path d="M31.954 5.9a12.781 12.781 0 01-2.945 2.857l.004.88c.064 10.77-8.615 19.553-19.384 19.617h-.306a19.563 19.563 0 01-8.72-1.977.399.399 0 01-.24-.367l-.002-.176a.415.415
+                                0 01.414-.417 14.167 14.167 0 008.171-2.976 6.986 6.986 0 01-6.235-4.065.416.416 0 01.413-.578 6.407 6.407 0 002.429-.234 6.97 6.97 0 01-5.54-6.066.415.415 0 01.573-.418 6.4 6.4 0 002.528.533A6.841 6.841 0 01.347 4.628.863.863
+                                0 011.8 4.334a19.755 19.755 0 0013.47 6.146 6.434 6.434 0 01-.198-1.598 6.97 6.97 0 0111.984-4.75 13.878 13.878 0 003.814-1.344.273.273 0 01.289-.001c.055.088.055.2 0 .288a6.99 6.99 0 01-2.799 3.209 13.731 13.731 0 003.193-.781c.087-.06.2-.06.288-.001a.271.271
+                                0 01.114.399 " fill="#202636 " fill-rule="evenodd "></path></svg>
+                            </span>
+                            <span class="twiter__text community-icon__text ">
+                                Twiter
+                            </span>
+                        </div>
+                        <div class="community-medium community-icon ">
+                            <span class="icon-svg"> 
+                                <svg width="32 " height="32 " xmlns="http://www.w3.org/2000/svg "><path d="M32 16.087c0 4.231-.71 7.664-1.587 7.664s-1.587-3.432-1.587-7.664c0-4.232.71-7.664 1.587-7.664.876 0 1.587 3.431 1.587 7.664m-4.05 0c0 4.724-2.02
+                                8.555-4.512 8.555-2.493 0-4.513-3.831-4.513-8.555s2.02-8.555 4.513-8.555c2.492 0 4.512 3.83 4.512 8.555m-9.9 0c0 5.019-4.04 9.087-9.025 9.087S0 21.104 0 16.087C0 11.069 4.04 7 9.025 7c4.984 0 9.025 4.068 9.025 9.087
+                                " fill="#202636 " fill-rule="evenodd "></path></svg>
+                            </span>
+                            <span class="medium__text community-icon__text  ">
+                              Medium
+                            </span>
+                        </div>
+                        <div class="community-contact community-icon ">
+                            <span class="icon-svg">
+                                <svg width="32 " height="32 " xmlns="http://www.w3.org/2000/svg "><path d="M26.339 5A3.661 3.661 0 0130 8.66v14.933a3.662 3.662 0 01-3.661 3.661H5.662A3.662 3.662 0 012 23.594V8.661A3.661 3.661 0 015.662 5h20.677zm1.507
+                                7.262l-10.617 5.182a2.797 2.797 0 01-2.457 0L4.154 12.262v11.332c0 .833.675 1.508 1.508 1.508h20.677c.832 0 1.507-.676 1.507-1.508V12.262zm-1.507-5.108H5.662c-.833 0-1.508.675-1.508 1.507v1.241c.087.018.173.047.257.088l11.307
+                                5.519a.648.648 0 00.565 0l11.307-5.52c.083-.04.17-.069.256-.087v-1.24c0-.833-.675-1.508-1.507-1.508z " fill-rule="evenodd "></path></svg>
+                            </span>
+                            <span class="contact__text community-icon__text  ">
+                                contact@amy.finance
+                            </span>
+                        </div>
+                        <div class="community-github community-icon ">
+                            <span class="icon-svg">
+                                <svg width="32 " height="32 " xmlns="http://www.w3.org/2000/svg "><path d="M16 0C7.16 0 0 7.346 0 16.406c0 7.25 4.583 13.399 10.94 15.566.8.154 1.093-.353 1.093-.79 0-.389-.013-1.421-.02-2.788-4.451.99-5.39-2.201-5.39-2.201-.727-1.894-1.779-2.4-1.779-2.4-1.45-1.017.111-.996.111-.996
+                                1.607.115 2.45 1.689 2.45 1.689 1.428 2.51 3.747 1.785 4.662 1.365.144-1.061.556-1.784 1.013-2.195-3.553-.41-7.288-1.821-7.288-8.107 0-1.791.62-3.254 1.646-4.402-.18-.414-.72-2.083.14-4.343 0 0 1.34-.44 4.4 1.682 1.28-.365
+                                2.64-.546 4-.553a14.93 14.93 0 014 .553c3.04-2.122 4.38-1.682 4.38-1.682.86 2.26.32 3.929.16 4.343 1.02 1.148 1.64 2.61 1.64 4.402 0 6.303-3.74 7.69-7.3 8.094.56.492 1.08 1.498 1.08 3.035 0 2.196-.02 3.96-.02 4.493 0 .43.28.943
+                                1.1.779C27.42 29.798 32 23.645 32 16.406 32 7.346 24.836 0 16 0 " fill="#202636 " fill-rule="evenodd "></path></svg>
+                            </span>
+                            <span class="github__text community-icon__text ">
+                               Github
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="help">
+                    <div class="row">
+                        <div class="col-md-4 mt-5 mb-5">
+                            <div class="subscribe">
+                                <div class="help__svg">
+                                    <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg"><path d="M28.5 1.5a3 3 0 013 3V33a1.5 1.5 0 01-2.189 1.332L18 28.483l-11.311 5.85a1.5 1.5 0 01-2.183-1.2L4.5 33V4.5a3 3 0 013-3zm0 3h-21v26.035l9.811-5.072a1.5 1.5 0 011.231-.066l.147.066 9.811 5.073V4.5zM17.962 8.962a1.5 1.5 0 011.493 1.356l.007.144v3h3a1.5 1.5 0 01.145 2.993l-.145.007h-3v3a1.5 1.5 0 01-2.993.145l-.007-.145v-3h-3a1.5 1.5 0 01-.144-2.993l.144-.007h3v-3a1.5 1.5 0 011.5-1.5z" fill="#E1EBEC"></path></svg>
+                                </div>
+                                <p class="subscribe__text">
+                                    Subscribe to our newsletter and stay updated on the latest developments and events about Assembly Finance.
+                                </p>
+                                <div class="subscribe--wrap">
+                                    <input type="text">
+                                    <h1 class="subscribe__label ">Subscribe</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-5 ">
+                            <div class="faq">
+                                <div class="help__svg">
+                                    <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 2.25c7.249 0 13.163 5.713 13.486 12.882l.007.217 3.568 6.423a1.5 1.5 0 01-.89 2.168l-.127.03-2.544.51v3.271a1.5 1.5 0 01-1.356 1.493l-.144.007h-2.25a1.5 1.5 0 01-.247-.02l-2.986-.499-.532 3.731a1.5 1.5 0 01-1.346 1.282L21 33.75H9.75a1.5 1.5 0 01-1.473-1.216l-1.412-7.329-.166-.171a13.455 13.455 0 01-3.694-8.91L3 15.75c0-7.456 6.044-13.5 13.5-13.5zm0 3C10.701 5.25 6 9.951 6 15.75c0 2.924 1.2 5.653 3.281 7.625a1.5 1.5 0 01.442.805l1.265 6.57h8.711l.566-3.962a1.5 1.5 0 011.594-1.284l.138.016 4.379.73H27v-3a1.5 1.5 0 011.068-1.437l.138-.034 1.734-.347-2.751-4.954a1.5 1.5 0 01-.181-.576L27 15.75c0-5.799-4.701-10.5-10.5-10.5zm0 18a1.5 1.5 0 011.493 1.356l.007.144v.75a1.5 1.5 0 01-2.993.144L15 25.5v-.75a1.5 1.5 0 011.5-1.5zM16.5 9a5.25 5.25 0 011.66 10.232l-.16.049v.969a1.5 1.5 0 01-1.356 1.493l-.144.007a1.5 1.5 0 01-1.493-1.356L15 20.25V18a1.5 1.5 0 011.356-1.493l.144-.007a2.25 2.25 0 10-2.245-2.404l-.005.154a1.5 1.5 0 01-3 0c0-2.9 2.35-5.25 5.25-5.25z" fill="#E1EBEC"></path></svg>
+                                </div>
+                                <p class="faq__text">
+                                    Need Help? Click here and you’ll find answers to the questions we’ve been frequently asked about Assembly Finance.
+                                </p>
+                                <button class="faq__btn btn">FAQs</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-5">
+                            <div class="dow">
+                                <div class="help__svg">
+                                    <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg"><path d="M14 2.5a1.5 1.5 0 011.152.54L18.453 7H30.5a3 3 0 012.995 2.824L33.5 10v19.5a3 3 0 01-3 3H5a3 3 0 01-3-3v-24a3 3 0 013-3zm-.703 3H5v24h25.5V10H17.75a1.5 1.5 0 01-1.152-.54L13.297 5.5zm3.502 20.664l-.114-.103-4.495-4.49a1.5 1.5 0 012.006-2.225l.114.103 1.94 1.937V14.5a1.5 1.5 0 012.993-.144l.007.144v6.875l1.94-1.936a1.5 1.5 0 012.223 2.008l-.103.114-4.442 4.44a1.5 1.5 0 01-1.118.499 1.5 1.5 0 01-.951-.336z" fill="#E1EBEC"></path></svg>
+                                </div>
+                                <p class="dow__text">
+                                    Click here to download our press kit and know more about us.
+                                </p>
+                                <button class="dow__btn btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="claim-airdrop">
+                    <h1 class="claim-airdrop__title">
+                        DUSD Network
+                    </h1>
+                    <div class="row">
+                        <div class="col-md-6 mt-5">
+                            <div class="claim-airdrop__wrap">
+                                <img src="https://dusd.network/airdrop//images/airdrop.svg" height="60">
+                                <h2>Claim Airdrop</h2>
+                                <h4>(200 DUSD)</h4>
+                                <p>Airdrop will ends on October 30, 2021.</p>
+                                <div id="countdown-time" class="clock-container  mt-4 mb-4d-flex flex-column flex-md-row justify-content-evenly" data-countdown="10/15/2021 00:00:00">
+                                    <div>
+                                        <div class="clock-number" id="days">15</div>
+                                        <div class="clock-title">Days</div>
+                                    </div>
+                                    <div>
+                                        <div class="clock-number" id="hours">3</div>
+                                        <div class="clock-title">Hours</div>
+                                    </div>
+                                    <div>
+                                        <div class="clock-number" id="min">37</div>
+                                        <div class="clock-title">Min</div>
+                                    </div>
+                                    <div>
+                                        <div class="clock-number" id="sec">19</div>
+                                        <div class="clock-title">Sec</div>
+                                    </div>
+                                </div>
+                                <button class="gold-button btn btn-primary active mt-4 mb-4" id="airbtn" onclick="buystta()">Claim Airdrop</button>
+                                <p>(Please Connect to Binance Smart Chain first.)</p>
+                                <p>The DUSD token will appear on the Pancakeswap exchanges on October 31, 2021.</p>
+                                <h5>
+                                    <p>LISTING PRICE: 1 DUSD = 0.3USD</p>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-5">
+                            <div class="token">
+                                <img src="https://dusd.network//airdrop/images/rocket.svg" height="60">
+                                <h2>Buy DUSD Token</h2>
+                                <h4>
+                                    <p>Min buy 0.01 BNB (2000 DUSD) </p>
+                                </h4>
+                                <h4>
+                                    <p>Max buy 10 BNB (2,000,000 DUSD) </p>
+                                </h4>
+                                <input id="buyinput" class="input" value="0.01" placeholder="0.01">
+
+                                <button class="gold-button btn btn-primary active">Buy</button>
+                                <p>(Please Connect to Binance Smart Chain first.)</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+                            <div class="invite">
+                                <h3>Invite By</h3>
+                                <p>Invited by wallet address is Required</p>
+                                <input id="airinput" class="input" value="0x456514Cc67EC477ce33521Ab58019F906dc2408f">
+                                <h4>⚠️ Attention: Use Gas 100,000</h4>
+                                <h5>Refer and Get 50% of all Claim and 100% of all Buy ! </h5>
+                                <p>Claim Airdrop, then paste your wallet address below</p>
+                                <input type="text" name="address" class="input" id="refaddress" value="" placeholder="Your BEP20 Address">
+                                <a class=" active gold-button btn" style="background-color:#0069D9;">Get Refer Link</a>
+
+                                <p>Token Name - <strong>DUSD Network</strong></p>
+                                <p>
+                                    Token Symbol - <strong>DUSD</strong>
+                                </p>
+                                <p> Token Decimal - <strong>18</strong></p>
+
+
+                                <button class=" active gold-button btn mb-5" style="background-color:#0069D9;"><img src="https://dusd.network/airdrop/images/addtometamask.png "></button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <div class="container footer d-flex justify-content-around ">
+                <img src="./assets/images/logo.png" id="hero-logo" width="200" class="HeroSection_HeroSection__logo__2Ygn5 " alt="">
+
+                <p class="footer__text ">
+                    @2021 All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./assets/js/main.js "></script>
+    <script>
+        // Set the date we're counting down to
+        var time = document.getElementById("countdown-time").getAttribute("data-countdown");
+        var countDownDate = new Date(time).getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with 
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("min").innerHTML = minutes;
+            document.getElementById("sec").innerHTML = seconds;
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+
+            }
+        }, 1000);
+    </script>
+
+</body>
+
+</html>

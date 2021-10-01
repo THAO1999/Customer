@@ -1582,21 +1582,21 @@ body {
 }
 
 .content-babydoge .content-babydoge-number {
-  color: white;
+  color: #000;
   font-size: 40px;
   font-weight: 800;
   line-height: 1.5;
 }
 
 .content-babydoge .content-babydoge-text {
-  color: white;
+  color: #000;
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
 }
 
 .content-babydoge .content-babydoge-panca {
-  color: white;
+  color: #000;
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
@@ -1610,16 +1610,16 @@ body {
 }
 
 .content--air .content-air__title {
-  color: white;
+  color: #000;
   font-size: 40px;
   font-weight: 800;
   line-height: 1.5;
 }
 
 .content--air .content-air__text-title {
-  color: white;
+  color: #000;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   margin-bottom: 24px;
 }
@@ -1631,9 +1631,9 @@ body {
 }
 
 .content--air .content-air__text {
-  color: white;
+  color: #000;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1;
 }
 
@@ -1647,7 +1647,7 @@ body {
   width: 230px;
   border-radius: 15px;
   color: white;
-  background-color: red;
+  background-color: #383d51;
 }
 
 .content--air .content-air__btn:hover {
@@ -1659,14 +1659,14 @@ body {
   padding: 40px;
   min-height: 600px;
   border-radius: 25px;
-  background-color: #0e245d;
+  background-color: #f1f1f3;
   position: relative;
 }
 
 .content--bdsw .content-rate__text {
-  color: white;
+  color: #000;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1;
   margin-left: 5px;
   margin-bottom: 0;
@@ -1687,7 +1687,7 @@ body {
   width: 230px;
   border-radius: 15px;
   color: white;
-  background-color: red;
+  background-color: #383d51;
 }
 
 @media (max-width: 566px) {
@@ -1706,7 +1706,7 @@ body {
   width: 80%;
   height: 45%;
   margin: auto;
-  background-color: #223d8e;
+  background-color: #9497a2;
   border-radius: 25px;
   position: absolute;
   left: 50%;
@@ -1791,7 +1791,7 @@ body {
   padding: 40px;
   min-height: 600px;
   border-radius: 25px;
-  background-color: #0e245d;
+  background-color: #f1f1f3;
   position: relative;
 }
 
@@ -1799,7 +1799,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  background-color: red;
+  background-color: #383d51;
   color: #fff;
   height: 60px;
   width: 200px;
@@ -1816,7 +1816,7 @@ body {
   width: 80%;
   height: 45%;
   margin: auto;
-  background-color: #223d8e;
+  background-color: #9497a2;
   border-radius: 25px;
   position: absolute;
   left: 50%;
@@ -1832,7 +1832,7 @@ body {
   margin-left: 80%;
   font-weight: 300;
   font-size: 20px;
-  color: #b7d386;
+  color: #fff;
   margin-bottom: 0;
   line-height: 50px;
 }
@@ -1857,9 +1857,9 @@ body {
 }
 
 .content--reffer .content-rate__text {
-  color: white;
+  color: #000;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1;
   margin-left: 5px;
   margin-bottom: 0;
@@ -1915,14 +1915,39 @@ body {
 }
 
 .content--reffer .content-count__input {
+  margin-left: 10px;
   cursor: pointer;
-  background-color: #223d8e;
+  background-color: #9497a2;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   outline: none;
   border: none;
   border-radius: 10px;
+}
+
+@media (max-width: 566px) {
+  .content--reffer .content-count__input {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content--reffer .content-count__input {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1335px) {
+  .content--reffer .content-count__input {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .content--reffer .content-count__input {
+    margin-left: 0;
+  }
 }
 
 .content--reffer .content-count {

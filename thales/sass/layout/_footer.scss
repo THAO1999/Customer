@@ -1,0 +1,38 @@
+footer {
+    position: relative !important;
+    z-index: 2 !important;
+    background: #160438;
+    text-align: center;
+    //box-shadow: 0px -1px 7px #00f9ff;
+    backdrop-filter: blur(20px);
+    background: transparent;
+    .icon__wrap {
+        margin-left: 7%;
+        padding-top: 50px;
+        .icon__link {
+            display: inline-block;
+            text-align: center;
+            padding-right: 120px;
+            @include mobile {
+                padding-right: 36px;
+            }
+        }
+    }
+    img {
+        margin: 70px 0;
+        width: 214px;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        height: 2px;
+        filter: blur(2px);
+        background-color: rgb(0, 249, 255);
+    }
+}
