@@ -147,4 +147,9 @@ header {
         display: block;
         margin-top: 13px;
     }
+    @include ipadPro {
+        width: 170px;
+        margin-top: 8%;
+        display: block;
+    }
 }

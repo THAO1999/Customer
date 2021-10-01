@@ -496,7 +496,7 @@ body {
 @media (max-width: 766px) {
   .header .header__logo {
     width: 100px;
-    height: 50px;
+    margin: 17px 20px;
   }
 }
 
@@ -809,7 +809,6 @@ footer h1 {
 
 .purchase .purchase__img {
   width: 540px;
-  height: 340px;
   position: absolute;
   top: -6%;
   left: -10%;

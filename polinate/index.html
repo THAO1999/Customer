@@ -13,7 +13,6 @@
 
 <body>
     <div class="main">
-
         <header>
             <div class="header">
                 <div class="row">
@@ -77,7 +76,7 @@
                 <div class="col-md-12">
                     <div class="coming">
                         <h1>Coming September!</h1>
-                        <p>Join the BETA</p>
+                        <p id="test__btn">Join the BETA</p>
                         <img src="./assets/images/4b19270e53239436aea421042e28dd9a.png" alt="">
 
                     </div>
@@ -248,6 +247,17 @@
 
             }
         }, 1000);
+    </script>
+    <script>
+        document.getElementById("test__btn").addEventListener("click", test);
+
+        function test() {
+            var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            if (currentScroll > 0) {
+                // window.requestAnimationFrame(smoothscroll);
+                console.log(window.scrollTo(0, 0));
+            }
+        }
     </script>
 </body>
 

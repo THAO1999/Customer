@@ -697,6 +697,14 @@ header #close-icon {
   }
 }
 
+@media (min-width: 1023px) and (max-width: 1335px) {
+  #hero-logo {
+    width: 170px;
+    margin-top: 8%;
+    display: block;
+  }
+}
+
 .footer {
   background: #e1ebec;
   border-radius: 12px;
