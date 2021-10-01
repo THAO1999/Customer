@@ -1319,6 +1319,12 @@ canvas {
   outline: none;
 }
 
+@media (max-width: 766px) {
+  .banner2 {
+    width: 316px !important;
+  }
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;

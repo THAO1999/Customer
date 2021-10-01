@@ -456,3 +456,9 @@ canvas {
         outline: none;
     }
 }
+
+.banner2 {
+    @include mobile {
+        width: 316px !important;
+    }
+}
