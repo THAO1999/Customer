@@ -690,6 +690,13 @@ header #close-icon {
   display: none;
 }
 
+@media (max-width: 566px) {
+  #hero-logo {
+    display: block;
+    margin-top: 13px;
+  }
+}
+
 .footer {
   background: #e1ebec;
   border-radius: 12px;
