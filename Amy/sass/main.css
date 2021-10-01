@@ -520,6 +520,13 @@ body {
   opacity: 0;
 }
 
+@media (min-width: 1336px) and (max-width: 1719px) {
+  .header {
+    left: 10%;
+    width: 81%;
+  }
+}
+
 @media (min-width: 1023px) and (max-width: 1335px) {
   .header {
     left: 5%;

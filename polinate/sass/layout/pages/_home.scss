@@ -90,6 +90,7 @@
         @include mobile {
             position: unset;
             width: 345px;
+            margin-top: 20px;
         }
         @include tablet {
             position: unset;
@@ -143,7 +144,7 @@
     position: relative;
     @include mobile {
         text-align: center;
-        height: 450px;
+        height: 280px;
     }
     @include tablet {
         text-align: center;
@@ -216,7 +217,7 @@
     position: relative;
     @include mobile {
         text-align: center;
-        height: 520px;
+        height: 365px;
     }
     @include tablet {
         text-align: center;
@@ -257,6 +258,7 @@
         @include mobile {
             position: unset;
             width: 345px;
+            height: unset;
         }
         @include tablet {
             position: unset;

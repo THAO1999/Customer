@@ -686,6 +686,7 @@ footer h1 {
   .policy .approve__img {
     position: unset;
     width: 345px;
+    margin-top: 20px;
   }
 }
 
@@ -770,7 +771,7 @@ footer h1 {
 @media (max-width: 766px) {
   .purchase {
     text-align: center;
-    height: 450px;
+    height: 280px;
   }
 }
 
@@ -880,7 +881,7 @@ footer h1 {
 @media (max-width: 766px) {
   .trading {
     text-align: center;
-    height: 520px;
+    height: 365px;
   }
 }
 
@@ -941,6 +942,7 @@ footer h1 {
   .trading .trading__img {
     position: unset;
     width: 345px;
+    height: unset;
   }
 }
 
