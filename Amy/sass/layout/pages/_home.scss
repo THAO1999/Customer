@@ -56,6 +56,9 @@
                 background-color: #4d9aad;
                 color: #fff;
                 font-size: 20px;
+                @include mobile {
+                    margin-bottom: 20px;
+                }
             }
             .trade__btn-second {
                 color: #428596;

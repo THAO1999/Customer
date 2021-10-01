@@ -816,6 +816,12 @@ header #close-icon {
   font-size: 20px;
 }
 
+@media (max-width: 566px) {
+  .trade .trade--wrap .btn--wrap .trade__btn-one {
+    margin-bottom: 20px;
+  }
+}
+
 .trade .trade--wrap .btn--wrap .trade__btn-second {
   color: #428596;
   border: 1px solid;
