@@ -39,11 +39,13 @@
         position: absolute;
     }
     .tho__img {
-        top: 40%;
-        left: -100px;
+        top: 65%;
+        left: -140px;
+        max-width: 400px;
     }
     .soi__img {
-        top: 40%;
+        max-width: 250px;
+        top: 55%;
         right: -50px;
         transform: rotate(180deg);
     }
@@ -165,6 +167,7 @@
         position: absolute;
         top: -230px;
         width: 20%;
+        left: -100px;
         @include ipadPro {
             top: -100px;
         }

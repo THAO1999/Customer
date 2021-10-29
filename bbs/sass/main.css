@@ -587,12 +587,14 @@ header .shadow-btn {
 }
 
 .section-one .tho__img {
-  top: 40%;
-  left: -100px;
+  top: 65%;
+  left: -140px;
+  max-width: 400px;
 }
 
 .section-one .soi__img {
-  top: 40%;
+  max-width: 250px;
+  top: 55%;
   right: -50px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -744,6 +746,7 @@ header .shadow-btn {
   position: absolute;
   top: -230px;
   width: 20%;
+  left: -100px;
 }
 
 @media (min-width: 1024px) and (max-width: 1335px) {
