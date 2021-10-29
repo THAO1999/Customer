@@ -2,6 +2,7 @@
     background-image: url("../assets/images/texture.f96e0cf6.png");
     height: 950px;
     background-color: #fff;
+    background-size: 100%;
     @include desk {
         max-height: 700px;
     }
@@ -60,7 +61,7 @@
         max-width: 80%;
         position: absolute;
         top: -300px;
-        left: -13%;
+        left: -16%;
         animation: bg_img 1.4s ease-in-out infinite alternate;
         @include ipadPro {
             top: -130px;
@@ -86,13 +87,13 @@
             width: 250%;
             position: absolute;
             top: 427px;
-            left: -326.0333px;
+            left: -326.0333px !important;
         }
     }
     .solution {
         position: relative;
         z-index: 1;
-        top: 100px;
+        top: 50px;
         left: 24%;
         @include tablet {
             top: 10px;
@@ -349,8 +350,9 @@
         height: 400px;
     }
     .text-wrap {
-        margin-top: 50px;
+        margin-top: 80px;
         text-align: center;
+        border-right: 1px solid #fff;
         h3 {
             font-size: 4rem;
             color: #fff;
@@ -359,6 +361,7 @@
         h4 {
             color: #fff;
             font-size: 2.25rem;
+            content: "";
         }
     }
     p {
@@ -377,7 +380,7 @@
         top: -50px;
         width: 300px;
         @include desk {
-            width: 200px;
+            width: 310px;
         }
     }
     .btn-wrap {
@@ -422,6 +425,17 @@
             color: #fff;
             background: #c99b4d;
         }
+        h4::after {
+            content: "";
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            border-color: transparent;
+            border-style: solid;
+            border-width: 1.1rem;
+            border-right-color: #b5883f;
+            border-top-color: #b5883f;
+        }
     }
 }
 
@@ -429,7 +443,7 @@
     img {
         width: 576px;
         @include desk {
-            width: 400px;
+            width: 600px;
         }
     }
     .grand {
@@ -439,10 +453,13 @@
         }
         h3 {
             color: #000;
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: 700;
             margin-bottom: 50px;
             margin-top: 50px;
+            span {
+                font-weight: normal;
+            }
         }
         p {
             color: #000;

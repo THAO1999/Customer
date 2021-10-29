@@ -1,0 +1,51 @@
+.section-one {
+    background: url(../assets/images/screen_06b4b291d2.png);
+    height: 620px;
+    background-size: 100%;
+    position: relative;
+    .landing__img {
+        width: 600px;
+        display: flex;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .topbg__img,
+    .break__img {
+        position: absolute;
+    }
+    .break__img {
+        width: 100%;
+        left: 0;
+        bottom: -120px;
+    }
+    .topbg__img {
+        left: 0;
+        position: absolute;
+        width: 100%;
+        top: -80px;
+    }
+    .play-video {
+        display: flex;
+        align-items: center;
+        height: 45px;
+        width: 220px;
+        margin: auto;
+        background: url(../assets/images/buttonBlackBg.9acfaf08.png);
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .down-video {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        height: 45px;
+        width: 220px;
+        background: url(../assets/images/download.png);
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

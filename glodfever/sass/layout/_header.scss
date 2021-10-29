@@ -1,0 +1,31 @@
+.header {
+    position: relative;
+    z-index: 10;
+    height: 100px;
+    background-color: #000;
+    .logo {
+        margin-top: 10px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .logo__img {
+        width: 108px;
+    }
+    .icon__img {
+        width: 20px;
+        margin-left: 20px;
+    }
+    .nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+            li {
+                color: #fff5af;
+                font-weight: 700;
+                margin-left: 20px;
+                line-height: 100px;
+            }
+        }
+    }
+}
