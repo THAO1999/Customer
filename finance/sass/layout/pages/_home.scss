@@ -61,14 +61,20 @@
         position: absolute;
         top: -300px;
         left: -13%;
-        animation-name: bg_img;
-        animation-duration: 8s;
-        animation-iteration-count: infinite;
+        animation: bg_img 1.4s ease-in-out infinite alternate;
         @include ipadPro {
             top: -130px;
         }
         @include tablet {
             top: -30px;
+        }
+        @include mobile {
+            max-width: initial;
+            width: 680px;
+            height: 608px;
+            position: absolute;
+            top: -14px;
+            left: -49%;
         }
     }
     .hero__img {
@@ -76,6 +82,12 @@
         position: absolute;
         top: 170px;
         left: 0%;
+        @include mobile {
+            width: 250%;
+            position: absolute;
+            top: 427px;
+            left: -326.0333px;
+        }
     }
     .solution {
         position: relative;
@@ -85,6 +97,10 @@
         @include tablet {
             top: 10px;
             left: 10%;
+        }
+        @include mobile {
+            left: 18%;
+            width: 263px;
         }
         h3 {
             @include tablet {
@@ -135,14 +151,24 @@
     .automat-wrap,
     .multi-wrap {
         margin-top: 100px;
+        @include mobile {
+            margin-top: 20px;
+        }
         img {
             width: 530px;
             @include tablet {
                 width: 430px;
             }
+            @include mobile {
+                width: 400px;
+            }
         }
         .auto_img {
             width: 320px;
+            @include mobile {
+                width: 300px;
+                margin-left: 50px;
+            }
         }
         h4 {
             font-size: 2.5rem;
@@ -198,6 +224,10 @@
         padding: 50px;
         background-color: #1c2026;
         border-radius: 0.5rem;
+        @include mobile {
+            padding: 10px;
+            top: 700px;
+        }
         .yin__img {
             margin-left: 100px;
             margin-top: 50px;
@@ -213,6 +243,9 @@
             margin-top: 100px;
             @include tablet {
                 margin-top: 0;
+            }
+            @include mobile {
+                margin-top: 10px;
             }
             h1 {
                 color: #fff;
@@ -255,6 +288,11 @@
     .yin__txt {
         margin-top: 100px;
         margin-bottom: 50px;
+        @include mobile {
+            text-align: center;
+            margin-top: 0;
+            flex-direction: column;
+        }
         h1 {
             color: #000;
             font-weight: 700;
@@ -294,7 +332,7 @@
     margin-top: 30px;
     h3 {
         text-align: center;
-        font-size: 2.25rem;
+        font-size: 4rem;
         font-weight: 700;
         margin-bottom: 50px;
     }
@@ -307,6 +345,9 @@
     margin-top: 100px;
     height: 272px;
     background-image: url(../assets/images/TokenomicsBG.b9c543f9.png);
+    @include mobile {
+        height: 400px;
+    }
     .text-wrap {
         margin-top: 50px;
         text-align: center;
@@ -326,6 +367,9 @@
         color: #eef2f6;
         @include tablet {
             margin-top: 50px;
+        }
+        @include mobile {
+            margin-top: 10px;
         }
     }
     img {
@@ -349,6 +393,13 @@
             text-align: center;
             line-height: 40px;
             position: relative;
+            @include mobile {
+                display: flex;
+                margin: auto;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                padding-left: 36px;
+            }
         }
         h3::before {
             content: "";
@@ -383,6 +434,9 @@
     }
     .grand {
         margin-left: 50px;
+        @include mobile {
+            height: 500px;
+        }
         h3 {
             color: #000;
             font-size: 3rem;
@@ -440,6 +494,10 @@
         color: #fff;
         font-weight: 700;
         font-size: 18px;
+        @include mobile {
+            margin-top: 20px;
+            text-align: center;
+        }
     }
     input {
         background: #0e1116 !important;
@@ -452,6 +510,10 @@
     }
     .sub-wrap {
         position: relative;
+        @include mobile {
+            display: flex;
+            justify-content: center;
+        }
     }
     .sub__btn {
         font-size: 1.6rem !important;
@@ -462,12 +524,18 @@
         position: absolute;
         left: 140px;
         top: 2px;
+        @include mobile {
+            left: 215px;
+        }
     }
     .contact {
         padding-left: 60px;
         margin-top: 85px;
         border-left: 1px solid #fff;
         @include tablet {
+            display: none;
+        }
+        @include mobile {
             display: none;
         }
     }
@@ -484,6 +552,11 @@
         @include tablet {
             border: none;
             margin-left: -120px;
+        }
+        @include mobile {
+            border: none;
+            margin-top: 25px;
+            justify-content: center;
         }
     }
     .icon-wrap {
@@ -552,15 +625,25 @@
             font-size: 3rem;
             font-weight: bold;
             margin-top: 250px;
+            @include mobile {
+                margin-top: 54px;
+                text-align: center;
+            }
         }
         h2 {
             text-align: right;
+            @include mobile {
+                text-align: center;
+            }
         }
     }
     .multi {
         h1,
         h2 {
             text-align: left;
+            @include mobile {
+                text-align: center;
+            }
         }
     }
     .nov {
@@ -571,10 +654,21 @@
         padding-top: 10px;
         height: 149px;
         width: 400px;
+        @include mobile {
+            padding-left: 5rem;
+            padding-right: 2rem;
+            padding-top: 10px;
+            height: 140px;
+            width: 290px;
+            margin-left: 30px;
+        }
         h1 {
             color: #fff;
             font-weight: 700;
-            font-size: 3rem;
+            font-size: 2rem;
+            @include mobile {
+                text-align: center;
+            }
         }
         p {
             color: #fff;
@@ -588,6 +682,9 @@
         margin-left: 40px;
         width: 2px;
         background-color: #000;
+        @include mobile {
+            margin-left: 10px;
+        }
         img {
             position: absolute;
             width: 24px;
@@ -619,5 +716,8 @@
         margin-left: 39px;
         width: 2px;
         border-right: 5px dotted #000;
+        @include mobile {
+            margin-left: 10px;
+        }
     }
 }
