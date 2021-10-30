@@ -1,6 +1,11 @@
 header {
     height: 104px;
     background-color: #092e49;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
     @include mobile {
         height: 60px;
     }

@@ -494,6 +494,11 @@ body {
 header {
   height: 104px;
   background-color: #092e49;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 @media (max-width: 766px) {
@@ -588,7 +593,7 @@ header .shadow-btn {
 .section-one h3 {
   color: #5c77d8;
   font-size: 25px;
-  padding-top: 100px;
+  padding-top: 130px;
   font-weight: bold;
   text-align: center;
 }
@@ -596,7 +601,7 @@ header .shadow-btn {
 @media (max-width: 766px) {
   .section-one h3 {
     font-size: 12px;
-    padding-top: 50px;
+    padding-top: 80px;
   }
 }
 
@@ -950,6 +955,7 @@ header .shadow-btn {
   height: 417px;
   max-width: 340px;
   padding: 20px 24px;
+  margin: auto;
 }
 
 @media (min-width: 1024px) and (max-width: 1335px) {

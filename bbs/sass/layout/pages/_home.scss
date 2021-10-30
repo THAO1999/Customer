@@ -6,12 +6,12 @@
     h3 {
         color: #5c77d8;
         font-size: 25px;
-        padding-top: 100px;
+        padding-top: 130px;
         font-weight: bold;
         text-align: center;
         @include mobile {
             font-size: 12px;
-            padding-top: 50px;
+            padding-top: 80px;
         }
     }
     h2 {
@@ -273,6 +273,7 @@
         height: 417px;
         max-width: 340px;
         padding: 20px 24px;
+        margin: auto;
         @include ipadPro {
             height: 450px;
         }
