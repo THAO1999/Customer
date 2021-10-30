@@ -94,21 +94,30 @@
         position: relative;
         z-index: 1;
         top: 50px;
-        left: 24%;
+        left: 17%;
         @include tablet {
-            top: 10px;
+            top: 50px;
             left: 10%;
         }
         @include mobile {
             left: 18%;
-            width: 263px;
+            width: 300px;
+            top: 130px;
+        }
+        @include fullHD {
+            top: 250px;
         }
         h3 {
             @include tablet {
                 font-size: 3rem;
+                width: 216px;
             }
-            width: 280px;
-            font-size: 4rem;
+            @include mobile {
+                font-size: 3rem;
+                width: 215px;
+            }
+            width: 396px;
+            font-size: 6rem;
             color: #fff;
             font-weight: bold;
             span {
@@ -116,7 +125,7 @@
             }
         }
         p {
-            font-size: 3rem;
+            font-size: 2rem;
             color: #fff;
         }
     }
@@ -140,7 +149,7 @@
     background-color: #fff;
     h3 {
         text-align: center;
-        font-size: 3rem;
+        font-size: 4rem;
         color: #000;
         font-weight: bold;
     }
@@ -156,7 +165,7 @@
             margin-top: 20px;
         }
         img {
-            width: 530px;
+            width: 560px;
             @include tablet {
                 width: 430px;
             }
@@ -192,6 +201,7 @@
     .automat-wrap {
         padding-top: 50px;
         margin-top: 0px;
+        padding-bottom: 50px;
     }
 }
 
@@ -225,6 +235,10 @@
         padding: 50px;
         background-color: #1c2026;
         border-radius: 0.5rem;
+        @include fullHD {
+            width: 60%;
+            left: 20%;
+        }
         @include mobile {
             padding: 10px;
             top: 700px;
@@ -242,6 +256,7 @@
         }
         .yin__txt {
             margin-top: 100px;
+            margin-bottom: 50px;
             @include tablet {
                 margin-top: 0;
             }
@@ -260,7 +275,8 @@
                 line-height: 2rem;
                 font-weight: 700;
                 margin-top: 14px;
-                width: 200px;
+                max-width: 200px;
+                border-bottom: 2px solid #707c8b;
             }
         }
         .text-wrap {
@@ -286,6 +302,12 @@
 
 #section-five,
 #section-six {
+    .container {
+        width: 80%;
+        @include fullHD {
+            width: 60%;
+        }
+    }
     .yin__txt {
         margin-top: 100px;
         margin-bottom: 50px;
@@ -306,7 +328,8 @@
             line-height: 2rem;
             font-weight: 700;
             margin-top: 14px;
-            width: 350px;
+            max-width: 330px;
+            border-bottom: 2px solid #707c8b;
         }
     }
     img {
@@ -391,7 +414,7 @@
             margin-bottom: 20px;
             border-radius: 24px;
             border: 1px solid #c99b4d;
-            width: 170px;
+            max-width: 170px;
             height: 40px;
             text-align: center;
             line-height: 40px;
@@ -466,15 +489,28 @@
             font-size: 1.6rem;
         }
         h4 {
+            cursor: pointer;
             margin-top: 50px;
             color: #fff;
             margin-bottom: 20px;
             border-radius: 12px;
             background-color: #c99b4d;
-            width: 170px;
+            max-width: 170px;
             height: 40px;
             text-align: center;
             line-height: 40px;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-color: transparent;
+                border-style: solid;
+                border-width: 1.1rem;
+                border-right-color: #b5883f;
+                border-top-color: #b5883f;
+            }
         }
     }
 }
@@ -486,6 +522,7 @@
     padding-left: 10px;
     padding-right: 10px;
     .yin_one {
+        cursor: pointer;
         margin-top: 85px;
         margin-left: 100px;
         @include ipadPro {
@@ -495,14 +532,14 @@
             margin-left: 10px;
         }
         h3 {
-            // opacity: 0.5;
+            opacity: 0.5;
             font-weight: 300;
             color: #eef2f6;
             margin-left: 20px;
             span {
-                opacity: 1;
+                opacity: 1 !important;
                 display: block;
-                color: #fff;
+                color: #eef2f6;
             }
         }
     }
@@ -525,6 +562,13 @@
         color: #fff;
         text-align: left;
     }
+    .touch {
+        h4 {
+            span {
+                font-weight: normal;
+            }
+        }
+    }
     .sub-wrap {
         position: relative;
         @include mobile {
@@ -544,11 +588,14 @@
         @include mobile {
             left: 215px;
         }
+        &:hover {
+            background: #ffd24c;
+        }
     }
     .contact {
         padding-left: 60px;
         margin-top: 85px;
-        border-left: 1px solid #fff;
+        border-left: 1px solid #262e3a;
         @include tablet {
             display: none;
         }
@@ -560,12 +607,28 @@
         font-size: 1.6rem !important;
         color: #fff;
         padding: 0.5rem 1.5rem !important;
-        border: 2px solid #c99b4d;
+        border: 2px solid #b5883f;
         border-radius: 17px;
+        border-top-right-radius: 0px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-color: transparent;
+            border-style: solid;
+            border-width: 1.1rem;
+            border-right-color: #b5883f;
+            border-top-color: #b5883f;
+        }
+        &:hover {
+            background-color: #b5883f;
+        }
     }
     .icon {
         margin-top: 85px;
-        border-left: 1px solid #fff;
+        border-left: 1px solid #262e3a;
         @include tablet {
             border: none;
             margin-left: -120px;
@@ -578,15 +641,23 @@
     }
     .icon-wrap {
         margin-left: 30px;
+        cursor: pointer;
         @include ipadPro {
             margin-left: 20px;
         }
         img {
             width: 24px;
+            opacity: 0.75;
+            &:hover {
+                opacity: 1;
+            }
         }
         p {
             margin-top: 20px;
             color: #fff;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
     .upcoming {
@@ -594,14 +665,21 @@
         top: -60px;
         margin: auto;
         height: 12rem;
-        width: 80%;
-        left: 10%;
+        width: 60%;
+        left: 20%;
         background: #000;
+        @include mobile {
+            width: 100%;
+            left: 0%;
+        }
         h3 {
-            font-size: 24px;
+            font-size: 28px;
             text-align: center;
             line-height: 12rem;
             color: #fff;
+            span {
+                font-weight: bold;
+            }
         }
         &::after {
             content: "";
@@ -737,4 +815,8 @@
             margin-left: 10px;
         }
     }
+}
+
+.coming__btn:hover {
+    background-color: #cda35d !important;
 }

@@ -486,35 +486,67 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: thaotm;
+  src: url(../assets/fonts/file.woff2);
+}
+
 header {
-  height: 120px;
+  height: 104px;
   background-color: #092e49;
 }
 
+@media (max-width: 766px) {
+  header {
+    height: 60px;
+  }
+}
+
 header .logo__img {
-  margin-top: 40px;
+  margin-top: 35px;
   width: 127px;
+  cursor: pointer;
+}
+
+@media (max-width: 766px) {
+  header .logo__img {
+    width: 80px;
+    margin-top: 20px;
+  }
 }
 
 header .nav ul {
-  line-height: 120px;
+  line-height: 104px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+@media (max-width: 766px) {
+  header .nav ul {
+    line-height: 60px;
+  }
+}
+
 header .nav ul li {
+  cursor: pointer;
   font-size: 30px;
   font-weight: bold;
   color: #fff;
   margin-left: 30px;
 }
 
+@media (max-width: 766px) {
+  header .nav ul li {
+    font-size: 16px;
+  }
+}
+
 header .visit__btn {
   height: 39px;
   color: #fff;
   background: #5c77d8;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 20px;
   padding: 0px 44px;
   position: relative;
@@ -523,17 +555,27 @@ header .visit__btn {
   line-height: 39px;
 }
 
+header .visit__btn:hover ~ .shadow-btn {
+  -webkit-transform: translate(-6px, -10px);
+          transform: translate(-6px, -10px);
+}
+
 header .btn-wrap {
   position: relative;
 }
 
 header .shadow-btn {
+  display: block;
   position: absolute;
   background: #3a4280;
-  padding: 16px 90px;
-  top: 53px;
-  left: 23px;
+  padding: 16px 88px;
+  top: 43px;
+  left: 26px;
   z-index: 1;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .section-one {
@@ -545,15 +587,23 @@ header .shadow-btn {
 
 .section-one h3 {
   color: #5c77d8;
-  font-size: 28px;
+  font-size: 25px;
   padding-top: 100px;
   font-weight: bold;
   text-align: center;
 }
 
+@media (max-width: 766px) {
+  .section-one h3 {
+    font-size: 12px;
+    padding-top: 50px;
+  }
+}
+
 .section-one h2 {
+  font-family: thaotm;
   color: #fff;
-  font-size: 38px;
+  font-size: 64px;
   padding-top: 20px;
   font-weight: bold;
   text-align: center;
@@ -561,6 +611,12 @@ header .shadow-btn {
 
 .section-one h2 span {
   color: #82d2e1;
+}
+
+@media (max-width: 766px) {
+  .section-one h2 {
+    font-size: 28px;
+  }
 }
 
 .section-one p {
@@ -572,6 +628,12 @@ header .shadow-btn {
   text-align: center;
 }
 
+@media (max-width: 766px) {
+  .section-one p {
+    font-size: 12px;
+  }
+}
+
 .section-one .content4__img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -581,20 +643,27 @@ header .shadow-btn {
   width: 80%;
 }
 
+@media (max-width: 766px) {
+  .section-one .content4__img {
+    margin-top: 20px;
+    width: 90%;
+  }
+}
+
 .section-one .tho__img,
 .section-one .soi__img {
   position: absolute;
 }
 
 .section-one .tho__img {
-  top: 65%;
+  top: 55%;
   left: -140px;
   max-width: 400px;
 }
 
 .section-one .soi__img {
   max-width: 250px;
-  top: 55%;
+  top: 45%;
   right: -50px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -604,14 +673,19 @@ header .shadow-btn {
   height: 39px;
   color: #fff;
   background: #5c77d8;
+  margin: auto;
   margin-top: 40px;
-  margin-left: 20px;
   padding: 0px 44px;
   position: relative;
   z-index: 2;
   font-size: 20px;
   line-height: 39px;
   width: 200px;
+}
+
+.section-one .visit__btn:hover ~ .shadow-btn {
+  -webkit-transform: translate(-6px, -10px);
+          transform: translate(-6px, -10px);
 }
 
 .section-one .btn-wrap {
@@ -622,13 +696,29 @@ header .shadow-btn {
   margin-bottom: 70px;
 }
 
+@media (max-width: 766px) {
+  .section-one .btn-wrap {
+    margin: auto;
+  }
+}
+
 .section-one .shadow-btn {
   position: absolute;
   background: #3a4280;
-  padding: 16px 102px;
+  padding: 16px 100px;
   top: 53px;
-  left: 23px;
+  left: 5px;
   z-index: 1;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+@media (max-width: 766px) {
+  .section-one .shadow-btn {
+    left: 5px;
+  }
 }
 
 .section-second {
@@ -636,15 +726,28 @@ header .shadow-btn {
   padding-bottom: 50px;
 }
 
+@media (min-width: 1920px) {
+  .section-second .container {
+    width: 50%;
+  }
+}
+
 .section-second h3 {
+  font-family: thaotm;
   color: #fff;
-  font-size: 38px;
+  font-size: 50px;
   padding-top: 20px;
   font-weight: bold;
 }
 
 .section-second h3 span {
   color: #82d2e1;
+}
+
+@media (max-width: 766px) {
+  .section-second h3 {
+    font-size: 36px;
+  }
 }
 
 .section-second p {
@@ -662,6 +765,7 @@ header .shadow-btn {
   border: 1px solid #1e293b;
   padding: 30px;
   margin-top: 30px;
+  max-width: 500px;
 }
 
 .section-second .network img,
@@ -674,6 +778,7 @@ header .shadow-btn {
 .section-second .network h3,
 .section-second .revenue h3,
 .section-second .resistant h3 {
+  font-family: revert;
   color: #fff;
   font-size: 24px;
   padding-top: 20px;
@@ -690,8 +795,25 @@ header .shadow-btn {
 .section-second .network p,
 .section-second .revenue p,
 .section-second .resistant p {
-  font-size: 18px;
+  font-size: 14px;
   color: #fff;
+  position: relative;
+}
+
+@media (max-width: 766px) {
+  .section-second .network {
+    display: block;
+  }
+}
+
+.section-second .revenue p::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  background: #fff;
+  height: 7px;
+  left: -15px;
+  top: 26%;
 }
 
 .section-second .mobile__img {
@@ -717,6 +839,11 @@ header .shadow-btn {
   width: 200px;
 }
 
+.section-second .visit__btn:hover ~ .shadow-btn {
+  -webkit-transform: translate(-6px, -10px);
+          transform: translate(-6px, -10px);
+}
+
 .section-second .btn-wrap {
   position: relative;
   text-align: center;
@@ -728,10 +855,14 @@ header .shadow-btn {
 .section-second .shadow-btn {
   position: absolute;
   background: #3a4280;
-  padding: 16px 102px;
+  padding: 16px 100px;
   top: 53px;
-  left: 23px;
+  left: 25px;
   z-index: 1;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .section-third,
@@ -776,6 +907,7 @@ header .shadow-btn {
   top: -230px;
   width: 20%;
   right: -96px;
+  z-index: 1;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -793,10 +925,11 @@ header .shadow-btn {
 }
 
 .section-four h3 {
+  font-family: thaotm;
   padding-top: 100px;
   padding-bottom: 50px;
   color: #82d2e1;
-  font-size: 38px;
+  font-size: 50px;
   font-weight: bold;
   text-align: center;
 }
@@ -805,16 +938,23 @@ header .shadow-btn {
   color: #fff;
 }
 
+@media (max-width: 766px) {
+  .section-four h3 {
+    font-size: 36px;
+  }
+}
+
 .section-four .network--wrap {
   background: #0a1626;
   border: 1px solid #477764;
-  height: 550px;
+  height: 417px;
+  max-width: 340px;
   padding: 20px 24px;
 }
 
 @media (min-width: 1024px) and (max-width: 1335px) {
   .section-four .network--wrap {
-    height: 700px;
+    height: 450px;
   }
 }
 
@@ -838,7 +978,7 @@ header .shadow-btn {
 .section-four .network--wrap h2 {
   color: #78c697;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
@@ -850,21 +990,28 @@ header .shadow-btn {
 
 .section-four .network--wrap p {
   color: #fff;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .section-four .visit__btn {
   height: 39px;
   color: #fff;
   background: #78c697;
+  margin: auto;
   margin-top: 40px;
-  margin-left: 20px;
   padding: 0px 44px;
   position: relative;
   z-index: 2;
   font-size: 20px;
   line-height: 39px;
   width: 216px;
+  color: #092e49;
+  font-weight: 500;
+}
+
+.section-four .visit__btn:hover ~ .shadow-btn {
+  -webkit-transform: translate(-6px, -10px);
+          transform: translate(-6px, -10px);
 }
 
 .section-four .btn-wrap {
@@ -878,10 +1025,14 @@ header .shadow-btn {
 .section-four .shadow-btn {
   position: absolute;
   background: #092e49;
-  padding: 16px 110px;
+  padding: 16px 108px;
   top: 53px;
-  left: 23px;
+  left: 5px;
   z-index: 1;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .section-six {
@@ -890,6 +1041,7 @@ header .shadow-btn {
 }
 
 .section-six h3 {
+  font-family: thaotm;
   padding-top: 30px;
   font-size: 50px;
   font-weight: bold;
@@ -900,23 +1052,23 @@ header .shadow-btn {
 
 @media (max-width: 766px) {
   .section-six h3 {
-    font-size: 28px;
-    text-align: center;
+    font-size: 36px;
   }
 }
 
 .section-six .blockchain {
   max-width: 368px;
-  padding: 20px 30px;
+  padding: 30px 40px;
   background: #0f172a;
-  height: 400px;
+  min-height: 350px;
+  max-width: 310px;
   margin-bottom: 40px;
   border: 1px solid #1e293b;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .section-six .blockchain {
-    height: 450px;
+    height: 390px;
   }
 }
 
@@ -935,7 +1087,7 @@ header .shadow-btn {
 .section-six .blockchain p {
   margin-top: 30px;
   color: #fff;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .section-seven {
@@ -950,12 +1102,20 @@ header .shadow-btn {
 }
 
 .section-seven h3 {
+  font-family: thaotm;
   color: #82d2e1;
-  font-size: 38px;
+  font-size: 50px;
   font-weight: bold;
 }
 
+@media (max-width: 766px) {
+  .section-seven h3 {
+    font-size: 36px;
+  }
+}
+
 .section-seven .mission {
+  max-width: 450px;
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -983,7 +1143,7 @@ header .shadow-btn {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .section-seven img {
-    margin-top: 100px;
+    margin-top: 50px;
     width: 350px;
   }
 }
@@ -1002,10 +1162,18 @@ header .shadow-btn {
 }
 
 .section-eight h3 {
+  text-align: left;
+  font-family: thaotm;
   color: #82d2e1;
-  font-size: 38px;
+  font-size: 50px;
   font-weight: bold;
   margin-bottom: 50px;
+}
+
+@media (max-width: 766px) {
+  .section-eight h3 {
+    font-size: 36px;
+  }
 }
 
 .section-eight img {
@@ -1014,7 +1182,14 @@ header .shadow-btn {
 
 .section-end {
   position: relative;
-  height: 100px;
+  height: 570px;
+  padding: 0px;
+}
+
+@media (max-width: 766px) {
+  .section-end {
+    height: 300px;
+  }
 }
 
 .section-end img {
@@ -1040,10 +1215,17 @@ header .shadow-btn {
 }
 
 .section-ten h3 {
+  font-family: thaotm;
   color: #82d2e1;
-  font-size: 38px;
+  font-size: 50px;
   font-weight: bold;
   margin-bottom: 50px;
+}
+
+@media (max-width: 766px) {
+  .section-ten h3 {
+    font-size: 36px;
+  }
 }
 
 .section-ten .team h5 {
@@ -1077,6 +1259,41 @@ header .shadow-btn {
 
 .section-ten video:hover {
   pointer-events: none;
+}
+
+.container {
+  width: 70%;
+}
+
+@media (min-width: 1920px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1335px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 766px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 766px) {
+  section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .btn {

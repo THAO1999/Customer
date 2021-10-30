@@ -48,3 +48,9 @@ $desk-high: 1920px;
         @content;
     }
 }
+
+@mixin fullHD {
+    @media (min-width: $desk-high - 1px) {
+        @content;
+    }
+}
