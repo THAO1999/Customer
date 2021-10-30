@@ -490,7 +490,7 @@ body {
   background-image: url("../assets/images/texture.f96e0cf6.png");
   height: 950px;
   background-color: #fff;
-  background-size: 100%;
+  background-size: 75%;
 }
 
 @media (max-width: 1440px) {
@@ -858,6 +858,12 @@ body {
   border-left: 2px solid #c99b4d;
 }
 
+@media (max-width: 566px) {
+  #section-second h3 {
+    padding-top: 30px;
+  }
+}
+
 #section-third {
   margin-top: 0;
   background-color: #f4f6fa;
@@ -996,6 +1002,12 @@ body {
 #section-five {
   padding-bottom: 50px;
   padding-top: 250px;
+}
+
+@media (max-width: 566px) {
+  #section-five {
+    padding-top: 100px;
+  }
 }
 
 #section-five .container,

@@ -2,7 +2,7 @@
     background-image: url("../assets/images/texture.f96e0cf6.png");
     height: 950px;
     background-color: #fff;
-    background-size: 100%;
+    background-size: 75%;
     @include desk {
         max-height: 700px;
     }
@@ -195,6 +195,14 @@
     }
 }
 
+#section-second {
+    h3 {
+        @include mobile {
+            padding-top: 30px;
+        }
+    }
+}
+
 #section-third {
     margin-top: 0;
     background-color: #f4f6fa;
@@ -298,6 +306,9 @@
 #section-five {
     padding-bottom: 50px;
     padding-top: 250px;
+    @include mobile {
+        padding-top: 100px;
+    }
 }
 
 #section-five,
