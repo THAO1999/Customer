@@ -7,7 +7,8 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-style: solid;
   border-width: 0;
 }
@@ -98,7 +99,8 @@ dd {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -235,13 +237,13 @@ textarea {
 /**
  * Reset radio and checkbox appearance to preserve their look in iOS.
  */
-[type=checkbox] {
+[type="checkbox"] {
   -webkit-appearance: checkbox;
   -moz-appearance: checkbox;
        appearance: checkbox;
 }
 
-[type=radio] {
+[type="radio"] {
   -webkit-appearance: radio;
   -moz-appearance: radio;
        appearance: radio;
@@ -271,9 +273,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -281,9 +283,9 @@ button,
 }
 
 button[disabled],
-[type=button][disabled],
-[type=reset][disabled],
-[type=submit][disabled] {
+[type="button"][disabled],
+[type="reset"][disabled],
+[type="submit"][disabled] {
   cursor: default;
 }
 
@@ -291,9 +293,9 @@ button[disabled],
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -302,9 +304,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -367,15 +369,15 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
 /**
  * 1. Correct the outline style in Safari.
  */
-[type=search] {
+[type="search"] {
   outline-offset: -2px;
   /* 1 */
 }
@@ -383,7 +385,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -466,14 +468,120 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: PasseroOne;
+  src: url("../assets/fonts/passero_one/PasseroOne-Regular.ttf");
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v40/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlbHYjedg.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v40/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlSHYjedg.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v40/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlZHYjedg.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v40/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlYHYjedg.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v40/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlWHYg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v40/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlbHYjedg.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v40/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlSHYjedg.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v40/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlZHYjedg.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v40/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlYHYjedg.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v40/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlWHYg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-feature-settings: "palt";
+  font-family: PasseroOne !important;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
   letter-spacing: 0.06em;
   line-height: 1.75;
   position: relative;
@@ -485,83 +593,343 @@ body {
 .header {
   position: relative;
   z-index: 10;
-  height: 100px;
-  background-color: #000;
 }
+
 .header .logo {
   margin-top: 10px;
   margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .header .logo__img {
+  margin-right: 20px;
+  cursor: pointer;
   width: 108px;
 }
+
 .header .icon__img {
+  cursor: pointer;
   width: 20px;
   margin-left: 20px;
 }
+
 .header .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 .header .nav ul li {
-  color: #fff5af;
+  cursor: pointer;
+  color: #f2be43;
   font-weight: 700;
   margin-left: 20px;
   line-height: 100px;
 }
 
+.header .nav ul li:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff5af !important;
+  text-decoration: none !important;
+}
+
 .section-one {
   background: url(../assets/images/screen_06b4b291d2.png);
-  height: 620px;
+  max-height: 760px;
   background-size: 100%;
   position: relative;
+  top: -101px;
 }
+
 .section-one .landing__img {
   width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: auto;
-  padding-top: 50px;
+  padding-top: 180px;
 }
+
 .section-one .topbg__img,
 .section-one .break__img {
   position: absolute;
 }
+
 .section-one .break__img {
   width: 100%;
   left: 0;
-  bottom: -120px;
+  bottom: -175px;
 }
+
 .section-one .topbg__img {
   left: 0;
   position: absolute;
   width: 100%;
-  top: -80px;
+  top: -50px;
+  opacity: 0.9;
 }
+
 .section-one .play-video {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  height: 45px;
-  width: 220px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: auto;
+  color: #f2be43;
+  font-size: 20px;
+  width: 220px;
+  min-height: 45px;
   background: url(../assets/images/buttonBlackBg.9acfaf08.png);
+  background-size: 100%;
 }
+
 .section-one .play-video img {
+  margin-right: 10px;
   width: 20px;
   height: 20px;
 }
+
+.section-one .play-video p {
+  font-family: PasseroOne;
+}
+
+.section-one .play-video:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.4));
+          filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.4));
+}
+
 .section-one .down-video {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: auto;
   height: 45px;
-  width: 220px;
+  width: 280px;
+  margin-top: 116px;
+  position: relative;
   background: url(../assets/images/download.png);
+  background-size: 100%;
+  z-index: 10;
 }
+
+.section-one .down-video p {
+  font-family: PasseroOne;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .section-one .down-video img {
+  margin-right: 10px;
   width: 20px;
   height: 20px;
+}
+
+.section-one .down-video:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.4));
+          filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.4));
+}
+
+.section-second {
+  background-color: #000;
+}
+
+.section-second h3 {
+  color: #f2be43;
+  font-family: PasseroOne;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  margin-left: 400px;
+}
+
+.section-second .slide__img {
+  width: 560px;
+  height: 400px;
+  margin-left: 100px;
+}
+
+.section-second .slick-prev {
+  position: relative;
+}
+
+.section-second .slick-prev:before {
+  content: "";
+  width: 38px;
+  height: 56px;
+  background-image: url(../assets/images/left.png);
+  position: absolute;
+  top: 200px;
+  z-index: 10;
+  left: -50px;
+}
+
+.section-second .slick-next:before {
+  content: "";
+  width: 38px;
+  height: 56px;
+  background-image: url(../assets/images/right.png);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  position: absolute;
+  top: 00px;
+  z-index: 10;
+  right: -50px;
+}
+
+.section-second ul.slick-dots li button {
+  position: relative;
+}
+
+.section-second ul.slick-dots {
+  bottom: -100px;
+}
+
+.section-second ul.slick-dots li button::before {
+  position: absolute;
+  content: "";
+  background-image: url(../assets/images/dot.png);
+  background-size: 100%;
+  width: 26px;
+  height: 15px;
+}
+
+.section-second .break__img {
+  position: relative;
+  top: 65px;
+}
+
+.section-third {
+  background-color: #1d2918;
+  background-image: url(../assets/images/web_pattern.d59528d3.png);
+}
+
+.section-third h3 {
+  color: #f2be43;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 100px;
+}
+
+.section-third p {
+  color: #fff5af;
+  font-size: 20px;
+  margin-top: 30px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.section-four {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  top: -40px;
+  background-image: url(../assets/images/features-bg.8cc7e5cc.png);
+}
+
+.section-four .four__title {
+  padding: 30px 0px;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  background: url(../assets/images/text-center.8df0e0bd.png) no-repeat;
+  background-size: 300% 100%;
+}
+
+.section-four .four__title h3 {
+  color: #f2be43;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.section-four .text-wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.section-four .text-wrap h3 {
+  color: #f2be43;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+  margin-top: 20px;
+  background: none;
+}
+
+.section-four .text-wrap p {
+  color: #fff5af;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.section-four .axe__img {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  top: 47px;
+}
+
+.section-four .gun__img {
+  position: absolute;
+  right: 0;
+  top: 373px;
+  width: 700px;
+}
+
+.section-five {
+  padding-top: 200px;
+  top: -100px;
+  position: relative;
+  background: url(../assets/images/back-blue.11e0a37a.png) no-repeat;
+}
+
+.section-five h3 {
+  color: #f2be43;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.section-five .roadmap__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.section-five .break__img {
+  position: absolute;
+  top: -50px;
 }
 
 .btn {
@@ -582,5 +950,9 @@ body {
   padding: 0.375rem 0.75rem;
   font-size: 1.6rem;
   border-radius: 0.25rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}/*# sourceMappingURL=main.css.map */
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+/*# sourceMappingURL=main.css.map */
