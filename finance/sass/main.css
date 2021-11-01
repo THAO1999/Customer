@@ -1032,7 +1032,7 @@ body {
   #section-five .yin__txt,
   #section-six .yin__txt {
     text-align: center;
-    margin-top: 0;
+    margin-top: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1093,10 +1093,22 @@ body {
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 50px;
+  color: #000;
 }
 
 #section-seven img {
   width: 150px;
+}
+
+#presale p,
+#presale span,
+#presale h1,
+#presale h2,
+#presale h3,
+#presale h4,
+#presale h5,
+#presale h6 {
+  color: #fff;
 }
 
 #section-eight {
