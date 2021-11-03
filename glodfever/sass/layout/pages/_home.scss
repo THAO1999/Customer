@@ -1,14 +1,21 @@
 .section-one {
     background: url(../assets/images/screen_06b4b291d2.png);
     max-height: 760px;
-    background-size: 100%;
+    background-size: 100% 100%;
     position: relative;
     top: -101px;
+    @include mobile {
+        background-image: url(../assets/images/screen_06b4b291d2.png);
+        background-size: cover;
+    }
     .landing__img {
         width: 600px;
         display: flex;
         margin: auto;
         padding-top: 180px;
+        @include mobile {
+            width: 350px;
+        }
     }
     .topbg__img,
     .break__img {
@@ -17,14 +24,32 @@
     .break__img {
         width: 100%;
         left: 0;
-        bottom: -175px;
+        @include fullHD {
+            bottom: -175px;
+        }
+        @include tablet {
+            bottom: -40px;
+        }
+        bottom: -85px;
+        @include mobile {
+            bottom: 20px;
+        }
     }
     .topbg__img {
         left: 0;
         position: absolute;
         width: 100%;
-        top: -50px;
+        top: 15px;
         opacity: 0.9;
+        @include fullHD {
+            top: -20px;
+        }
+        @include ipadPro {
+            top: 30px;
+        }
+        @include tablet {
+            top: 30px;
+        }
     }
     .play-video {
         cursor: pointer;
@@ -67,6 +92,7 @@
         background-size: 100%;
         z-index: 10;
         p {
+            color: #000;
             font-family: PasseroOne;
             font-size: 18px;
             font-weight: bold;
@@ -84,6 +110,18 @@
 }
 
 .section-second {
+    .container-section {
+        width: 85%;
+        margin: auto;
+        @include ipadPro {
+            width: 80%;
+        }
+        @include tablet {
+            width: 70%;
+        }
+    }
+    margin-top: -100px;
+    padding-top: 100px;
     background-color: #000;
     h3 {
         color: #f2be43;
@@ -92,6 +130,12 @@
         font-size: 30px;
         position: relative;
         margin-left: 400px;
+        @include tablet {
+            margin-left: unset;
+        }
+        @include mobile {
+            margin-left: unset;
+        }
     }
     .slide__img {
         width: 560px;
@@ -145,24 +189,52 @@
 .section-third {
     background-color: #1d2918;
     background-image: url(../assets/images/web_pattern.d59528d3.png);
+    @include ipadPro {
+        padding-bottom: 100px;
+    }
+    @include tablet {
+        padding-bottom: 100px;
+    }
+    @include mobile {
+        padding-bottom: 100px;
+    }
     h3 {
+        font-family: none;
         color: #f2be43;
         font-weight: bold;
         font-size: 40px;
         margin-top: 100px;
+        @include mobile {
+            margin-left: 15px;
+            font-size: 35px;
+        }
     }
     p {
+        font-family: Oswald;
         color: #fff5af;
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 30px;
         line-height: 24px;
-        font-weight: bold;
+        @include mobile {
+            margin-left: 15px;
+            font-size: 15px;
+        }
+    }
+    img {
+        @include ipadPro {
+            width: 215px;
+            margin-top: 100px;
+        }
+        @include tablet {
+            width: 200px;
+            margin-top: 100px;
+        }
     }
 }
 
 .section-four {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 240px;
     position: relative;
     top: -40px;
     background-image: url(../assets/images/features-bg.8cc7e5cc.png);
@@ -172,8 +244,9 @@
         width: 400px;
         margin: auto;
         background: url(../assets/images/text-center.8df0e0bd.png) no-repeat;
-        background-size: 300% 100%;
+        background-size: 100% 100%;
         h3 {
+            font-family: none;
             color: #f2be43;
             font-weight: bold;
             font-size: 40px;
@@ -182,6 +255,9 @@
     .text-wrap {
         position: relative;
         z-index: 2;
+        @include mobile {
+            margin-left: 20px;
+        }
         h3 {
             color: #f2be43;
             font-weight: bold;
@@ -191,10 +267,10 @@
             background: none;
         }
         p {
+            font-family: Oswald;
             color: #fff5af;
-            font-size: 20px;
+            font-size: 16px;
             line-height: 24px;
-            font-weight: bold;
         }
     }
     .axe__img {
@@ -202,33 +278,353 @@
         left: 0;
         z-index: 1;
         top: 47px;
+        @include ipadPro {
+            width: 400px;
+        }
+        @include tablet {
+            width: 300px;
+        }
+        @include mobile {
+            width: 200px;
+        }
     }
     .gun__img {
         position: absolute;
         right: 0;
-        top: 373px;
+        top: 280px;
         width: 700px;
+        @include ipadPro {
+            top: 380px;
+            width: 400px;
+        }
+        @include tablet {
+            width: 300px;
+            top: 480px;
+        }
+        @include mobile {
+            width: 200px;
+        }
     }
 }
 
 .section-five {
-    padding-top: 200px;
-    top: -100px;
+    padding-bottom: 200px;
+    padding-top: 170px;
+    top: -180px;
     position: relative;
     background: url(../assets/images/back-blue.11e0a37a.png) no-repeat;
+    background-size: 100% 100%;
+    @include mobile {
+        background-size: cover;
+    }
     h3 {
+        width: 400px;
+        margin: auto;
         color: #f2be43;
         font-weight: bold;
         font-size: 30px;
         text-align: center;
         margin-top: 20px;
+        background: url(../assets/images/text-center.8df0e0bd.png) no-repeat;
+        background-size: 100% 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @include mobile {
+            margin-top: 50px;
+        }
     }
     .roadmap__img {
         display: flex;
         margin: auto;
+        margin-bottom: 100px;
+        @include mobile {
+            width: 100%;
+        }
+        @include tablet {
+            width: 100%;
+        }
     }
     .break__img {
         position: absolute;
-        top: -50px;
+        top: -117px;
+    }
+    .btn-wrap {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+        h1,
+        h2 {
+            color: #000;
+            background: url(../assets/images/download.png) no-repeat;
+            padding: 10px 20px;
+            margin-right: 10px;
+            line-height: 15px;
+            background-size: 100% 100%;
+            width: 220px;
+            font-weight: bold;
+            &:hover {
+                cursor: pointer;
+                transition: 0.3s;
+                filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.4));
+            }
+            @include mobile {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.section-six {
+    height: 800px;
+    position: relative;
+    margin-top: -100px;
+    background-color: #130c0a;
+    @include ipadPro {
+        height: 900px;
+    }
+    .six__title {
+        width: 400px;
+        margin: auto;
+        position: relative;
+        z-index: 2;
+        color: #f2be43;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 70px;
+        padding-bottom: 40px;
+        background: url(../assets/images/text-center.8df0e0bd.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    h1 {
+        font-size: 2.625rem;
+        color: #f2be43;
+        font-weight: bold;
+        @include ipadPro {
+            position: relative;
+            z-index: 1;
+        }
+        @include tablet {
+            position: relative;
+            z-index: 1;
+        }
+        @include mobile {
+            position: relative;
+            z-index: 1;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+    p {
+        font-family: Oswald;
+        color: #fff5af;
+        font-size: 16px;
+        @include ipadPro {
+            position: relative;
+            z-index: 1;
+        }
+        @include tablet {
+            position: relative;
+            z-index: 1;
+        }
+        @include mobile {
+            position: relative;
+            z-index: 1;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+    .florest-1__img {
+        position: absolute;
+        left: 0;
+        top: 187px;
+    }
+    .florest-2__img {
+        position: absolute;
+        right: 0;
+        top: 187px;
+    }
+    .break__img {
+        position: absolute;
+        top: -170px;
+        z-index: 4;
+    }
+}
+
+.section-seven {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-top: -250px;
+    background: url(../assets/images/back-purple.29a5fe51.png) no-repeat;
+    background-size: 100% 100%;
+    h3 {
+        position: relative;
+        z-index: 2;
+        width: 400px;
+        margin: auto;
+        color: #f2be43;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 70px;
+        padding-bottom: 40px;
+        background: url(../assets/images/text-center.8df0e0bd.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .native {
+        margin-top: 20px;
+        img {
+            width: 300px;
+            height: 300px;
+            margin-right: 20px;
+        }
+        p {
+            font-family: Oswald;
+            color: #fff5af;
+            font-size: 1.625rem;
+            line-height: 20px;
+            margin-bottom: 20px;
+            text-align: right;
+            max-width: 440px;
+        }
+    }
+    .diagram {
+        img {
+            width: 600px;
+            height: 400px;
+            @include ipadPro {
+                width: 500px;
+                height: 340px;
+            }
+            @include tablet {
+                width: 500px;
+                height: 340px;
+            }
+        }
+    }
+    .linegram {
+        img {
+            width: 850px;
+            @include ipadPro {
+                width: 580px;
+            }
+            @include tablet {
+                width: 580px;
+            }
+        }
+    }
+}
+
+.section-eight {
+    height: 780px;
+    position: relative;
+    background-image: url(../assets/images/purple-bk.fa26ca43.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    @include mobile {
+        height: 900px;
+        padding: 10px;
+    }
+    .break__img {
+        position: relative;
+        top: -75px;
+    }
+    h3 {
+        font-family: Oswald;
+        font-size: 26px;
+        font-weight: bold;
+        color: #f2be43;
+        text-align: center;
+    }
+    p {
+        font-family: Oswald;
+        margin-top: 30px;
+        color: #fff5af;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .ec__img,
+    .js__img {
+        width: 323px;
+        height: 498px;
+        position: absolute;
+        @include ipadPro {
+            width: 230px;
+            height: 350px;
+        }
+    }
+    .ec__img {
+        top: 200px;
+        left: 100px;
+    }
+    .js__img {
+        top: 200px;
+        right: 100px;
+    }
+    .emilian,
+    .jan {
+        img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        span {
+            color: #f2be43;
+            text-align: right;
+            display: block;
+            font-size: 16px;
+            @include mobile {
+                text-align: center;
+            }
+        }
+        p {
+            text-align: right;
+        }
+    }
+    .jan {
+        span {
+            text-align: left;
+            @include mobile {
+                text-align: center;
+            }
+        }
+        img {
+            margin-left: 10px;
+        }
+        p {
+            text-align: left;
+        }
+    }
+    @include mobile {
+        p,
+        span {
+            text-align: center;
+        }
+    }
+}
+
+#presale {
+    padding: 100px 0 130px 0;
+    p,
+    span,
+    h1,
+    input,
+    a,
+    h2 {
+        font-family: Montserrat, sans-serif;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    span.fs-1 {
+        font-size: 24px;
     }
 }
