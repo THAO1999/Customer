@@ -935,6 +935,7 @@ footer li:hover {
 
 @media (min-width: 1024px) and (max-width: 1335px) {
   .section-third img {
+    position: unset;
     width: 215px;
     margin-top: 100px;
   }
@@ -942,8 +943,23 @@ footer li:hover {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .section-third img {
+    position: unset;
     width: 200px;
     margin-top: 100px;
+  }
+}
+
+@media (min-width: 1338px) and (max-width: 1919px) {
+  .section-third img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1338px) and (max-width: 1919px) {
+  .section-third .adv {
+    position: relative;
+    right: -55px;
+    top: 80px;
   }
 }
 
@@ -1003,6 +1019,7 @@ footer li:hover {
   left: 0;
   z-index: 1;
   top: 47px;
+  max-width: 400px;
 }
 
 @media (min-width: 1024px) and (max-width: 1335px) {
@@ -1026,8 +1043,8 @@ footer li:hover {
 .section-four .gun__img {
   position: absolute;
   right: 0;
-  top: 280px;
-  width: 700px;
+  top: 380px;
+  max-width: 600px;
 }
 
 @media (min-width: 1024px) and (max-width: 1335px) {
@@ -1047,6 +1064,12 @@ footer li:hover {
 @media (max-width: 766px) {
   .section-four .gun__img {
     width: 200px;
+  }
+}
+
+@media (min-width: 1338px) and (max-width: 1919px) {
+  .section-four .gun__img {
+    top: 450px;
   }
 }
 
@@ -1218,6 +1241,13 @@ footer li:hover {
   }
 }
 
+@media (min-width: 1338px) and (max-width: 1919px) {
+  .section-six h1 {
+    position: relative;
+    z-index: 1;
+  }
+}
+
 .section-six p {
   font-family: Oswald;
   color: #fff5af;
@@ -1244,6 +1274,13 @@ footer li:hover {
     z-index: 1;
     margin-left: 15px;
     margin-right: 15px;
+  }
+}
+
+@media (min-width: 1338px) and (max-width: 1919px) {
+  .section-six p {
+    position: relative;
+    z-index: 1;
   }
 }
 
@@ -1309,6 +1346,12 @@ footer li:hover {
   max-width: 440px;
 }
 
+@media (max-width: 766px) {
+  .section-seven .native p {
+    text-align: center;
+  }
+}
+
 .section-seven .diagram img {
   width: 600px;
   height: 400px;
@@ -1344,6 +1387,12 @@ footer li:hover {
   }
 }
 
+@media (min-width: 1338px) and (max-width: 1919px) {
+  .section-seven .linegram img {
+    width: 770px;
+  }
+}
+
 .section-eight {
   height: 780px;
   position: relative;
@@ -1372,6 +1421,13 @@ footer li:hover {
   text-align: center;
 }
 
+.section-eight h4 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #f2be43;
+  text-align: center;
+}
+
 .section-eight p {
   font-family: Oswald;
   margin-top: 30px;
@@ -1393,6 +1449,14 @@ footer li:hover {
   .section-eight .ec__img,
   .section-eight .js__img {
     width: 230px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 1338px) and (max-width: 1919px) {
+  .section-eight .ec__img,
+  .section-eight .js__img {
+    width: 260px;
     height: 350px;
   }
 }
@@ -1432,6 +1496,15 @@ footer li:hover {
 .section-eight .emilian p,
 .section-eight .jan p {
   text-align: right;
+}
+
+@media (max-width: 766px) {
+  .section-eight .emilian p,
+  .section-eight .jan p {
+    padding-right: 75px;
+    text-align: right;
+    padding-left: 40px;
+  }
 }
 
 .section-eight .jan span {
@@ -1478,6 +1551,20 @@ footer li:hover {
 
 #presale span.fs-1 {
   font-size: 24px;
+}
+
+@media (max-width: 766px) {
+  #presale {
+    padding-top: 217px;
+  }
+}
+
+.slick-slide img {
+  opacity: 0.4;
+}
+
+.slick-current img {
+  opacity: 1;
 }
 
 .btn {

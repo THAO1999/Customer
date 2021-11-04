@@ -19,6 +19,7 @@ $desktop-width: 1024px;
 $ipad-pro: 1336px;
 $desk-low: 1338px;
 $desk-high: 1920px;
+$desk: 1440px;
 @mixin mobile {
     @media (max-width: #{$mobile-width - 1px}) {
         @content;
