@@ -2796,7 +2796,7 @@ blockquote {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 75%;
+    width: 60%;
     margin-right: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

@@ -235,7 +235,7 @@ a.app {
 .grid_item.is--svg.fade_up_next,
 #wf-form-Newsletter-Sign-Up,
 .view__link {
-    transform: translateY(40px);
+    transform: translateY(0px);
 }
 
 .tranfers {
