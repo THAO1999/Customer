@@ -1,0 +1,141 @@
+.nextNav {
+    display: none;
+}
+
+.slick {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.slick img {
+    margin-right: 40px;
+    max-width: 618px;
+    border-radius: 40px;
+}
+
+.slick-dots li button:before {
+    content: "" !important;
+    width: 13px !important;
+    height: 13px !important;
+    border-radius: 50%;
+    background-color: #e4ff02 !important;
+}
+
+.slick-dots {
+    bottom: -50px !important;
+}
+
+.titleImg {
+    margin-top: 90px !important;
+}
+
+.nav {
+    display: none;
+}
+
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    background-color: #070f45;
+    padding: 20px;
+}
+
+.nav ul li {
+    font-size: 16px;
+    color: #fff;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.logo {
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff
+}
+
+.nav-item {
+    padding: 24px 0px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+}
+
+.nav-list-child li {
+    padding: 16px 0px;
+    padding-left: 20px;
+}
+
+.logo__img {
+    width: 74px;
+    height: 25px;
+}
+
+.close {
+    width: 15px;
+    height: 15px;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .nav-item {
+        padding: 16px 0px;
+        border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+    }
+    .nav-list-child li {
+        padding: 10px 0px;
+        padding-left: 20px;
+    }
+}
+
+@media(max-width: 1024px) and (min-width: 768px) {
+    .nav-item {
+        padding: 24px 0px;
+        border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+    }
+    .nav-list-child li {
+        padding: 12px 0px;
+        padding-left: 20px;
+    }
+}
+
+@media(max-width: 1025px) and (min-width: 1024px) {
+    .featuresList {
+        width: 1000px;
+        padding: 10px;
+    }
+    .homeContainer .featuresPanel .featuresList .featItem[data-v-36eb7f64] {
+        width: 330px;
+        height: 290px;
+        margin: 4px;
+    }
+    .mapList {
+        width: 990px;
+        margin-left: 15px;
+    }
+    .partnerPanel .partnerList {
+        width: 1000px;
+    }
+    .iplist {
+        padding-left: 40px;
+        width: 980px;
+    }
+    .ipItem {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .homeContainer .partnerPanel .businessText[data-v-36eb7f64] {
+        width: 1000px;
+        margin-left: 10px;
+    }
+    .container {
+        margin: unset !important;
+    }
+    /* .footer .cryptoimgs[data-v-3c85e696] {
+        justify-content: unset !important;
+    } */
+    .footer .footerCon[data-v-3c85e696] {
+        width: 1024px;
+    }
+}

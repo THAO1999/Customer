@@ -151,3 +151,10 @@
             width: 100%;
         }
     }
+    
+    @media (max-width: 767px) {
+        .display_text.is--special.mb-small,
+        .display_text {
+            font-size: 3rem;
+        }
+    }

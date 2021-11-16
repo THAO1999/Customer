@@ -149,11 +149,11 @@
                             <a><img src="./img/614ba33bb06974479683baa0_Numbers.svg" loading="lazy" alt="Numbers Logo" class="nav_image"></a>
                         </div>
                         <div class="nav_links_wrapper">
-                            <a>
+                            <a href="#products">
                                 <p class="nav_text">Products</p>
                                 <div class="nav_underline" style="transform: translate3d(-101%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
                             </a>
-                            <a>
+                            <a href="#partners">
                                 <p class="nav_text">Partners</p>
                                 <div class="nav_underline" style="transform: translate3d(-101%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
                             </a>
@@ -232,11 +232,13 @@
         <div class="nav-menu">
             <div class="">
                 <ul>
-                    <li>Products</li>
-                    <li>Partners</li>
-                    <li>News</li>
-                    <li>Team</li>
-                    <li>Contact Us</li>
+                    <li class="nav-item"><a href="#products">Products</a> </li>
+                    <li class="nav-item">
+                        <a href="#partners"> Partners</a> </li>
+                    </li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Contact Us</a></li>
                 </ul>
                 <a class="get-mobile__link get__link">Get Litepaper</a>
             </div>
@@ -795,7 +797,7 @@
                             <a>
                                 <div class="nav_underline" style="transform: translate3d(-101%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
                             </a>
-                            <a>
+                            <a href="#">
                                 <p class="nav_text">Partners</p>
                                 <div class="nav_underline" style="transform: translate3d(-101%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
                             </a>
@@ -849,6 +851,14 @@
                     "transform": "scale(1)"
                 });
 
+                $(".nav-item").click(function() {
+                    $(".nav-menu").css({
+                        "transform": "translateY(-120%)"
+                    });
+                    $(".icon-menu-js").css("display", "block");
+                    $(".close").css("display", "none")
+
+                })
                 window.addEventListener("scroll", function() {
                     var x = parseInt(pageYOffset) + 400;
 
