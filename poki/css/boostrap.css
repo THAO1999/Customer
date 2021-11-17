@@ -110,8 +110,8 @@ h6:last-child,
 }
 
 p {
-    font-size: 14px;
-    color: #758194;
+    /* font-size: 14px; */
+    /* color: #758194; */
 }
 
 p:last-child {
@@ -700,10 +700,6 @@ h6,
 
 .btn .icon {
     color: inherit;
-}
-
-.btn:hover {
-    color: #fff !important;
 }
 
 .btn-grad {
@@ -1946,9 +1942,11 @@ h6,
     font-size: 1.75rem;
 }
 
+
+/* 
 .title:not(:last-child) {
     margin-bottom: 1.25rem;
-}
+} */
 
 .title small {
     font-size: 50%;
@@ -1990,9 +1988,10 @@ h6,
     font-size: 30px;
 }
 
-.title-md:not(:last-child) {
+
+/* .title-md:not(:last-child) {
     margin-bottom: 1rem;
-}
+} */
 
 .title-xl {
     font-size: 1.75rem;
@@ -2209,9 +2208,9 @@ a .title {
     .title {
         font-size: 2.15rem;
     }
-    .title:not(:last-child) {
+    /* .title:not(:last-child) {
         margin-bottom: 1.25rem;
-    }
+    } */
     .title small {
         font-size: 50%;
         margin-top: 0.75rem;
@@ -2247,9 +2246,9 @@ a .title {
     .title-md {
         font-size: 20px;
     }
-    .title-md:not(:last-child) {
+    /* .title-md:not(:last-child) {
         margin-bottom: 1rem;
-    }
+    } */
     .title-md-s2 {
         font-size: 1.675rem;
         line-height: 1.6;
@@ -2481,7 +2480,7 @@ a .title {
     font-weight: 500;
     height: 38px;
     line-height: 38px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
 }
 
 .countdown-s3.countdown-small .countdown-time {
@@ -2857,23 +2856,19 @@ hr+.nk-block {
     .section-connect:before {
         height: 160px;
     }
-    .section-t,
-    .section {
+    .section-t {
         padding-top: 120px;
     }
-    .section-b,
-    .section {
+    .section-b {
         padding-bottom: 120px;
     }
 }
 
 @media (min-width: 1600px) {
-    .section-t,
-    .section {
+    .section-t {
         padding-top: 150px;
     }
-    .section-b,
-    .section {
+    .section-b {
         padding-bottom: 150px;
     }
 }

@@ -1,3 +1,21 @@
+@media screen and (max-width: 1440px) {
+    .slick img {
+        max-width: 414px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slick img {
+        max-width: 214px !important;
+    }
+    .slick {
+        margin-top: 40px !important;
+    }
+    .title-text.title2 img {
+        width: 300px;
+    }
+}
+
 .nextNav {
     display: none;
 }
@@ -9,7 +27,7 @@
 
 .slick img {
     margin-right: 40px;
-    max-width: 618px;
+    max-width: 600px;
     border-radius: 40px;
 }
 

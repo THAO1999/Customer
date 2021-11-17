@@ -813,7 +813,7 @@ button.swiper-pagination-bullet {
 
 .homeContainer .kakaInfoPanel .roadmap .mapList .roadcon .context[data-v-36eb7f64] {
     font-size: 16px;
-    color: #e4ff02;
+    color: #e4ff02 !important;
     line-height: 26px;
     width: 85%
 }
@@ -839,7 +839,7 @@ button.swiper-pagination-bullet {
     padding-bottom: 100px
 }
 
-.homeContainer .kakaInfoPanel .tokenomics .title[data-v-36eb7f64] {
+.title-text {
     text-align: center;
     padding-bottom: 34px
 }
@@ -1281,15 +1281,15 @@ button.swiper-pagination-bullet {
         display: block
     }
     .homeContainer .partnerPanel .iplist .ipItem.item1 .ipItemTitle[data-v-36eb7f64] {
-        background: url(../img/ipimg4.837c90df.png) no-repeat 50%;
+        background: url(../images/ipimg4.837c90df.png) no-repeat 50%;
         background-size: 100% 100%
     }
     .homeContainer .partnerPanel .iplist .ipItem.item2 .ipItemTitle[data-v-36eb7f64] {
-        background: url(../img/ipimg5.4eeb3823.png) no-repeat 50%;
+        background: url(../images/ipimg5.4eeb3823.png) no-repeat 50%;
         background-size: 100% 100%
     }
     .homeContainer .partnerPanel .iplist .ipItem.item3 .ipItemTitle[data-v-36eb7f64] {
-        background: url(../img/ipimg6.6eab5fa0.png) no-repeat 50%;
+        background: url(../images/ipimg6.6eab5fa0.png) no-repeat 50%;
         background-size: 100% 100%
     }
 }
