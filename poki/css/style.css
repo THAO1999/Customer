@@ -14,6 +14,21 @@
     .title-text.title2 img {
         width: 300px;
     }
+    .title-text {
+        margin-top: 30px !important;
+    }
+    .footer .footerCon[data-v-3c85e696] {
+        padding-top: 0px !important;
+    }
+    section {
+        padding: 0px !important;
+    }
+    .title-md {
+        font-size: 24px !important;
+    }
+    .partnerPanel .title-text {
+        margin-top: 60px !important;
+    }
 }
 
 .nextNav {
@@ -26,7 +41,8 @@
 }
 
 .slick img {
-    margin-right: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
     max-width: 600px;
     border-radius: 40px;
 }

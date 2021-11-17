@@ -628,7 +628,6 @@ button.swiper-pagination-bullet {
 .homeContainer .featuresPanel[data-v-36eb7f64] {
     width: 1200px;
     margin: 0 auto;
-    padding-bottom: 60px
 }
 
 .homeContainer .featuresPanel .titleImg[data-v-36eb7f64] {
@@ -841,7 +840,8 @@ button.swiper-pagination-bullet {
 
 .title-text {
     text-align: center;
-    padding-bottom: 34px
+    padding-bottom: 34px;
+    margin-top: 100px;
 }
 
 .homeContainer .kakaInfoPanel .tokenomics .economicsTitle[data-v-36eb7f64] {
@@ -1285,11 +1285,11 @@ button.swiper-pagination-bullet {
         background-size: 100% 100%
     }
     .homeContainer .partnerPanel .iplist .ipItem.item2 .ipItemTitle[data-v-36eb7f64] {
-        background: url(../images/ipimg5.4eeb3823.png) no-repeat 50%;
+        background: url(../images/ipimg4.837c90df.png) no-repeat 50%;
         background-size: 100% 100%
     }
     .homeContainer .partnerPanel .iplist .ipItem.item3 .ipItemTitle[data-v-36eb7f64] {
-        background: url(../images/ipimg6.6eab5fa0.png) no-repeat 50%;
+        background: url(../images/ipimg4.837c90df.png) no-repeat 50%;
         background-size: 100% 100%
     }
 }
