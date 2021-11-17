@@ -833,10 +833,11 @@ button.swiper-pagination-bullet {
     border-radius: 50%
 }
 
-.homeContainer .kakaInfoPanel .tokenomics[data-v-36eb7f64] {
+
+/* .homeContainer .kakaInfoPanel .tokenomics[data-v-36eb7f64] {
     padding-top: 100px;
     padding-bottom: 100px
-}
+} */
 
 .title-text {
     text-align: center;

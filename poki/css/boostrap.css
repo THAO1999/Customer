@@ -2380,7 +2380,7 @@ a .title {
 }
 
 .countdown-s3 {
-    margin: 0 -16px 0 -25px;
+    margin: 0 -16px 30px -25px;
 }
 
 .countdown-s4 {
@@ -2814,14 +2814,28 @@ hr+.nk-block {
     z-index: inherit;
 }
 
-.section-t,
-.section {
+.section-t {
     padding-top: 60px;
 }
 
-.section-b,
-.section {
+.section-b {
     padding-bottom: 60px;
+}
+
+.footer .title[data-v-3c85e696] {
+    padding: 0px !important;
+}
+
+.footerCon .title {
+    margin-top: -100px;
+}
+
+.homeContainer .partnerPanel .partnerList[data-v-36eb7f64] {
+    padding-bottom: 0px !important;
+}
+
+.footer .btns[data-v-3c85e696] {
+    padding-top: 100px !important;
 }
 
 @media (min-width: 576px) {
