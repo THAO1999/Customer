@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)https://bigether.co/ -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigether</title>
+    <link rel="icon" href="./css/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./css/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1036.0" data-gr-ext-installed="">
+    <section id="airdrop" class="py-5">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="airdrop__wrap py-5 px-4 text-center">
+                        <img src="./css/airdrop.svg" class="img-fluid" style="max-height: 60px;" alt="">
+                        <h1 class="text-center text-white fw-bold mt-3">Claim <br> Airdrop</h1>
+                        <p class="text-white text-center fs-4">(200 $BIG)</p>
+                        <p class="text-white text-center">Airdrop will ends on <span id="timeEnd">Tue Nov 16 2021</span>.</p>
+                        <div class="airdrop__count-down d-flex justify-content-center space-x-8 py-3 mt-4" id="countdown-time" data-date="12/15/2021 00:00:00">
+                            <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                <div class="airdrop__count-down-item--number lh-1 text-center">
+                                    <span id="days" class="fs-1 fw-bold text-white">16d</span>
+                                </div>
+                            </div>
+                            <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                <div class="airdrop__count-down-item--number lh-1 text-center">
+                                    <span id="hours" class="fs-1 fw-bold text-white">00h</span>
+                                </div>
+                            </div>
+                            <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                <div class="airdrop__count-down-item--number lh-1 text-center">
+                                    <span id="minutes" class="fs-1 fw-bold text-white">54m</span>
+                                </div>
+                            </div>
+                            <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                <div class="airdrop__count-down-item--number lh-1 text-center">
+                                    <span id="seconds" class="fs-1 fw-bold text-white">56s</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="javascript:void(0)" id="airbtn" onclick="getAirdrop()" class="btn btn-info intro__button py-2 px-5 fs-6 mt-3 fw-bold text-uppercase">Claim
+                                Airdrop</a>
+                            <p class="text-white mt-3">(Please Connect to Binance Smart Chain first.)</p>
+                            <p class="text-white mt-3">The $BIG token will appear on the Pancakeswap exchanges on November 16, 2021.</p>
+                            <p class="text-white mt-3">LISTING PRICE: 1 $BIG = 0.3USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="airdrop__wrap py-5 px-4 text-center card__bg">
+                        <img src="./css/rocket.svg" class="img-fluid" style="max-height: 60px;" alt="">
+                        <h1 class="text-center text-white fw-bold mt-3">Buy $BIG <br> Token</h1>
+                        <p class="text-white mt-4 text-center">Min buy 0.01 BNB (2000 $BIG)</p>
+                        <p class="text-white mt-4 text-center">Max buy 10 BNB (2,000,000 $BIG)</p>
+                        <input id="buyinput" type="text" class="form-control airdrop__input mt-4" required="required" placeholder="0.05" style="text-align: center; color: #7F5D54" value="0.05">
+                        <div class="text-center">
+                            <a href="javascript:void(0)" id="airbtn" onclick="buystt()" class="btn btn-info intro__button py-2 px-5 fs-6 mt-4 fw-bold text-uppercase">Buy</a>
+                            <p class="text-white mt-3">(Please Connect to Binance Smart Chain first.)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="invite_by mt-5">
+                <h2 class="text-white fw-bold text-center">Invite By</h2>
+                <p class="text-white text-center">Invited by wallet address is Required</p>
+
+                <p class="mt-5 text-white text-center fs-4">⚠️ Attention: Use Gas 100,000</p>
+                <p class="mt-5 text-white text-center fs-5">Refer and Get 100% of all Claim and 100% of all Buy !</p>
+                <p class="text-white text-center">Claim Airdrop, then paste your wallet address below</p>
+                <input id="refaddress" type="text" class="form-control airdrop__input mt-4" required="required" placeholder="Your BEP20 Address" style="text-align: center; color: red">
+                <div class="text-center">
+                    <a href="javascript:void(0)" onclick="getreflink()" class="btn btn-info intro__button py-2 px-5 fs-6 mt-4 fw-bold text-uppercase">Get Refer Link</a>
+                    <input id="airinput" type="text" class="form-control" value="" required="required" placeholder="Referrer Id" hidden="">
+                </div>
+                <div class="text-center mt-5">
+                    <p class="text-white mb-0">Token Name - <strong>Bigether</strong></p>
+                    <p class="text-white mb-0">Token Symbol - <strong>$BIG</strong></p>
+                    <p class="text-white mb-0">Token Decimal - <strong>8</strong></p>
+                    <p class="text-white mb-0">Contract Address -
+                        <strong>0x7ed5b430505f086e9290</strong></p>
+                    <a href="javascript:void(0)" id="airbtn" onclick="addToWallet()" class="btn btn-info intro__button py-2 px-5 fs-6 mt-4 fw-bold">
+                        Add To METAMASK
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./css/jquery.min.js"></script>
+    <script src="./css/main.js"></script>
+
+</body>
+
+</html>
