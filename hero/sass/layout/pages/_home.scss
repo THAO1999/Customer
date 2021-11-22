@@ -85,6 +85,9 @@ section {
     .gameplay-wrap {
         position: relative;
         width: 100%;
+        .play__img {
+            width: 100vw;
+        }
         p {
             width: 680px;
             position: absolute;
@@ -140,6 +143,9 @@ section {
             padding: 0;
             line-height: 0.7em;
             font-family: "game-font" !important;
+            @include desk-low {
+                margin-top: 10px;
+            }
         }
         h5 {
             font-size: 27px;
@@ -156,6 +162,9 @@ section {
         bottom: 128px;
         right: -300px;
         width: 200px;
+        @include desk-low {
+            right: 40px;
+        }
     }
     .relative {
         position: relative;
@@ -163,6 +172,9 @@ section {
             pointer-events: none;
             width: 164%;
             margin-top: -170px;
+            @include desk-low {
+                width: 90%;
+            }
         }
     }
     .undfine-slide {

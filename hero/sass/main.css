@@ -650,6 +650,10 @@ section {
   width: 100%;
 }
 
+.section-third .gameplay-wrap .play__img {
+  width: 100vw;
+}
+
 .section-third .gameplay-wrap p {
   width: 680px;
   position: absolute;
@@ -716,6 +720,12 @@ section {
   font-family: "game-font" !important;
 }
 
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-five .text-wrap h3 {
+    margin-top: 10px;
+  }
+}
+
 .section-five .text-wrap h5 {
   font-size: 27px;
   color: #00b7ff;
@@ -734,6 +744,12 @@ section {
   width: 200px;
 }
 
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-five .img-wrap {
+    right: 40px;
+  }
+}
+
 .section-five .relative {
   position: relative;
 }
@@ -742,6 +758,12 @@ section {
   pointer-events: none;
   width: 164%;
   margin-top: -170px;
+}
+
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-five .relative .video-five {
+    width: 90%;
+  }
 }
 
 .section-five .undfine-slide {
