@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/vendor/boostrap-5.min.css">
     <link rel="stylesheet" href="./sass/main.css">
     <!-- font -->
@@ -99,7 +100,7 @@
 
 
                         </div>
-                        <div class="social">
+                        <div class="social" id="social">
                             <img src="./assets/images/ic_facebook.png" alt="">
                             <img src="./assets/images/ic_twitter.png" alt="">
                             <img src="./assets/images/ic_telegram.png" alt="">
@@ -113,7 +114,7 @@
                     </section>
                     <section class="section-third" id="game">
                         <img src="./assets/images/txt_GamePlay.png" class="gameplay__img" alt="">
-                        <div class="slide-one">
+                        <div class="slide-one" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <div class="gameplay-wrap">
                                 <img src="./assets/images/gamePlay1.png" alt="">
                                 <img src="./assets/images/txt_Challenge.png" class="txt__img" alt="">
@@ -151,10 +152,9 @@
                     </section>
                     <section class="section-five" id="nft">
 
-                        <img src="./assets/images/txt_NFTS.png" class="txt__nfts" alt="">
+                        <img src="./assets/images/txt_NFTS.png" class="txt__nfts" alt="" data-aos="fade-down" data-aos-duration="1000">
                         <div class="row text-wrap">
-                            <div class="col-3 offset-3">
-
+                            <div class="col-3 offset-3" data-aos="zoom-in-right" data-aos-duration="1000">
                                 <h3>
                                     LUCIA
                                 </h3>
@@ -164,7 +164,7 @@
                                 <p>Lucia, Lucian, or Lucy, nobody knows her exact name. She doesn't remember where she comes from, but deep inside her, there is huge energy waiting to explode.</p>
 
                             </div>
-                            <div class="col-3 relative">
+                            <div class="col-3 relative" data-aos="zoom-in-left" data-aos-duration="1000">
                                 <video autoplay="" loop="" muted="" preload="auto" playsinline="" class="video-five" style="">
                                         <source src="./assets/images/Lucia.webm" type="video/mp4">
                                    </video>
@@ -177,12 +177,12 @@
                         <div class="row pt-3 pb-5">
                             <div class="col-7 offset-3">
                                 <div class="undfine-slide">
-                                    <img src="./assets/images/Untitled1.png" alt="">
-                                    <img src="./assets/images/Untitled2.png" alt="">
-                                    <img src="./assets/images/Untitled3.png" alt="">
-                                    <img src="./assets/images/Untitled4.png" alt="">
-                                    <img src="./assets/images/Untitled5.png" alt="">
-                                    <img src="./assets/images/Untitled6.png" alt="">
+                                    <img src="./assets/images/Untitled1.png" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="550" alt="">
+                                    <img src="./assets/images/Untitled2.png" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="1550" alt="">
+                                    <img src="./assets/images/Untitled3.png" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="2050" alt="">
+                                    <img src="./assets/images/Untitled4.png" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="2550" alt="">
+                                    <img src="./assets/images/Untitled5.png" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="3000" alt="">
+                                    <img src="./assets/images/Untitled6.png" data-aos="fade-right" data-aos-easing="ease-in-sine" alt="">
                                 </div>
                             </div>
                         </div>
@@ -192,60 +192,60 @@
                         <img src="./assets/images/txt_HTD.png" class="txt_htd" alt="">
                         <p class="text">The main token of Heroes TD. Tradable on DEX or earned through Play-to-Earn ingame activities. Used for summoning new NFT Heroes.</p>
                         <div class="nft-wrap">
-                            <video autoplay="" loop="" muted="" preload="auto" playsinline="" class="video_htd" style="pointer-events: none;">
+                            <video data-aos="zoom-in-up" data-aos-duration="1000" autoplay="" loop="" muted="" preload="auto" playsinline="" class="video_htd" style="pointer-events: none;">
                                 <source src="./assets/images/website-HTD.webm" type="video/mp4">
                            </video>
-                            <img src="./assets/images/ic_htd_char1.png" class="htd1__img" alt="">
-                            <img src="./assets/images/ic_htd_char_2.png" class="htd2__img" alt="">
+                            <img src="./assets/images/ic_htd_char1.png" data-aos-duration="1000" data-aos="zoom-in-right" class="htd1__img" alt="" data-aos-delay="1050">
+                            <img src="./assets/images/ic_htd_char_2.png" data-aos-duration="1000" data-aos="zoom-in-left" class="htd2__img" alt="" data-aos-delay="1050">
                         </div>
                     </section>
                     <section class="section-seven" id="cgc">
                         <img src="./assets/images/txt_CGC.png" class="txt_htd" alt="">
                         <p class="text">The second token of the game economy. Offered in most Play-to-Earn ingame activities.</p>
                         <div class="nft-wrap">
-                            <video autoplay="" loop="" muted="" preload="auto" playsinline="" class="video_htd" style="pointer-events: none;">
+                            <video autoplay="" data-aos="zoom-in-up" data-aos-duration="1000" loop="" muted="" preload="auto" playsinline="" class="video_htd" style="pointer-events: none;">
                                 <source src="./assets/images/website-CGC.webm" type="video/mp4">
                            </video>
-                            <img src="./assets/images/ic_cgc_char1.png" class="htd1__img" alt="">
-                            <img src="./assets/images/ic_cgc_char2.png" class="htd2__img" alt="">
+                            <img src="./assets/images/ic_cgc_char1.png" data-aos-duration="1000" data-aos="zoom-in-right" class="htd1__img" alt="" data-aos-delay="1050">
+                            <img src="./assets/images/ic_cgc_char2.png" data-aos-duration="1000" data-aos="zoom-in-left" class="htd2__img" alt="" data-aos-delay="1050">
                         </div>
                     </section>
                     <section class="section-eight " id="team">
-                        <img src="./assets/images/txt_Coreteam.png" class="core__img" alt="">
+                        <img src="./assets/images/txt_Coreteam.png" class="core__img" alt="" data-aos="fade-down" data-aos-duration="1000">
                         <div class="slide-wrap">
-                            <img src="./assets/images/u1.png" alt="">
-                            <img src="./assets/images/u2.png" alt="">
-                            <img src="./assets/images/u3.png" alt="">
-                            <img src="./assets/images/u4.png" alt="">
-                            <img src="./assets/images/u5.png" alt="">
-                            <img src="./assets/images/u6.png" alt="">
+                            <img src="./assets/images/u1.png" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="550" alt="">
+                            <img src="./assets/images/u2.png" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="1050" alt="">
+                            <img src="./assets/images/u3.png" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="1550" alt="">
+                            <img src="./assets/images/u4.png" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="2050" alt="">
+                            <img src="./assets/images/u5.png" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="2550" alt="">
+                            <img src="./assets/images/u6.png" data-aos="fade-right" alt="">
 
 
                         </div>
                     </section>
                     <section class="section-night " id="road">
 
-                        <img src="./assets/images/txt_Roadmap.png" class="core__img" alt="">
+                        <img src="./assets/images/txt_Roadmap.png" class="core__img" data-aos="fade-down" data-aos-duration="1000" alt="">
 
                         <div class="container">
                             <div class="row">
                                 <div class="col-2">
-                                    <img src="./assets/images/q1.png" class="q1" alt="">
+                                    <img src="./assets/images/q1.png" data-aos="fade-up" data-aos-duration="1000" class="q1" alt="">
                                 </div>
                                 <div class="col-2">
-                                    <img src="./assets/images/q2.png" class="q2" alt="">
+                                    <img src="./assets/images/q2.png" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="550" class="q2" alt="">
                                 </div>
                                 <div class="col-2">
-                                    <img src="./assets/images/q3.png" class="q3" alt="">
+                                    <img src="./assets/images/q3.png" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" class="q3" alt="">
                                 </div>
                                 <div class="col-2">
-                                    <img src="./assets/images/q4.png" class="q4" alt="">
+                                    <img src="./assets/images/q4.png" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500" class="q4" alt="">
                                 </div>
                                 <div class="col-2">
-                                    <img src="./assets/images/q5.png" class="q5" alt="">
+                                    <img src="./assets/images/q5.png" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2500" class="q5" alt="">
                                 </div>
                                 <div class="col-2">
-                                    <img src="./assets/images/q6.png" class="q6" alt="">
+                                    <img src="./assets/images/q6.png" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000" class="q6" alt="">
                                 </div>
 
                             </div>
@@ -254,7 +254,7 @@
                     <section class="section-ten " id="partner">
                         <img src="./assets/images/txt_Investor.png" class="core__img" alt="">
                         <div class="container">
-                            <div class="row">
+                            <div class="row" data-aos="fade-down" data-aos-duration="1000">
                                 <div class="col-3">
                                     <img src="./assets/images/1.png" class="inve__img" alt="">
                                     <img src="./assets/images/hover1.png" class="hover__img" alt="">
@@ -441,7 +441,7 @@
                             </div>
 
                         </div>
-                        <div class="row mt-5 text-center  ic_footer">
+                        <div class="row mt-5 text-center  ic_footer" id="ic_footer">
                             <div class="col-3">
                                 <img src="./assets/images/ic_logo.png" alt="">
                             </div>
@@ -512,12 +512,17 @@
             </div>
         </div>
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
+        AOS.init({
+                once: false
+            }
+
+        );
         $('.slide-one').slick({
             dots: true,
             autoplay: true,
@@ -569,6 +574,18 @@
             let parent = $(this).parent().parent();
             parent.find(".active").removeClass("active");
             $(this).addClass("active");
+        })
+        var community = document.getElementById("community");
+        c = community.offsetTop;
+        var social = document.getElementById("social");
+        window.addEventListener("scroll", function() {
+            var x = pageYOffset;
+            // header
+            if (x >= c) {
+                $("#social").css("display", "none");
+            } else {
+                $("#social").css("display", "block");
+            }
         })
     </script>
 </body>

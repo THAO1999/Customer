@@ -92,6 +92,7 @@ $(function() {
 
     $('.slick-track').slick({
         autoplay: true,
+        dots: true,
         slidesToScroll: 1,
     })
     $(".menu-js").click(function() {
