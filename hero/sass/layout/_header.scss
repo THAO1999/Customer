@@ -25,6 +25,9 @@
                 font-size: 20px;
                 font-weight: 500;
                 padding: 10px;
+                @include desk-low {
+                    font-size: 14px;
+                }
                 &:hover {
                     border: 1px solid #f49f0b !important;
                     box-sizing: border-box;

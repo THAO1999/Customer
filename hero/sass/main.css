@@ -516,6 +516,12 @@ body {
   padding: 10px;
 }
 
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .header ul li a {
+    font-size: 14px;
+  }
+}
+
 .header ul li a:hover {
   border: 1px solid #f49f0b !important;
   -webkit-box-sizing: border-box;
