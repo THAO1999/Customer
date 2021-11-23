@@ -695,11 +695,23 @@ section {
   padding-top: 115px;
 }
 
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-five {
+    padding-top: 90px;
+  }
+}
+
 .section-five .txt__nfts {
   width: 414px;
   margin: auto;
   display: block;
   padding-bottom: 20px;
+}
+
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-five .unit__img {
+    height: 200px;
+  }
 }
 
 .section-five .text-wrap {
@@ -709,6 +721,12 @@ section {
   height: 500px;
   padding-top: 20px;
   padding-bottom: 10px;
+}
+
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-five .text-wrap {
+    height: 350px;
+  }
 }
 
 .section-five .text-wrap h3 {
@@ -723,6 +741,7 @@ section {
 @media (min-width: 1336px) and (max-width: 1919px) {
   .section-five .text-wrap h3 {
     margin-top: 10px;
+    font-size: 130px;
   }
 }
 
@@ -731,10 +750,22 @@ section {
   color: #00b7ff;
 }
 
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-five .text-wrap h5 {
+    font-size: 25px;
+  }
+}
+
 .section-five .text-wrap p {
   width: 80%;
   font-size: 20px;
   color: #fff;
+}
+
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-five .text-wrap p {
+    font-size: 18px;
+  }
 }
 
 .section-five .img-wrap {
@@ -778,21 +809,35 @@ section {
 .section-five .slick-next:before {
   content: "";
   position: absolute;
-  top: -190px;
-  right: -1028px;
+  top: -200px;
+  right: -1050px;
   background: url("../assets/images/ic_btnRight.png");
   width: 100px;
   height: 100px;
 }
 
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-five .slick-next:before {
+    top: -150px;
+    right: -760px;
+  }
+}
+
 .section-five .slick-prev:before {
   content: "";
   position: absolute;
-  top: 129px;
-  right: -10px;
+  top: 120px;
+  right: 2px;
   background: url("../assets/images/ic_btnLeft.png");
   width: 100px;
   height: 100px;
+}
+
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-five .slick-prev:before {
+    top: 70px;
+    right: -10px;
+  }
 }
 
 .section-six,
@@ -844,6 +889,17 @@ section {
   height: 655px;
 }
 
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-six .nft-wrap,
+  .section-seven .nft-wrap,
+  .section-eight .nft-wrap,
+  .section-night .nft-wrap,
+  .section-ten .nft-wrap,
+  .section-ele .nft-wrap {
+    height: 455px;
+  }
+}
+
 .section-six .nft-wrap .video_htd,
 .section-seven .nft-wrap .video_htd,
 .section-eight .nft-wrap .video_htd,
@@ -873,7 +929,9 @@ section {
 .section-ten .nft-wrap .htd1__img,
 .section-ele .nft-wrap .htd1__img {
   left: 10px;
-  bottom: -10px;
+  bottom: -40px;
+  height: 200px;
+  width: 200px;
 }
 
 .section-six .nft-wrap .htd2__img,
@@ -883,7 +941,15 @@ section {
 .section-ten .nft-wrap .htd2__img,
 .section-ele .nft-wrap .htd2__img {
   right: 10px;
-  bottom: -10px;
+  bottom: -40px;
+  height: 200px;
+  width: 200px;
+}
+
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .video_nft {
+    width: 30%;
+  }
 }
 
 .section-seven .nft-wrap {
@@ -892,6 +958,12 @@ section {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 655px;
+}
+
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-seven .nft-wrap {
+    height: 455px;
+  }
 }
 
 .section-eight {
@@ -905,6 +977,12 @@ section {
   border-radius: 56px;
   padding: 50px 76px 75px;
   height: 75%;
+}
+
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-eight .u__img {
+    height: 340px;
+  }
 }
 
 .section-eight .slick-next,
@@ -951,24 +1029,61 @@ section {
   margin-top: 33px;
 }
 
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-night .container .q1 {
+    margin-top: -55px;
+  }
+}
+
 .section-night .container .q4 {
   margin-top: -57px;
+}
+
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-night .container .q4 {
+    margin-top: -124px;
+  }
 }
 
 .section-night .container .q2 {
   margin-top: 16px;
 }
 
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-night .container .q2 {
+    margin-top: -70px;
+  }
+}
+
 .section-night .container .q3 {
   margin-top: -8px;
+}
+
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-night .container .q3 {
+    margin-top: -90px;
+  }
 }
 
 .section-night .container .q5 {
   margin-top: -122px;
 }
 
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-night .container .q5 {
+    margin-top: -180px;
+  }
+}
+
 .section-night .container .q6 {
   margin-top: -206px;
+}
+
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-night .container .q6 {
+    margin-left: 56px;
+    margin-top: -230px;
+  }
 }
 
 .section-ten {
@@ -983,6 +1098,13 @@ section {
 .section-ten .inve__img,
 .section-ten .hover__img {
   cursor: pointer;
+}
+
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-ten .inve__img,
+  .section-ten .hover__img {
+    width: 220px;
+  }
 }
 
 .section-ele {
@@ -1001,12 +1123,25 @@ section {
   width: 150px;
 }
 
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-ele .bi-wrap img {
+    width: 137px;
+  }
+}
+
 .section-ele p,
 .section-ele h3 {
   color: #fff;
   margin-bottom: 40px;
   font-weight: 500;
   font-size: 20px;
+}
+
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-ele p,
+  .section-ele h3 {
+    font-size: 16px;
+  }
 }
 
 .section-ele p:hover {
@@ -1025,6 +1160,12 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 1336px) and (max-width: 1919px) {
+  .section-ele .ic_footer {
+    padding-top: 20px;
+  }
 }
 
 section {

@@ -123,11 +123,19 @@ section {
 
 .section-five {
     padding-top: 115px;
+    @include desk-low {
+        padding-top: 90px;
+    }
     .txt__nfts {
         width: 414px;
         margin: auto;
         display: block;
         padding-bottom: 20px;
+    }
+    @include desk-low {
+        .unit__img {
+            height: 200px;
+        }
     }
     .text-wrap {
         background: url("../assets/images/bg_nfts.png");
@@ -136,6 +144,9 @@ section {
         height: 500px;
         padding-top: 20px;
         padding-bottom: 10px;
+        @include desk-low {
+            height: 350px;
+        }
         h3 {
             margin-top: 50px;
             font-size: 150px;
@@ -145,16 +156,23 @@ section {
             font-family: "game-font" !important;
             @include desk-low {
                 margin-top: 10px;
+                font-size: 130px;
             }
         }
         h5 {
             font-size: 27px;
             color: #00b7ff;
+            @include desk-low {
+                font-size: 25px;
+            }
         }
         p {
             width: 80%;
             font-size: 20px;
             color: #fff;
+            @include desk-low {
+                font-size: 18px;
+            }
         }
     }
     .img-wrap {
@@ -187,20 +205,28 @@ section {
     .slick-next:before {
         content: "";
         position: absolute;
-        top: -190px;
-        right: -1028px;
+        top: -200px;
+        right: -1050px;
         background: url("../assets/images/ic_btnRight.png");
         width: 100px;
         height: 100px;
+        @include desk-low {
+            top: -150px;
+            right: -760px;
+        }
     }
     .slick-prev:before {
         content: "";
         position: absolute;
-        top: 129px;
-        right: -10px;
+        top: 120px;
+        right: 2px;
         background: url("../assets/images/ic_btnLeft.png");
         width: 100px;
         height: 100px;
+        @include desk-low {
+            top: 70px;
+            right: -10px;
+        }
     }
 }
 
@@ -235,6 +261,9 @@ section {
         background-repeat: no-repeat;
         background-size: 100%;
         height: 655px;
+        @include desk-low {
+            height: 455px;
+        }
         .video_htd {
             display: flex;
             margin: auto;
@@ -245,12 +274,22 @@ section {
         }
         .htd1__img {
             left: 10px;
-            bottom: -10px;
+            bottom: -40px;
+            height: 200px;
+            width: 200px;
         }
         .htd2__img {
             right: 10px;
-            bottom: -10px;
+            bottom: -40px;
+            height: 200px;
+            width: 200px;
         }
+    }
+}
+
+.video_nft {
+    @include desk-low {
+        width: 30%;
     }
 }
 
@@ -261,6 +300,9 @@ section {
         background-repeat: no-repeat;
         background-size: 100%;
         height: 655px;
+        @include desk-low {
+            height: 455px;
+        }
     }
 }
 
@@ -273,6 +315,11 @@ section {
         border-radius: 56px;
         padding: 50px 76px 75px;
         height: 75%;
+    }
+    .u__img {
+        @include desk-low {
+            height: 340px;
+        }
     }
     .slick-next,
     .slick-prev {
@@ -310,21 +357,40 @@ section {
         margin-top: 300px;
         .q1 {
             margin-top: 33px;
+            @include desk-low {
+                margin-top: -55px;
+            }
         }
         .q4 {
             margin-top: -57px;
+            @include desk-low {
+                margin-top: -124px;
+            }
         }
         .q2 {
             margin-top: 16px;
+            @include desk-low {
+                margin-top: -70px;
+            }
         }
         .q3 {
             margin-top: -8px;
+            @include desk-low {
+                margin-top: -90px;
+            }
         }
         .q5 {
             margin-top: -122px;
+            @include desk-low {
+                margin-top: -180px;
+            }
         }
         .q6 {
             margin-top: -206px;
+            @include desk-low {
+                margin-left: 56px;
+                margin-top: -230px;
+            }
         }
     }
 }
@@ -338,6 +404,9 @@ section {
     .inve__img,
     .hover__img {
         cursor: pointer;
+        @include desk-low {
+            width: 220px;
+        }
     }
     // .inve__img:hover {
     //     display: none;
@@ -359,12 +428,22 @@ section {
             width: 150px;
         }
     }
+    .bi-wrap {
+        img {
+            @include desk-low {
+                width: 137px;
+            }
+        }
+    }
     p,
     h3 {
         color: #fff;
         margin-bottom: 40px;
         font-weight: 500;
         font-size: 20px;
+        @include desk-low {
+            font-size: 16px;
+        }
     }
     p:hover {
         cursor: pointer;
@@ -378,6 +457,9 @@ section {
         background-color: #260704;
         padding-bottom: 140px;
         align-items: center;
+        @include desk-low {
+            padding-top: 20px;
+        }
     }
 }
 
