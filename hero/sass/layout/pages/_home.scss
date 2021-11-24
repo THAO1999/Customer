@@ -41,6 +41,27 @@ section {
                 font-weight: 500;
             }
         }
+        .wallet-item {
+            width: 90vw;
+            margin: auto;
+            margin-top: 20px;
+            justify-content: center;
+            .t1 {
+                background-color: #000;
+                width: 90px;
+                padding: 8px;
+            }
+            .t2 {
+                padding: 8px;
+                background-color: #000;
+                width: 308px;
+            }
+            p {
+                border: 1px solid #fff;
+                font-size: 9px;
+                color: #fff;
+            }
+        }
         .comming-wrap {
             text-align: center;
             img {
@@ -122,7 +143,7 @@ section {
                 width: 90px;
             }
             .t2 {
-                width: 267px;
+                width: 308px;
             }
             p {
                 border: 1px solid #fff;
@@ -237,6 +258,7 @@ section {
         padding-top: 90px;
     }
     @include mobile {
+        padding: 10px;
         padding-top: 60px;
     }
     .txt__nfts {
@@ -298,7 +320,6 @@ section {
             color: #00b7ff;
             @include desk-low {
                 font-size: 25px;
-                margin-left: 100px;
             }
             @include mobile {
                 font-size: 16px;
@@ -381,6 +402,29 @@ section {
     @include tablet {
         padding-top: 0px;
     }
+    @include mobile {
+        padding-top: 0px;
+    }
+}
+
+.section-six,
+.section-seven {
+    @include mobile {
+        padding-top: 57px;
+        height: 1455px;
+    }
+}
+
+.section-ele {
+    @include mobile {
+        height: unset;
+    }
+}
+
+.section-four {
+    @include mobile {
+        height: 1220px !important;
+    }
 }
 
 .section-six,
@@ -395,6 +439,9 @@ section {
         margin: auto;
         display: block;
         padding-bottom: 20px;
+        @include mobile {
+            width: 100% !important;
+        }
     }
     .text {
         color: #fff;
@@ -409,6 +456,16 @@ section {
         height: 655px;
         @include desk-low {
             height: 455px;
+        }
+        @include mobile {
+            background: unset;
+            height: 1655px;
+        }
+        .htd-img,
+        .pvp-img,
+        .pvp2-img {
+            position: unset !important;
+            width: 100%;
         }
         .video_htd {
             display: flex;
@@ -463,6 +520,9 @@ section {
     @include tablet {
         padding: 0px 100px;
     }
+    @include mobile {
+        padding: 100px 0px;
+    }
     .slide-wrap {
         width: 100%;
         margin: 50px auto auto;
@@ -470,11 +530,18 @@ section {
         border-radius: 56px;
         padding: 50px 76px 75px;
         height: 90%;
+        @include mobile {
+            height: 80%;
+        }
     }
     img {
         border-radius: 56px;
         max-width: 280px;
         margin: 0px;
+        @include mobile {
+            width: 210px;
+            margin: auto;
+        }
     }
     h1 {
         text-align: center;
@@ -536,17 +603,41 @@ section {
     background: url("../assets/images/back4.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    @include mobile {
+        background: unset;
+        height: 1330px;
+        background: #320b03;
+    }
     .core__img {
         width: 500px;
     }
+    .col-2.col-12 {
+        margin-bottom: 10px;
+    }
     .container {
+        @include mobile {
+            height: 1300px;
+            margin-top: 10px;
+        }
         margin-top: 300px;
+        .q6 {
+            img {
+                @include mobile {
+                    width: 128px;
+                    height: 128px;
+                }
+            }
+        }
         .q1,
         .q2,
         .q3,
         .q4,
         .q5,
         .q6 {
+            @include mobile {
+                margin: 0px !important;
+                margin-bottom: 100px;
+            }
             h1 {
                 color: #f29d0b;
                 font-size: 16px;
@@ -610,6 +701,10 @@ section {
 .section-ten {
     padding-top: 110px;
     padding-bottom: 20px;
+    @include mobile {
+        padding-top: 10px;
+        height: 650px;
+    }
     .hover__img {
         display: none;
     }
@@ -618,6 +713,9 @@ section {
         cursor: pointer;
         @include desk-low {
             width: 220px;
+        }
+        @include mobile {
+            width: 130px;
         }
     }
     // .inve__img:hover {
@@ -631,6 +729,9 @@ section {
 .section-ele {
     background-color: #320b03;
     padding-top: 60px;
+    @include mobile {
+        padding-top: 0px;
+    }
     .wrap {
         background-color: #360b07;
         margin: auto;
@@ -639,11 +740,18 @@ section {
         .lg__img {
             width: 150px;
         }
+        @include mobile {
+            width: 100%;
+        }
     }
     .bi-wrap {
         img {
             @include desk-low {
                 width: 137px;
+            }
+            @include mobile {
+                width: 150px;
+                margin-bottom: 20px;
             }
         }
     }
@@ -694,5 +802,27 @@ section {
     }
     @include mobile {
         height: 1505px;
+    }
+}
+
+.wallet-item {
+    width: 90vw;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+    .t1 {
+        background-color: #000;
+        width: 90px;
+        padding: 8px;
+    }
+    .t2 {
+        padding: 8px;
+        background-color: #000;
+        width: 308px;
+    }
+    p {
+        border: 1px solid #fff;
+        font-size: 9px;
+        color: #fff;
     }
 }

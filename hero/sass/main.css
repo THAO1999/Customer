@@ -697,6 +697,33 @@ section {
   font-weight: 500;
 }
 
+.section-one .hero-one .wallet-item {
+  width: 90vw;
+  margin: auto;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-one .hero-one .wallet-item .t1 {
+  background-color: #000;
+  width: 90px;
+  padding: 8px;
+}
+
+.section-one .hero-one .wallet-item .t2 {
+  padding: 8px;
+  background-color: #000;
+  width: 308px;
+}
+
+.section-one .hero-one .wallet-item p {
+  border: 1px solid #fff;
+  font-size: 9px;
+  color: #fff;
+}
+
 .section-one .hero-one .comming-wrap {
   text-align: center;
 }
@@ -793,7 +820,7 @@ section {
 }
 
 .section-one .part-one-mobile .wallet-item .t2 {
-  width: 267px;
+  width: 308px;
 }
 
 .section-one .part-one-mobile .wallet-item p {
@@ -936,6 +963,7 @@ section {
 
 @media (max-width: 566px) {
   .section-five {
+    padding: 10px;
     padding-top: 60px;
   }
 }
@@ -1026,7 +1054,6 @@ section {
 @media (min-width: 1336px) and (max-width: 1919px) {
   .section-five .text-wrap h5 {
     font-size: 25px;
-    margin-left: 100px;
   }
 }
 
@@ -1138,6 +1165,35 @@ section {
   }
 }
 
+@media (max-width: 566px) {
+  .section-six,
+  .section-seven,
+  .section-night,
+  .section-ten {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 566px) {
+  .section-six,
+  .section-seven {
+    padding-top: 57px;
+    height: 1455px;
+  }
+}
+
+@media (max-width: 566px) {
+  .section-ele {
+    height: unset;
+  }
+}
+
+@media (max-width: 566px) {
+  .section-four {
+    height: 1220px !important;
+  }
+}
+
 .section-six .txt_htd,
 .section-six .core__img,
 .section-seven .txt_htd,
@@ -1154,6 +1210,23 @@ section {
   margin: auto;
   display: block;
   padding-bottom: 20px;
+}
+
+@media (max-width: 566px) {
+  .section-six .txt_htd,
+  .section-six .core__img,
+  .section-seven .txt_htd,
+  .section-seven .core__img,
+  .section-eight .txt_htd,
+  .section-eight .core__img,
+  .section-night .txt_htd,
+  .section-night .core__img,
+  .section-ten .txt_htd,
+  .section-ten .core__img,
+  .section-ele .txt_htd,
+  .section-ele .core__img {
+    width: 100% !important;
+  }
 }
 
 .section-six .text,
@@ -1189,6 +1262,40 @@ section {
   .section-ele .nft-wrap {
     height: 455px;
   }
+}
+
+@media (max-width: 566px) {
+  .section-six .nft-wrap,
+  .section-seven .nft-wrap,
+  .section-eight .nft-wrap,
+  .section-night .nft-wrap,
+  .section-ten .nft-wrap,
+  .section-ele .nft-wrap {
+    background: unset;
+    height: 1655px;
+  }
+}
+
+.section-six .nft-wrap .htd-img,
+.section-six .nft-wrap .pvp-img,
+.section-six .nft-wrap .pvp2-img,
+.section-seven .nft-wrap .htd-img,
+.section-seven .nft-wrap .pvp-img,
+.section-seven .nft-wrap .pvp2-img,
+.section-eight .nft-wrap .htd-img,
+.section-eight .nft-wrap .pvp-img,
+.section-eight .nft-wrap .pvp2-img,
+.section-night .nft-wrap .htd-img,
+.section-night .nft-wrap .pvp-img,
+.section-night .nft-wrap .pvp2-img,
+.section-ten .nft-wrap .htd-img,
+.section-ten .nft-wrap .pvp-img,
+.section-ten .nft-wrap .pvp2-img,
+.section-ele .nft-wrap .htd-img,
+.section-ele .nft-wrap .pvp-img,
+.section-ele .nft-wrap .pvp2-img {
+  position: unset !important;
+  width: 100%;
 }
 
 .section-six .nft-wrap .video_htd,
@@ -1289,6 +1396,12 @@ section {
   }
 }
 
+@media (max-width: 566px) {
+  .section-eight {
+    padding: 100px 0px;
+  }
+}
+
 .section-eight .slide-wrap {
   width: 100%;
   margin: 50px auto auto;
@@ -1298,10 +1411,23 @@ section {
   height: 90%;
 }
 
+@media (max-width: 566px) {
+  .section-eight .slide-wrap {
+    height: 80%;
+  }
+}
+
 .section-eight img {
   border-radius: 56px;
   max-width: 280px;
   margin: 0px;
+}
+
+@media (max-width: 566px) {
+  .section-eight img {
+    width: 210px;
+    margin: auto;
+  }
 }
 
 .section-eight h1 {
@@ -1368,12 +1494,50 @@ section {
   background-size: 100% 100%;
 }
 
+@media (max-width: 566px) {
+  .section-night {
+    background: unset;
+    height: 1330px;
+    background: #320b03;
+  }
+}
+
 .section-night .core__img {
   width: 500px;
 }
 
+.section-night .col-2.col-12 {
+  margin-bottom: 10px;
+}
+
 .section-night .container {
   margin-top: 300px;
+}
+
+@media (max-width: 566px) {
+  .section-night .container {
+    height: 1300px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 566px) {
+  .section-night .container .q6 img {
+    width: 128px;
+    height: 128px;
+  }
+}
+
+@media (max-width: 566px) {
+  .section-night .container .q1,
+  .section-night .container .q2,
+  .section-night .container .q3,
+  .section-night .container .q4,
+  .section-night .container .q5,
+  .section-night .container .q6 {
+    margin: 0px !important;
+    margin-bottom: 100px;
+  }
 }
 
 .section-night .container .q1 h1,
@@ -1491,6 +1655,13 @@ section {
   padding-bottom: 20px;
 }
 
+@media (max-width: 566px) {
+  .section-ten {
+    padding-top: 10px;
+    height: 650px;
+  }
+}
+
 .section-ten .hover__img {
   display: none;
 }
@@ -1507,9 +1678,22 @@ section {
   }
 }
 
+@media (max-width: 566px) {
+  .section-ten .inve__img,
+  .section-ten .hover__img {
+    width: 130px;
+  }
+}
+
 .section-ele {
   background-color: #320b03;
   padding-top: 60px;
+}
+
+@media (max-width: 566px) {
+  .section-ele {
+    padding-top: 0px;
+  }
 }
 
 .section-ele .wrap {
@@ -1523,9 +1707,22 @@ section {
   width: 150px;
 }
 
+@media (max-width: 566px) {
+  .section-ele .wrap {
+    width: 100%;
+  }
+}
+
 @media (min-width: 1336px) and (max-width: 1919px) {
   .section-ele .bi-wrap img {
     width: 137px;
+  }
+}
+
+@media (max-width: 566px) {
+  .section-ele .bi-wrap img {
+    width: 150px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1600,6 +1797,33 @@ section {
   .form-count {
     height: 1505px;
   }
+}
+
+.wallet-item {
+  width: 90vw;
+  margin: auto;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wallet-item .t1 {
+  background-color: #000;
+  width: 90px;
+  padding: 8px;
+}
+
+.wallet-item .t2 {
+  padding: 8px;
+  background-color: #000;
+  width: 308px;
+}
+
+.wallet-item p {
+  border: 1px solid #fff;
+  font-size: 9px;
+  color: #fff;
 }
 
 .btn {
