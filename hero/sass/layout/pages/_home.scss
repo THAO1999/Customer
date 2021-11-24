@@ -203,6 +203,7 @@ section {
     background-color: #320b03;
     @include mobile {
         padding-top: 0px;
+        height: 56vh;
     }
     @include tablet {
         padding-top: 30px;
@@ -236,6 +237,34 @@ section {
             bottom: 100px;
             transform: translateX(-50%);
         }
+    }
+    .slick-next {
+        right: 150px !important;
+        top: 540px;
+        z-index: 1;
+    }
+    .slick-prev {
+        left: 15px !important;
+        top: 540px;
+        z-index: 1;
+    }
+    .slick-next:before {
+        content: "";
+        position: absolute;
+        // top: -540px;
+        // right: -1585px;
+        background: url("../assets/images/ic_btnRight.png");
+        width: 100px;
+        height: 100px;
+    }
+    .slick-prev:before {
+        content: "";
+        position: absolute;
+        // top: -40px;
+        // right: -24px;
+        background: url("../assets/images/ic_btnLeft.png");
+        width: 100px;
+        height: 100px;
     }
     .slick-dots li {
         width: 100px;
@@ -342,7 +371,8 @@ section {
         right: -300px;
         width: 200px;
         @include desk-low {
-            right: 0px;
+            right: -268px;
+            bottom: 96px;
         }
     }
     .relative {
@@ -352,7 +382,7 @@ section {
             width: 164%;
             margin-top: -170px;
             @include desk-low {
-                width: 90%;
+                width: 160%;
             }
             @include tablet {
                 width: 130%;
@@ -662,13 +692,13 @@ section {
         .q1 {
             margin-top: 17%;
             @include desk-low {
-                margin-top: -35%;
+                margin-top: -9%;
             }
         }
         .q2 {
             margin-top: 6%;
             @include desk-low {
-                margin-top: -21%;
+                margin-top: -8%;
             }
         }
         .q3 {
@@ -824,5 +854,11 @@ section {
         border: 1px solid #fff;
         font-size: 9px;
         color: #fff;
+    }
+}
+
+.section-second {
+    @include mobile {
+        height: unset !important;
     }
 }
