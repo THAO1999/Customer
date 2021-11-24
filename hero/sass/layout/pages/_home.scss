@@ -6,6 +6,9 @@ section {
 .section-one {
     position: relative;
     width: 100%;
+    @include mobile {
+        height: 110vh;
+    }
     .cta__img {
         position: absolute;
         top: 80px;
@@ -202,8 +205,8 @@ section {
     width: 100%;
     background-color: #320b03;
     @include mobile {
-        padding-top: 0px;
-        height: 56vh;
+        padding-top: 20px;
+        height: 59vh;
     }
     @include tablet {
         padding-top: 30px;

@@ -653,6 +653,12 @@ section {
   width: 100%;
 }
 
+@media (max-width: 566px) {
+  .section-one {
+    height: 110vh;
+  }
+}
+
 .section-one .cta__img {
   position: absolute;
   top: 80px;
@@ -887,8 +893,8 @@ section {
 
 @media (max-width: 566px) {
   .section-third {
-    padding-top: 0px;
-    height: 56vh;
+    padding-top: 20px;
+    height: 59vh;
   }
 }
 
