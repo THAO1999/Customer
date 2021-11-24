@@ -1423,7 +1423,7 @@ section {
 }
 
 .section-eight {
-  padding: 100px 100px;
+  padding: 0px 100px;
 }
 
 @media (min-width: 768px) and (max-width: 1336px) {
@@ -1434,13 +1434,12 @@ section {
 
 @media (max-width: 566px) {
   .section-eight {
-    padding: 100px 0px;
+   padding: 100px 0px;
   }
 }
 
 .section-eight .slide-wrap {
   width: 100%;
-  margin: 50px auto auto;
   background-color: #631206;
   border-radius: 56px;
   padding: 50px 76px 75px;
@@ -1819,7 +1818,7 @@ section {
 
 @media (min-width: 1336px) and (max-width: 1919px) {
   .form-count {
-    height: 1000px;
+    height: 885px;
   }
 }
 
@@ -1831,7 +1830,7 @@ section {
 
 @media (max-width: 566px) {
   .form-count {
-    height: 1505px;
+    height: 1200px;
   }
 }
 
