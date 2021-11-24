@@ -1814,7 +1814,7 @@ section {
 
 .form-count {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
 }
 
 @media (min-width: 1336px) and (max-width: 1919px) {
