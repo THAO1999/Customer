@@ -27,17 +27,16 @@ $full: 2800px;
 }
 
 @mixin tablet {
-    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$ipad-pro}) {
         @content;
     }
 }
 
-@mixin ipadPro {
-    @media (min-width: #{$desktop-width}) and (max-width: #{$ipad-pro - 1px}) {
-        @content;
-    }
-}
-
+// @mixin ipadPro {
+//     @media (min-width: #{$desktop-width}) and (max-width: #{$ipad-pro - 1px}) {
+//         @content;
+//     }
+// }
 @mixin desk-low {
     @media (min-width: #{$desk-low})and (max-width: #{$desk-high - 1px}) {
         @content;

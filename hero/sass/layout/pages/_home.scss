@@ -18,6 +18,7 @@ section {
         top: 100px;
         right: 50px;
         img {
+            cursor: pointer;
             width: 139px;
             height: 51px;
             display: block;
@@ -60,6 +61,7 @@ section {
         padding: 10px;
         border-radius: 15px 0 0 15px;
         img {
+            cursor: pointer;
             width: 48px;
             height: 48px;
             display: block;
@@ -69,6 +71,108 @@ section {
             margin-bottom: 0px;
         }
     }
+    // mobile
+    .part-one-mobile {
+        text-align: center;
+        .hero__title-mobile {
+            margin-top: 100px;
+            width: 331px;
+            height: 49px;
+        }
+        .cta__img-mobile {
+            margin-top: 80px;
+            height: 49px;
+            width: 331px;
+        }
+        .hero-text,
+        .join-text {
+            color: #fff;
+            margin: auto;
+            margin-top: 80px;
+            width: 70%;
+        }
+        .join-text {
+            margin-top: 10px;
+        }
+        .comming-wrap {
+            img {
+                width: 90px;
+                height: 27px;
+            }
+            p {
+                color: #fff;
+                font-size: 12px;
+            }
+        }
+        .btn-mobile-wrap {
+            width: 90vw;
+            margin: auto;
+            margin-top: 20px;
+            img {
+                width: 90px;
+                height: 30px;
+                margin-right: 25px;
+            }
+        }
+        .wallet-item {
+            width: 90vw;
+            margin: auto;
+            margin-top: 20px;
+            .t1 {
+                width: 90px;
+            }
+            .t2 {
+                width: 267px;
+            }
+            p {
+                border: 1px solid #fff;
+                font-size: 9px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.trailer1__img {
+    width: 100vw;
+    margin-bottom: 10px;
+}
+
+#carouselExampleDark {
+    margin-top: 100px;
+    height: 400px;
+    .carousel-inner {
+        height: 400px;
+    }
+    .carousel-caption {
+        bottom: -15rem;
+        img {
+            width: 213px;
+            height: 19px;
+        }
+        p {
+            color: #fff;
+        }
+    }
+    .carousel-control-next-icon {
+        margin-left: -40px;
+        width: 91px;
+        height: 101px;
+        background: url(../assets/images/ic_btnRight.png) !important;
+        margin-top: 140px;
+    }
+    .carousel-control-prev-icon {
+        margin-left: -10px;
+        width: 91px;
+        height: 101px;
+        background: url(../assets/images/ic_btnLeft.png) !important;
+        margin-top: 140px;
+    }
+}
+
+.carousel-dark .carousel-control-next-icon,
+.carousel-dark .carousel-control-prev-icon {
+    filter: unset !important;
 }
 
 .section-third {
@@ -76,6 +180,12 @@ section {
     position: relative;
     width: 100%;
     background-color: #320b03;
+    @include mobile {
+        padding-top: 0px;
+    }
+    @include tablet {
+        padding-top: 30px;
+    }
     .gameplay__img {
         position: absolute;
         width: 500px;
@@ -126,6 +236,9 @@ section {
     @include desk-low {
         padding-top: 90px;
     }
+    @include mobile {
+        padding-top: 60px;
+    }
     .txt__nfts {
         width: 414px;
         margin: auto;
@@ -144,6 +257,14 @@ section {
         height: 500px;
         padding-top: 20px;
         padding-bottom: 10px;
+        @include mobile {
+            padding-top: 0px;
+            background: unset;
+            height: 334px;
+        }
+        @include tablet {
+            background-size: 100% 100%;
+        }
         @include desk-low {
             height: 350px;
         }
@@ -156,7 +277,20 @@ section {
             font-family: "game-font" !important;
             @include desk-low {
                 margin-top: 10px;
-                font-size: 130px;
+                font-size: 80px;
+            }
+            @include tablet {
+                font-size: 100px;
+            }
+            @include mobile {
+                font-size: 30px;
+                text-align: center;
+                margin-top: 2px;
+            }
+        }
+        .lucia {
+            @include tablet {
+                padding-left: 50px;
             }
         }
         h5 {
@@ -164,6 +298,12 @@ section {
             color: #00b7ff;
             @include desk-low {
                 font-size: 25px;
+                margin-left: 100px;
+            }
+            @include mobile {
+                font-size: 16px;
+                color: #00b7ff;
+                text-align: center;
             }
         }
         p {
@@ -171,7 +311,7 @@ section {
             font-size: 20px;
             color: #fff;
             @include desk-low {
-                font-size: 18px;
+                font-size: 16px;
             }
         }
     }
@@ -181,7 +321,7 @@ section {
         right: -300px;
         width: 200px;
         @include desk-low {
-            right: 40px;
+            right: 0px;
         }
     }
     .relative {
@@ -193,40 +333,43 @@ section {
             @include desk-low {
                 width: 90%;
             }
+            @include tablet {
+                width: 130%;
+            }
+            @include mobile {
+                width: 100%;
+                margin-top: -70px;
+            }
         }
     }
     .undfine-slide {
         width: 90%;
     }
-    .slick-next,
+    .slick-next {
+        right: 0px !important;
+        top: 40px;
+    }
     .slick-prev {
-        position: relative;
+        left: -90px !important;
+        top: 40px;
     }
     .slick-next:before {
         content: "";
         position: absolute;
-        top: -200px;
-        right: -1050px;
+        // top: -540px;
+        // right: -1585px;
         background: url("../assets/images/ic_btnRight.png");
         width: 100px;
         height: 100px;
-        @include desk-low {
-            top: -150px;
-            right: -760px;
-        }
     }
     .slick-prev:before {
         content: "";
         position: absolute;
-        top: 120px;
-        right: 2px;
+        // top: -40px;
+        // right: -24px;
         background: url("../assets/images/ic_btnLeft.png");
         width: 100px;
         height: 100px;
-        @include desk-low {
-            top: 70px;
-            right: -10px;
-        }
     }
 }
 
@@ -235,6 +378,9 @@ section {
 .section-night,
 .section-ten {
     padding-top: 100px;
+    @include tablet {
+        padding-top: 0px;
+    }
 }
 
 .section-six,
@@ -277,12 +423,18 @@ section {
             bottom: -40px;
             height: 200px;
             width: 200px;
+            @include tablet {
+                bottom: 240px;
+            }
         }
         .htd2__img {
             right: 10px;
             bottom: -40px;
             height: 200px;
             width: 200px;
+            @include tablet {
+                bottom: 240px;
+            }
         }
     }
 }
@@ -308,28 +460,62 @@ section {
 
 .section-eight {
     padding: 100px 100px;
+    @include tablet {
+        padding: 0px 100px;
+    }
     .slide-wrap {
         width: 100%;
         margin: 50px auto auto;
         background-color: #631206;
         border-radius: 56px;
         padding: 50px 76px 75px;
-        height: 75%;
+        height: 90%;
     }
-    .u__img {
-        @include desk-low {
-            height: 340px;
+    img {
+        border-radius: 56px;
+        max-width: 280px;
+        margin: 0px;
+    }
+    h1 {
+        text-align: center;
+        color: #f49f0b;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 34px;
+        span {
+            display: block;
         }
     }
-    .slick-next,
+    .u1,
+    .u2,
+    .u3,
+    .u4,
+    .u5,
+    .u6,
+    .u7 {
+        max-width: 280px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    p {
+        width: 65%;
+        margin: 15px auto auto;
+        color: #fff;
+        text-align: center;
+    }
+    .slick-next {
+        right: 70px !important;
+        top: 230px;
+    }
     .slick-prev {
-        position: relative;
+        left: -10px !important;
+        top: 230px;
     }
     .slick-next:before {
         content: "";
         position: absolute;
-        top: -540px;
-        right: -1585px;
+        // top: -540px;
+        // right: -1585px;
         background: url("../assets/images/ic_btnRight.png");
         width: 100px;
         height: 100px;
@@ -337,8 +523,8 @@ section {
     .slick-prev:before {
         content: "";
         position: absolute;
-        top: -40px;
-        right: -24px;
+        // top: -40px;
+        // right: -24px;
         background: url("../assets/images/ic_btnLeft.png");
         width: 100px;
         height: 100px;
@@ -355,41 +541,67 @@ section {
     }
     .container {
         margin-top: 300px;
-        .q1 {
-            margin-top: 33px;
-            @include desk-low {
-                margin-top: -55px;
+        .q1,
+        .q2,
+        .q3,
+        .q4,
+        .q5,
+        .q6 {
+            h1 {
+                color: #f29d0b;
+                font-size: 16px;
+            }
+            .roadmap__img {
+                width: 41px;
+                height: 128px;
+            }
+            .line__img {
+                width: 150px;
+                height: 36px;
+            }
+            p {
+                text-align: left;
+                color: #fff;
+                font-size: 12px;
+                span {
+                    color: #f29d0b;
+                }
             }
         }
-        .q4 {
-            margin-top: -57px;
+        .q1 {
+            margin-top: 17%;
             @include desk-low {
-                margin-top: -124px;
+                margin-top: -35%;
             }
         }
         .q2 {
-            margin-top: 16px;
+            margin-top: 6%;
             @include desk-low {
-                margin-top: -70px;
+                margin-top: -21%;
             }
         }
         .q3 {
-            margin-top: -8px;
+            margin-top: -6%;
             @include desk-low {
-                margin-top: -90px;
+                margin-top: -19%;
+            }
+        }
+        .q4 {
+            margin-top: -28%;
+            @include desk-low {
+                margin-top: -28%;
             }
         }
         .q5 {
-            margin-top: -122px;
+            margin-top: -60%;
             @include desk-low {
-                margin-top: -180px;
+                margin-top: -49%;
             }
         }
         .q6 {
-            margin-top: -206px;
+            margin-top: -104%;
             @include desk-low {
-                margin-left: 56px;
-                margin-top: -230px;
+                margin-top: -104%;
             }
         }
     }
@@ -466,4 +678,21 @@ section {
 section {
     height: 100vh;
     overflow: hidden;
+    @include tablet {
+        height: unset !important;
+    }
+}
+
+.form-count {
+    width: 100%;
+    height: 100vh;
+    @include desk-low {
+        height: 1000px;
+    }
+    @include tablet {
+        height: 885px;
+    }
+    @include mobile {
+        height: 1505px;
+    }
 }
