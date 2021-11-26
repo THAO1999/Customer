@@ -9,6 +9,9 @@ section {
     @include mobile {
         height: 110vh;
     }
+    @include mobile-small {
+        height: 120vh;
+    }
     .cta__img {
         position: absolute;
         top: 80px;
@@ -207,6 +210,9 @@ section {
     @include mobile {
         padding-top: 20px;
         height: 59vh;
+    }
+    @include mobile-small {
+        height: 67vh;
     }
     @include tablet {
         padding-top: 30px;
@@ -554,7 +560,7 @@ section {
         padding: 0px 100px;
     }
     @include mobile {
-        padding: 100px 0px;
+        padding: 0px 0px;
     }
     .slide-wrap {
         width: 100%;
@@ -695,31 +701,31 @@ section {
         .q1 {
             margin-top: 17%;
             @include desk-low {
-                margin-top: -9%;
+                margin-top: -28%;
             }
         }
         .q2 {
             margin-top: 6%;
             @include desk-low {
-                margin-top: -8%;
+                margin-top: -27%;
             }
         }
         .q3 {
             margin-top: -6%;
             @include desk-low {
-                margin-top: -19%;
+                margin-top: -35%;
             }
         }
         .q4 {
             margin-top: -28%;
             @include desk-low {
-                margin-top: -28%;
+                margin-top: -45%;
             }
         }
         .q5 {
             margin-top: -60%;
             @include desk-low {
-                margin-top: -49%;
+                margin-top: -66%;
             }
         }
         .q6 {
@@ -834,12 +840,12 @@ section {
         height: 885px;
     }
     @include mobile {
-        height: 1505px;
+        height: 1250px;
     }
 }
 
 .wallet-item {
-    width: 90vw;
+    width: 93vw;
     margin: auto;
     margin-top: 20px;
     justify-content: center;
@@ -857,6 +863,9 @@ section {
         border: 1px solid #fff;
         font-size: 9px;
         color: #fff;
+        @include mobile {
+            font-size: 8px;
+        }
     }
 }
 

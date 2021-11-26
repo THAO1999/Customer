@@ -13,6 +13,7 @@
 
 /* Set các giá trị với màn hình tương ứng */
 
+$mobile-small: 400px;
 $mobile-width: 567px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
@@ -22,6 +23,12 @@ $desk-high: 1920px;
 $full: 2800px;
 @mixin mobile {
     @media (max-width: #{$mobile-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin mobile-small {
+    @media (max-width: #{$mobile-small - 1px}) {
         @content;
     }
 }

@@ -659,6 +659,12 @@ section {
   }
 }
 
+@media (max-width: 399px) {
+  .section-one {
+    height: 120vh;
+  }
+}
+
 .section-one .cta__img {
   position: absolute;
   top: 80px;
@@ -895,6 +901,12 @@ section {
   .section-third {
     padding-top: 20px;
     height: 59vh;
+  }
+}
+
+@media (max-width: 399px) {
+  .section-third {
+    height: 67vh;
   }
 }
 
@@ -1423,7 +1435,7 @@ section {
 }
 
 .section-eight {
-  padding: 0px 100px;
+  padding: 100px 100px;
 }
 
 @media (min-width: 768px) and (max-width: 1336px) {
@@ -1434,12 +1446,13 @@ section {
 
 @media (max-width: 566px) {
   .section-eight {
-   padding: 100px 0px;
+    padding: 0px 0px;
   }
 }
 
 .section-eight .slide-wrap {
   width: 100%;
+  margin: 50px auto auto;
   background-color: #631206;
   border-radius: 56px;
   padding: 50px 76px 75px;
@@ -1631,7 +1644,7 @@ section {
 
 @media (min-width: 1336px) and (max-width: 1919px) {
   .section-night .container .q1 {
-    margin-top: -9%;
+    margin-top: -28%;
   }
 }
 
@@ -1641,7 +1654,7 @@ section {
 
 @media (min-width: 1336px) and (max-width: 1919px) {
   .section-night .container .q2 {
-    margin-top: -8%;
+    margin-top: -27%;
   }
 }
 
@@ -1651,7 +1664,7 @@ section {
 
 @media (min-width: 1336px) and (max-width: 1919px) {
   .section-night .container .q3 {
-    margin-top: -19%;
+    margin-top: -35%;
   }
 }
 
@@ -1661,7 +1674,7 @@ section {
 
 @media (min-width: 1336px) and (max-width: 1919px) {
   .section-night .container .q4 {
-    margin-top: -28%;
+    margin-top: -45%;
   }
 }
 
@@ -1671,7 +1684,7 @@ section {
 
 @media (min-width: 1336px) and (max-width: 1919px) {
   .section-night .container .q5 {
-    margin-top: -49%;
+    margin-top: -66%;
   }
 }
 
@@ -1818,7 +1831,7 @@ section {
 
 @media (min-width: 1336px) and (max-width: 1919px) {
   .form-count {
-    height: 885px;
+    height: 1000px;
   }
 }
 
@@ -1830,12 +1843,12 @@ section {
 
 @media (max-width: 566px) {
   .form-count {
-    height: 1200px;
+    height: 1250px;
   }
 }
 
 .wallet-item {
-  width: 90vw;
+  width: 93vw;
   margin: auto;
   margin-top: 20px;
   -webkit-box-pack: center;
@@ -1859,6 +1872,12 @@ section {
   border: 1px solid #fff;
   font-size: 9px;
   color: #fff;
+}
+
+@media (max-width: 566px) {
+  .wallet-item p {
+    font-size: 8px;
+  }
 }
 
 @media (max-width: 566px) {
