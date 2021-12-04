@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="presale">
+        <div class="airdrop pt-5">
+            <div class="container">
+                <div class="airdrop__wrap">
+                    <h1 class="mt-4 mt-md-0 text-center">COUNTDOWN Airdrop End & Listing Top Exchange</h1>
+                    <div class="airdrop__count-down d-flex justify-content-center space-x-8 py-3 mt-4">
+                        <div id="countdown-time" class="airdrop__count-down-item d-flex justify-content-center flex-column text-center" data-date="12/15/2021 00:00:00">
+                            <div class="airdrop__count-down-item--number lh-1 text-center">
+                                <span id="days" class="fs-1 fw-bold">00</span>
+                            </div>
+                            <div class="airdrop__count-down-item--label">
+                                <span class="text-uppercase fw-medium">Days</span>
+                            </div>
+                        </div>
+                        <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                            <div class="airdrop__count-down-item--number lh-1 text-center">
+                                <span id="hours" class="fs-1 fw-bold">00</span>
+                            </div>
+                            <div class="airdrop__count-down-item--label">
+                                <span class="text-uppercase fw-medium">Hours</span>
+                            </div>
+                        </div>
+                        <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                            <div class="airdrop__count-down-item--number lh-1 text-center">
+                                <span id="minutes" class="fs-1 fw-bold">00</span>
+                            </div>
+                            <div class="airdrop__count-down-item--label">
+                                <span class="text-uppercase fw-medium">Minutes</span>
+                            </div>
+                        </div>
+                        <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                            <div class="airdrop__count-down-item--number lh-1 text-center">
+                                <span id="seconds" class="fs-1 fw-bold">00</span>
+                            </div>
+                            <div class="airdrop__count-down-item--label">
+                                <span class="text-uppercase fw-medium">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-show">
+                        <div class="part">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 col-md-8 col-sm-10">
+                                    <a href="javascript:void(0)" id="airbtn" style="border: 1px solid rgb(51, 51, 51);" class="btn btn-default py-2 px-4 fs-6 mt-5 d-block">Claim Airdrop</a>
+                                </div>
+                                <input style="display: none;" id="buyinputone" type="text" class="my-space input-bordered" required="required" placeholder="0.002" value="0.002">
+
+                            </div>
+
+                            <p class="text-center mt-5">Support: Metamask, Trustwallet</p>
+                            <p class="text-center">Refer and Get 60% of all Claim/Buy and 40% of BNB!</p>
+                            <p class="text-center">PRESALE PRICE: 1 WIN = 0.000003 USD</p>
+                            <p class="text-center">LISTING PRICE: 1 WIN = 0.000009 USD</p>
+
+                            <p class="text-center">Get instant tokens</p>
+                        </div>
+
+                        <div class="part">
+                            <h2 class="text-center mt-5">Purchase Tokens</h2>
+                            <p class="text-center">Min buy 0.01 BNB (10,000,000 $WIN)</p>
+                            <p class="text-center">Max buy 5 BNB (50,000,000 $WIN)</p>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 col-md-8 col-sm-10">
+                                    <input id="buyinput" type="text" class="form-control btn-default border-dark text-danger" required="required" placeholder="0.05" style="text-align: center; color: #7F5D54" value="0.05">
+                                    <a href="javascript:void(0)" id="airbtn" style="border: 1px solid rgb(51, 51, 51);" class="btn btn-default py-2 px-4 fs-6 mt-3 d-block">Buy</a>
+                                    <a href="javascript:void(0)" id="airbtn" style="border: 1px solid rgb(51, 51, 51);" class="btn btn-default py-2 px-4 fs-6 mt-3 d-block">Add Metamask</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="text-center mt-5">Invite By</h2>
+                    <p class="text-center mt-4">Invite Link Required</p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-8 col-sm-10">
+                            <input id="refaddress" type="text" class="form-control btn-default boder-dark text-danger" required="required" placeholder="Enter Your BEP20 Address" style="text-align: center; color: red">
+
+                            <a href="javascript:void(0)" onclick="getreflink()" class="btn btn-default boder-dark py-2 px-4 fs-6 mt-3 d-block">Invite By</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
