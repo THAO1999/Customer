@@ -87,8 +87,14 @@ body {
     }
 }
 
+@media (max-width: 767px) {
+    #presale {
+        height: 120vh;
+    }
+}
+
 @media (min-width: 1314px) {
     #presale {
-        height: 70vh;
+        height: 80vh;
     }
 }
