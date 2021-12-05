@@ -89,12 +89,13 @@ body {
 
 @media (max-width: 767px) {
     #presale {
-        height: 120vh;
+        height: 130vh;
     }
 }
 
 @media (min-width: 1314px) {
     #presale {
         height: 80vh;
+        margin-top: 100px;
     }
 }
